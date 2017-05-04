@@ -37,6 +37,10 @@ layout: default
         max-width: 24px;
     }
 
+    tfoot {
+        border-top: 1px dashed #333;
+    }
+
     .name {
         text-align: right;
         font-size: 11pt;
@@ -73,6 +77,20 @@ layout: default
         background: rgb(105,105,105);
     }
 
+    .white {
+        margin: 1px;
+        width: 24px;
+        height: 24px;
+        background: #bdc3c7 !important;
+    }
+
+    .black {
+        margin: 1px;
+        width: 24px;
+        height: 24px;
+        background: #16BDEC;
+    }
+
     .numberHeader {
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
@@ -86,6 +104,19 @@ layout: default
         text-align: left;
         
         padding: 8px 0;
+    }
+
+    tfoot > tr > td.name {
+        font-weight: 800 !important;
+    }
+
+    .spoiler {
+        -webkit-filter: blur(6px) grayscale(.6);
+        -webkit-transition-property: -webkit-filter;
+        -webkit-transition-duration: .25s;
+    }
+    .spoiler:hover, .spoiler:focus {
+        -webkit-filter: blur(0px) grayscale(0);
     }
 </style>
 
@@ -178,7 +209,7 @@ layout: default
 
 <!-- jQuery and scoreboard.js -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src={{site.url}}/js/courselist.js></script>
-<script src="{{site.url}}/js/scoreboard.js"></script>
-<script src="{{site.url}}/js/course.js"></script>
-<script src="{{site.url}}/js/sorttable.js"></script>
+<script src="/js/scoreboard.js"></script>
+<script src="/js/courselist.js"></script>
+<script src="/js/course.js"></script>
+<script src="/js/sorttable.js"></script>

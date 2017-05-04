@@ -69,6 +69,20 @@
         background: rgb(105,105,105);
     }
 
+    .white {
+        margin: 1px;
+        width: 24px;
+        height: 24px;
+        background: #bdc3c7 !important;
+    }
+
+    .black {
+        margin: 1px;
+        width: 24px;
+        height: 24px;
+        background: #16BDEC;
+    }
+
     .numberHeader {
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
@@ -83,6 +97,14 @@
         
         padding: 8px 0;
     }
+
+    tfoot {
+        border-top: 1px dashed #333;
+    }
+
+    tfoot > tr > td.name {
+        font-weight: 800 !important;
+    }
 </style>
 <body>
 
@@ -93,6 +115,8 @@
 <div class="scoreboard"></div>
 
 <!-- JavaScript -->
+<script src="/js/session.js"></script>
+<script src="/js/common.js"></script>
 <script src="/js/sorttable.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

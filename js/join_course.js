@@ -11,6 +11,7 @@ class JoinCourse {
         function fulfilled(data) {
           let alert = '<div id="join_course_alert" class="alert alert-success" role="alert">' + data.message + '</div>';
           $('#join_course_group').prepend(alert);
+          document.cookie("student=true;path=/");
         },
         function rejected(data) {
           let alert = '<div id="join_course_alert" class="alert alert-danger" role="alert">' + data.error + '</div>';

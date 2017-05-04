@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.idea/
+Gemfile.lock
+
+kurssit/may1/.DS_Store
+
+.DS_Store
+<<<<<<< HEAD
+.tern-port
+
+out/
+node_modules/
+_coverage/
+=======
+/HTML5Application/nbproject/private
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1

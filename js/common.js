@@ -31,15 +31,17 @@ let temp_frontend_base_url;
 console.log("Adjusting environment settings");
 console.log("Running in: " + document.domain);
 if (document.domain == "localhost" || document.domain == "127.0.0.1") {
-  temp_backend_base_url = "http://kurssihallinta.kisallioppiminen.fi/";
+  //temp_backend_base_url = "http://kurssihallinta.kisallioppiminen.fi/";
+  temp_backend_base_url = "https://pure-inlet-98383.herokuapp.com/";
   temp_frontend_base_url = "http://localhost:4000/";
 } else if (document.domain == "ohtukisalli.github.io") {
+  //temp_backend_base_url = "http://kurssihallinta.kisallioppiminen.fi/";
   temp_backend_base_url = "https://pure-inlet-98383.herokuapp.com/";
-  temp_frontend_base_url = "https://ohtukisalli.github.io/dev-frontend/";
+  temp_frontend_base_url = "https://ohtukisalli.github.io/";
 //if in production
-} else if (document.domain == "beta.kisallioppiminen.fi") {
+} else if (document.domain == "beta-kisallioppiminen.github.io") {
   temp_backend_base_url = "http://kurssihallinta.kisallioppiminen.fi/";
-  temp_frontend_base_url = "http://beta.kisallioppiminen.fi/";
+  temp_frontend_base_url = "https://beta-kisallioppiminen.github.io/";
 } else {
   console.log("ERROR: cannot set temp_backend_base_url and temp_frontend_base_url. Domain changed?");
 }

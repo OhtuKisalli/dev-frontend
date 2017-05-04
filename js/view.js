@@ -1,7 +1,13 @@
+/**
+ * @file DOM/View manipulation
+ * @license GPL v2
+ * @version 1.00
+ */
+
+
  /**
   * @class
   */
-
 class View {
 
   constructor() {
@@ -11,6 +17,13 @@ class View {
   showNavigation() {
     if (Session.isLogged()) {
       this._buildUser();
+      document.cookie = 'attemptedLogin=; path=/; expires=' + new Date(0).toUTCString();
+    } else if (document.getCookie('attemptedLogin')) {
+      console.log('Loggin was too late, refreshing.');
+      setTimeout( function() {
+        document.cookie = 'attemptedLogin=; path=/; expires=' + new Date(0).toUTCString();
+        location.reload();
+      }, 2000);
     } else {
       this._buildGuest();
       this._buildModal();
@@ -18,33 +31,25 @@ class View {
   }
 
   _buildModal() {
-    const AUTHURL = 'users/auth/google_oauth2';
+    let ga = document.querySelector('#login-modal-body a');
+    let gimg = document.querySelector('#login-modal-body img');
 
-    let divBody = document.getElementById('login-modal-body');
-    let a = document.createElement('a');
-    let img = document.createElement('img');
 
-    let ddomain;
-    if (document.domain == 'ohtukisalli.github.io') {
-      ddomain = '/dev-frontend';
-    } else {
-      ddomain = '';
-    }
+    ga.href = BACKEND_BASE_URL + 'users/auth/google_oauth2';
+    gimg.src = '/img/google-login.png';
 
-    img.setAttribute('src', ddomain + '/img/google-login.png');
-    img.setAttribute('alt', 'Google-nappula');
+    ga.onclick = function () {
+      document.cookie = 'attemptedLogin=true; path=/';
+    };
 
-    a.setAttribute('href', BACKEND_BASE_URL + AUTHURL);
-
-    a.append(img);
-    divBody.append(a);
-
-    if (FRONTEND_BASE_URL == "http://localhost:4000/") {
-      this._addNormalLoginToModal(FRONTEND_BASE_URL);
-    }
-
+    // if (FRONTEND_BASE_URL == "http://localhost:4000/" || FRONTEND_BASE_URL == 'http://127.0.0.1:4000/') {
+    //   this._addNormalLoginToModal(FRONTEND_BASE_URL);
+    // }
   }
 
+  /* 
+   * Deprecated
+   */
   _addNormalLoginToModal(backendUrl) {
 
     let input, attributes;
@@ -97,7 +102,6 @@ class View {
 
     form.append(formDiv);
     document.getElementById('login-modal-body').append(form);
-
   }
   
   _buildUser() {
@@ -136,15 +140,24 @@ class View {
 
 
     let kirjauduUlos = [
-    {key: 'href', value: BACKEND_BASE_URL + 'users/sign_out'},
-    {key: 'rel', value: 'nofollow'},
-    {key: 'data-method', value: 'GET'}
+    {key: 'href', value: '#'},
+    {key: 'rel', value: 'nofollow'}
     ];
     let kirjauduUlosClickEvent = function () {
-      console.log('Current cookies: ' + document.cookie);
+
+      const request = new XMLHttpRequest();
+      request.open('DELETE', BACKEND_BASE_URL + 'users/sign_out', true);
+      request.withCredentials = true;
+      request.send();
+
       document.cookie = 'userFirstName=; path=/; expires=' + new Date(0).toUTCString();
       document.cookie = 'userId=; path=/; expires=' + new Date(0).toUTCString();
-      console.log('cookies after login : ' + document.cookie);
+      document.cookie = 'teacher=; path=/; expires=' + new Date(0).toUTCString();
+      document.cookie = 'student=; path=/; expires=' + new Date(0).toUTCString();
+      
+      setTimeout(function() {
+        document.location.href='/omat/kirjauduUlos.html';
+      }, 1000);
     };
 
     // Append everything to dropdown menu
@@ -258,6 +271,9 @@ class View {
     body.appendChild(item);
     scoreboard.appendChild(body);
 
+    let foot = document.createElement('tfoot');
+    scoreboard.appendChild(foot);
+
     let column = document.createElement('th');
     column.setAttribute('class', 'nameColumn');
 
@@ -269,7 +285,7 @@ class View {
   /**
    * Create a large goal checkbox with id and color
    */
-  createCheckbox(goalId, color) {
+  _createCheckbox(goalId, color) {
     let checkboxDiv = document.createElement('div');
     checkboxDiv.setAttribute('class', 'checkbox checkbox-kisalli');
 
@@ -320,13 +336,25 @@ class View {
     return mark;
   }
 
+  createScheduleMark(key, status, name, exercise) {
+    let mark = document.createElement('td');
+    mark.setAttribute('id', 'status');
+    let color = document.createElement('div');
+    color.setAttribute('style', `background-color: ${key}`);
+    color.setAttribute('class', status);
+    color.setAttribute('data-toggle', 'tooltip');
+    color.setAttribute('title', `${name} - ${exercise}`);
+    mark.appendChild(color);
+    return mark;
+  }
+
   createListItem(data, formattedTime) {
     let listItem = document.createElement('section');
     listItem.setAttribute('class', 'panel panel-courselisting');
 
     let header = document.createElement('header');
     let nameH1 = document.createElement('h1');
-    nameH1.innerHTML = data.name;
+    nameH1.innerHTML = `${data.name} <a href="/kurssit/${data.html_id}/index.html">(${data.html_id.toUpperCase()})</a>`;
 
     let h2 = document.createElement('h2');
     h2.style.display = "inline-block";
@@ -349,6 +377,8 @@ class View {
     coursekeyH1.appendChild(collapseLink);
 
     let coursekeyH3 = document.createElement('h3');
+    coursekeyH3.setAttribute('class', 'spoiler');
+    coursekeyH3.setAttribute('ontouchstart', '');
     coursekeyH3.style.fontFamily = "monospace";
     coursekeyH3.style.float = "right";
     coursekeyH3.style.display = "inline-block";
@@ -396,6 +426,14 @@ class View {
     button.setAttribute('onClick', 'self.close()');
     return button;
   }
+
+   renderEmptyCheckboxesForOneSchedule(scheduleId, scheduleColorString) {
+     let viewObject = this;
+     $(".checkbox-group").each(function () {
+       let newCheckboxElement = viewObject._createCheckbox(scheduleId, scheduleColorString);
+       this.appendChild(newCheckboxElement);
+     });
+   };
 
 }
 

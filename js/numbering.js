@@ -42,9 +42,33 @@ var SITE = {
             // $(value).attr("id", problemID);
 
             // tag subassignments
+
+
             $(value).find("div h1").each(function(subIndex, value) {
                 $(value).text(exCount + "." + (subIndex + 1) + ": " + $(value).text());
             });
+
+
+        });
+
+        $(".panel").each(function(index, value) {
+            let firstExercise;
+            let lastExercise;
+
+            $(this).find('.tehtava').each(function(index, value) {
+                if (index === 0) {
+                    firstExercise = $(this).find('header h1').text();
+                };
+
+                lastExercise = $(this).find('header h1').text();
+            });
+
+            $(this).find('.otsikko').each(function(index, value) {
+                var exHeader = $(value).find("h1 a").text();
+                var newHeader = exHeader + " ("+ /[0-9].[0-9]+/.exec(firstExercise)[0] + " - " + /[0-9].[0-9]+/.exec(lastExercise)[0] + ")";
+                $(value).find("h1 a").text(newHeader);
+            });
+
         });
         
         if ($('#theoremStart').val() == null) {

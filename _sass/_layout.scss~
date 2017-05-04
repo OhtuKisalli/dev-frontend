@@ -1,0 +1,434 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header a,
+.tehtava h2 a {
+	cursor: pointer;
+        padding: 2px;
+}
+
+.close-section a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0 -15px -15px -15px;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+.close-section a:hover {
+    background-color: #eee;
+  }
+
+<<<<<<< HEAD
+=======
+section > header h1 {
+    font-size: 2.75em;
+    padding-top: 15px;
+}
+
+th {
+    padding: 5px;
+}
+
+p a,
+ul a {
+    border-bottom: 1px dotted #aaa;
+}
+
+
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+/**
+ * NAVIGATION 
+ */
+
+body > nav ul {
+	margin-top: 13px;
+	z-index: 1;
+}
+
+body > nav ul li {
+	margin-top: 0;
+	display: inline-block;
+}
+
+body > nav a {
+	padding: 5px 20px;
+	margin: 6px 0 0 15px;
+}
+
+/**
+ * LOGO
+ */
+
+body > header {
+	margin-top: -30px;
+	clear: both;
+}
+
+body > header > img {
+	margin-top: -8px;
+	float: left;
+}
+
+body > header > h1 {
+	display: inline;
+	margin-top: 15px; 
+	float: left;
+	padding: 0 20px;
+}
+
+body > header > h1 > span {
+	display: block;
+	margin-top: 0px;
+
+	&:first-child {
+		border-bottom: 1px solid black;
+		margin-bottom: 0px;
+		margin-top: 45px;
+	}
+}
+
+body > header.no-nav {
+	margin-top: 20px;
+}
+
+/**
+ * CONTENT WITH SIDENAV
+ */
+
+main article > header h1 {
+	display: block;
+	border-radius: 7px;
+	padding: 12px 20px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+main.has-aside article,
+main.has-aside > header {
+	width: 65%;
+	float: left;
+}
+
+main.has-aside article {
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+/**
+ * CONTENT WITH TOPNAV
+ */
+
+main.has-atop article > header h1 {
+	display: none;
+}
+
+main.has-atop article {
+	margin-bottom: 40px;
+	clear: both;
+}
+
+/**
+ * Problem buttons style
+ */
+
+.problemButtonWrap {
+	text-align: center;
+}
+
+
+/**
+ * MAIN CONTENT
+ */
+
+ main {
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+main > header {
+	margin: auto;
+	height: auto;
+	width: 100%;
+	display: inline-block;
+}
+
+main > header > h1 {
+	display: block;
+	border-radius: 7px;
+	padding: 12px 20px;
+	margin-bottom: 30px;
+}
+
+article {
+	padding: 10px;
+}
+
+.no-header {
+	margin-top: 350px;
+}
+
+.items:after {
+	content: "";
+	display: inline-block;
+    width: 100%;
+}
+
+.item {
+	display: inline-block;
+	vertical-align: top;
+	width: 350px;
+	margin: 10px 15px;
+	padding: 20px;
+	padding-bottom: 0px;
+	position: relative;
+}
+
+.item > header {
+	padding-top: 10px;
+}
+
+.item .difficulty {
+	margin: 0px;
+	margin-bottom: 10px;
+	color: #00747a;
+	position: relative;
+	display: inline-block;
+	clear: none;
+}
+
+.item .organiser {
+	width: auto;
+	height: 1em;
+	margin-top: 0.2em;
+	float: left;
+	margin-right: 5px;
+}
+
+.item * {
+	clear: both;
+}
+
+.item > section {
+	clear:both;
+}
+
+.call_to_action {
+	margin-top: 40px;
+}
+
+.call_to_action a,
+.call_to_action input,
+.call_to_action a:visited {
+	width: 100%;
+	margin: 0px -20px 0px -20px;
+	padding: 20px;
+	display: block;
+	box-sizing: content-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+article li {
+	padding: 2px 0;
+	line-height: 1.8em;
+}
+
+article li li {
+	padding: 4px;
+}
+
+article ol,
+article ul {
+	margin: 10px 0;
+}
+
+.print-link {
+	float: right;
+	width: 400px;
+	display: block;
+	font-size: 0.8em;
+}
+
+.print-link img {
+	width: 30px;
+	padding-right: 8px;
+}
+
+@media screen and (max-width: 1160px) {
+
+	main {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+	}
+
+	.item {
+		width: 43%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 760px) {
+
+	main {
+		padding: 0;
+	}
+
+	main > header {
+		width: 100%;
+	}
+
+	.no-header {
+		margin-top: 0px;
+	}
+
+	main.has-aside,
+	main.has-aside > header,
+	main.has-aside article,
+	main.has-atop,
+	main.has-atop > header,
+	main.has-atop article{
+		width: auto;
+	}
+
+	.item,
+	.item:nth-child(odd),
+	.item:nth-child(even){
+		display: block;
+		float: none;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body > header {
+		margin-top: 0px
+	}
+
+	body > header > img {
+		height: 50px;
+		position: absolute;
+		top: 12px;
+		left: 20px;
+	}
+
+	body > header > h1 {
+		float: none;
+		clear: both;
+		max-width: 360px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 475px) {
+
+	body > header > h1 {
+		display: none;
+	}
+	
+	main {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+	}
+
+	main.has-aside,
+	main.has-aside > header,
+	main.has-aside article,
+	main.has-atop,
+	main.has-atop > header,
+	main.has-atop article{
+		width: 100%;
+		padding: 0;
+	}
+
+	main.has-aside article > header h1,
+	main.has-atop article > header h1{
+		width: 100%;
+		border-radius: 0;
+	}
+
+}
+
+@media print {
+	
+	*{transition:none!important}
+
+	body > header, 
+	atop,
+	nav,
+	aside,
+	footer,
+	div.print-link {
+		display: none;
+	}
+	
+	img,
+	.theorem,
+	.definition {
+		page-break-inside: avoid;
+	}
+	
+	main.has-atop article,
+	main.has-atop {
+		background-color: white;
+	}
+	
+	section .tehtava>header a[data-toggle="collapse"].collapsed:after, 
+	section.panel>header a[data-toggle="collapse"].collapsed:after {
+                content: none;
+        }
+        
+        .tehtava .collapse,
+	.panel .collapse {
+		display: block;
+		line-height: 10pt;
+	}
+	
+	li {
+		line-height: 110%;
+	}
+	
+	article .tehtava,
+	article  .panel,
+	article  .panel-default>.panel-heading, article .tehtava>.panel-heading, article .tehtava>header, article .panel>header {
+		border-top-width: 0pt;
+		border-bottom-width: 0pt;
+		border-left-width: 0pt;
+		border-right-width: 0pt;
+		-webkit-box-shadow: none;
+    		box-shadow: none;
+	}
+	
+	section .tehtava>header {
+		background: transparent;
+		background-color: transparent;
+		padding: 0 10pt;
+	}
+	
+	article section .tehtava {
+		font-size: 10pt;
+		border-left: 1pt solid #555;
+	}
+	
+	img {
+		display: block;
+		max-width: 60%;
+	}
+	
+	main.has-atop article {
+    		background-color: white;
+	}
+
+
+	
+}

@@ -15,7 +15,7 @@
     "karma-phantomjs-launcher": "^1.0.2"
   },
   "name": "ohtukisalli.github.io",
-  "description": "* Development/Staging version: [https://ohtukisalli.github.io/dev-frontend/](https://ohtukisalli.github.io/dev-frontend/) * Production version: [http://beta.kisallioppiminen.fi/](http://beta.kisallioppiminen.fi/)",
+  "description": "* Development/Staging version: [https://ohtukisalli.github.io/](https://ohtukisalli.github.io/) * Production version: [http://beta-kisallioppiminen.github.io/](http://beta-kisallioppiminen.github.io/)",
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "dependencies": {
@@ -29,13 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OhtuKisalli/dev-frontend.git"
+    "url": "git+https://github.com/OhtuKisalli/ohtukisalli.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OhtuKisalli/dev-frontend/issues"
+    "url": "https://github.com/OhtuKisalli/ohtukisalli.github.io/issues"
   },
-  "homepage": "https://github.com/OhtuKisalli/dev-frontend#readme"
+  "homepage": "https://github.com/OhtuKisalli/ohtukisalli.github.io/#readme"
 }

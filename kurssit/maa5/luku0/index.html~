@@ -1,0 +1,1739 @@
+---
+title: MAA5 - Analyyttinen geometria 
+layout: material
+sitemap: true
+main-class: has-atop
+topnav: maa5
+---
+
+<<<<<<< HEAD
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        padding: 5px;
+    }
+</style>
+
+<input type="hidden" id="chapterNumber" value="1"/>
+
+{% include bottomnav.html %}
+
+=======
+
+<input type="hidden" id="chapterNumber" value="1"/>
+
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+<article>
+    <section>
+        <header>
+            <h1>Etäisyys</h1>
+        </header>
+    </section>
+
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#luvun0-tavoitteet">
+                    Luvun tavoitteet
+                </a>
+            </h1>
+        </header>
+        <div id="luvun0-tavoitteet" class="collapse">
+
+            <div class="objective">
+                <p> 
+                    Tämän luvun tavoitteena on, että pystyt määrittämään pisteiden välisiä etäisyyksiä sekä lukusuoralla että tasossa. Osaat
+<<<<<<< HEAD
+                    <ul>
+                        <li> päätellä luvun itseisarvon </li>
+                        <li> ilmaista itseisarvon avulla kahden luvun välisen etäisyyden lukusuoralla </li>
+                        <li> käyttää tulon ja osamäärän itseisarvoihin liittyviä laskusääntöjä </li>
+                        <li> laskea tason kahden pisteen välisen etäisyyden </li>
+                        <li> määrittää janan keskipisteen koordinaatit.</li>
+                    </ul> 
+=======
+                <ul>
+                    <li> päätellä luvun itseisarvon </li>
+                    <li> ilmaista itseisarvon avulla kahden luvun välisen etäisyyden lukusuoralla </li>
+                    <li> käyttää tulon ja osamäärän itseisarvoihin liittyviä laskusääntöjä </li>
+                    <li> laskea tason kahden pisteen välisen etäisyyden </li>
+                    <li> määrittää janan keskipisteen koordinaatit.</li>
+                </ul> 
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="panel">
+<<<<<<< HEAD
+        <header class="otsikko">
+=======
+        <header>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#EtaisyysLukusuora">
+                    Etäisyys lukusuoralla
+                </a>
+            </h1>
+        </header>
+        <div id="EtaisyysLukusuora" class="collapse">
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Lukusuoraan tutustuttiin jo kurssilla <a href="http://kisallioppiminen.fi/kurssit/may1/luvutLaskutoimitukset/">MAY1</a>. Jokaista lukusuoran pistettä vastaa reaaliluku, ja jokaista reaalilukua vastaa lukusuoran piste.
+                    <br>
+                    <img src="/kurssit/may1/kuvat/reaaliK2.png" max-width: 100%; width: auto; height: auto;/>
+                    <!-- <br>
+                    Tässä kappaleessa tutkitaan lukusuoran pisteiden välisiä etäisyyksiä. -->
+                </p>
+            </div>
+
+            <!-- <div class="tehtavat">
+                <div class="tehtava" id="01e7d2ed-21fc-4423-91ec-31aef587266e">
+=======
+            <p>
+                Lukusuoraan tutustuttiin jo kurssilla <a href="http://kisallioppiminen.fi/kurssit/may1/luvutLaskutoimitukset/">MAY1</a>. Jokaista lukusuoran pistettä vastaa reaaliluku, ja jokaista reaalilukua vastaa lukusuoran piste. 
+                <br>
+                <img src="/kurssit/may1/kuvat/reaaliK2.png" max-width: 100%; width: auto; height: auto;/> 
+                     <!-- <br>
+                     Tässä kappaleessa tutkitaan lukusuoran pisteiden välisiä etäisyyksiä. -->
+            </p>
+
+            <!-- <div class="tehtavat">
+                <div class="tehtava" id="firstEx">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t001">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t001" class="collapse">
+                        <p>
+                            Päättele alla olevan kuvan avulla
+                        </p>
+                        <ol class="a">
+                            <li> lukujen $5$ ja $1$ välinen etäisyys </li>
+                            <li> lukujen $2$ ja $-4$ välinen etäisyys </li>
+                            <li> lukujen $-3$ ja $0$ välinen etäisyys. </li>
+                        </ol>
+                        <p>
+                            <img src="/kurssit/maa5/kuvat/k029.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Lukusuoran pisteiden välisten etäisyyksien ilmoittamiseen voidaan käyttää itseisarvoa, joka määritellään seuraavasti:
+                </p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: ITSEISARVO</h3>
+                    <p>
+                        Luvun $a$ <em>itseisarvo</em> $\left|a\right|$ ilmaisee luvun $a$ etäisyyden luvusta nolla lukusuoralla.
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="01e7d2ed-21fc-4423-91ec-31aef587266e">
+=======
+            <p>
+                Lukusuoran pisteiden välisten etäisyyksien ilmoittamiseen voidaan käyttää itseisarvoa, joka määritellään seuraavasti:
+            </p>
+
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: ITSEISARVO</h3>
+                <p>
+                    Luvun $a$ <em>itseisarvo</em> $\left|a\right|$ ilmaisee luvun $a$ etäisyyden luvusta nolla lukusuoralla.
+                    <br>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="firstEx">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t002">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t002" class="collapse">
+                        <p>
+                            Päättele alla olevan kuvan avulla seuraavat itseisarvot
+                        </p>
+                        <ol class="a">
+                            <li> $\left|3\right|$ </li>
+                            <li> $\left|-5\right|$ </li>
+                            <li> $\left|0\right|$ </li>
+                        </ol>
+                        <p>
+                            <img src="/kurssit/maa5/kuvat/k029.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t002_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t002_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t002_v" class="collapse">
+                            <ol class="a">
+                                <li> 3 </li>
+                                <li> 5 </li>
+                                <li> 0 </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="f2fcc715-f6bb-4edb-9a75-cbc66eaef2ad">
+=======
+                <div class="tehtava" id="t003-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t003">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t003" class="collapse">
+                        <p>
+                            Mikä ehto luvun $a$ pitää toteuttaa, jotta 
+                        </p>
+                        <ol class="a">
+                            <li> sen itseisarvo on sama kuin luku itse eli $\left|a\right| = a$ </li>
+                            <li> sen itseisarvo on luvun $a$ vastaluku eli $\left|a\right| = -a$? </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Edellisen tehtävän havainnot voidaan koota seuraavaksi teoreemaksi:
+                </p>
+
+
+                <div class="theorem" id="ITSEISARVO">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Luvun $a$ itseisarvolle pätee
+                        $$
+                            \left|a\right| = \left\{\begin{aligned}
+                                    &a, \quad \text{ jos $a \geq 0$} \\
+                                    -&a, \quad \text{ jos $a < 0$.}
+                                \end{aligned}\right.
+                        $$
+                    </p>
+                    <div class="proof">
+                        <p>
+                           Perustelu:
+                           <ul>
+                                <li> Jos luku $a$ on positiivinen tai nolla, on sen etäisyys luvusta nolla yhtä suuri kuin luku $a$. Esimerkiksi luvun $5$ etäisyys luvusta nolla on $5$. </li>
+                                <li> Jos luku $a$ on negatiivinen, saadaan sen etäisyys luvusta nolla ilmaistua vastaluvun avulla. Esimerkiksi luvun $-9$ etäisyys luvusta nolla on $9 = -(-9)$.</li>
+                           </ul>
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <p>
+                    Kahdella eri luvulla voi olla sama itseisarvo. Tätä ilmiötä tutkitaan seuraavassa tehtävässä.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="e0c10178-450e-4ac2-a612-3e3dabc03666">
+=======
+            <p>
+                Edellisen tehtävän havainnot voidaan koota seuraavaksi teoreemaksi:
+            </p>
+
+            <div class="theorem" id="ITSEISARVO">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Luvun $a$ itseisarvolle pätee
+                    $$
+                    \left|a\right| = \left\{\begin{aligned}
+                    &a, \quad \text{ jos $a \geq 0$} \\
+                    -&a, \quad \text{ jos $a < 0$.}
+                    \end{aligned}\right.
+                    $$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: 
+                    <ul>
+                        <li> Jos luku $a$ on positiivinen tai nolla, on sen etäisyys luvusta nolla yhtä suuri kuin luku $a$. Esimerkiksi luvun $5$ etäisyys luvusta nolla on $5$. </li>
+                        <li> Jos luku $a$ on negatiivinen, saadaan sen etäisyys luvusta nolla ilmaistua vastaluvun avulla. Esimerkiksi luvun $-9$ etäisyys luvusta nolla on $9 = -(-9)$.</li>
+                    </ul>
+
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Kahdella eri luvulla voi olla sama itseisarvo. Tätä ilmiötä tutkitaan seuraavassa tehtävässä.
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t002b-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t002b">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t002b" class="collapse">
+                        <p>
+                            Piirrä vihkoosi lukusuora ja päättele sen avulla, 
+                        </p>
+                        <ol class="a">
+                            <li> minkä lukujen itseisarvo on $4$ </li>
+                            <li> mitkä luvut toteuttavat yhtälön $\left|x\right| = 2$. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Seuraavan teoreeman mukaan lukujen itseisarvot ovat yhtä suuret, jos ja vain jos luvut ovat samat tai toistensa vastaluvut:
+                </p>
+
+
+                <div class="theorem" id="ITSEISARVOJEN YHTÄSUURUUS">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        $\left|a\right| = \left|b\right|$, jos ja vain jos $a = b$ tai $a = -b$.
+                    </p>
+                    <div class="proof">
+                        <p>
+                           Perustelu:
+                           <ul>
+                                <li> Oletetaan, että $\left|a\right| = \left|b\right|$ eli lukujen $a$ ja $b$ itseisarvot ovat samat. Luvut $a$ ja $b$ ovat siten lukusuoralla yhtä kaukana luvusta nolla. Ne ovat siis samat tai toistensa vastaluvut. Toisin sanottuna $a = b$ tai $a = -b$. </li>
+                                <li> Oletetaan, että $a = b$ tai $a = -b$. Tutkitaan kumpikin tapaus:
+                                    <ul>
+                                        <li> Jos $a = b$ eli luvut ovat samat, myös niiden itseisarvot ovat samat eli $\left|a\right| = \left|b\right|$.</li>
+                                        <li> Jos $a = -b$ eli luvut ovat toistensa vastaluvut, ne ovat lukusuoralla kuitenkin yhtä kaukana luvusta nolla. Siten niillä on sama itseisarvo eli $\left|a\right| = \left|b\right|$.</li>
+                                    </ul>
+                                </li>
+                           </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Luvun itseisarvo ilmaisee luvun etäisyyden nollasta. Tutkitaan seuraavaksi, miten itseisarvon avulla voidaan ilmaista kahden nollasta poikkeavan luvun välinen etäisyys.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="72afbc46-54d1-4712-a020-14ebc79430a4">
+=======
+            <p>
+                Seuraavan teoreeman mukaan lukujen itseisarvot ovat yhtä suuret, jos ja vain jos luvut ovat samat tai toistensa vastaluvut:
+            </p>
+
+            <div class="theorem" id="ITSEISARVOJEN YHTÄSUURUUS">
+                <h3>TEOREEMA</h3>
+                <p>
+                    $\left|a\right| = \left|b\right|$, jos ja vain jos $a = b$ tai $a = -b$.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: 
+                    <ul>
+                        <li> Oletetaan, että $\left|a\right| = \left|b\right|$ eli lukujen $a$ ja $b$ itseisarvot ovat samat. Luvut $a$ ja $b$ ovat siten lukusuoralla yhtä kaukana luvusta nolla. Ne ovat siis samat tai toistensa vastaluvut. Toisin sanottuna $a = b$ tai $a = -b$. </li>
+                        <li> Oletetaan, että $a = b$ tai $a = -b$. Tutkitaan kumpikin tapaus:
+                            <ul>
+                                <li> Jos $a = b$ eli luvut ovat samat, myös niiden itseisarvot ovat samat eli $\left|a\right| = \left|b\right|$.</li>
+                                <li> Jos $a = -b$ eli luvut ovat toistensa vastaluvut, ne ovat lukusuoralla kuitenkin yhtä kaukana luvusta nolla. Siten niillä on sama itseisarvo eli $\left|a\right| = \left|b\right|$.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Luvun itseisarvo ilmaisee luvun etäisyyden nollasta. Tutkitaan seuraavaksi, miten itseisarvon avulla voidaan ilmaista kahden nollasta poikkeavan luvun välinen etäisyys.
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t004-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t004">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t004" class="collapse">
+                        <p>
+                            Päättele lukujen $m$ ja $n$ välinen etäisyys lukusuoralla ja vertaa sitä lukujen erotuksen itseisarvoon $\left|m-n\right|$, jos
+                        </p>
+                        <ol class="a">
+                            <li> $m = 12$ ja $n = 7$ </li>
+                            <li> $m = 5$ ja $n = 8$ </li>
+                            <li> $m = -3$ ja $n = 6$. </li>
+                        </ol>
+                        <p>
+                            Kerro omin sanoin, mitä havaitset.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Edellisen tehtävän havainnot voidaan koota seuraavaksi teoreemaksi:
+                </p>
+
+                <div class="theorem" id="ETÄISYYS LUKUSUORALLA">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Lukujen $a$ ja $b$ välinen etäisyys lukusuoralla on $\left|a-b\right|$.
+                    </p>
+                    <div class="proof">
+                        <p>
+                           Perustelu: Tutkitaan erikseen kolme mahdollista tapausta:
+                       </p>
+                           <ol>
+                                <li>
+                                    Oletetaan, että $a > b$. Lukujen $a$ ja $b$ välinen etäisyys on $a-b$:
+                                    <br>
+                                    <img src="/kurssit/maa5/kuvat/k030.png" max-width: 100%; width: auto; height: auto;/>
+                                    Toisaalta erotus $a-b$ on positiivinen, joten $\left|a-b\right| = a-b$.
+                                    <br>
+                                </li>
+                                <li>
+                                    Oletetaan, että $a = b$. Lukujen $a$ ja $b$ välinen etäisyys on $0$:
+                                    <br>
+                                    <img src="/kurssit/maa5/kuvat/k032.png" max-width: 100%; width: auto; height: auto;/>
+                                    Toisaalta erotus $a - b = 0$, joten $\left|a-b\right| = \left|0\right| = 0$.
+                                    <br>
+                                </li>
+                                <li>
+                                    Oletetaan, että $a < b$. Lukujen $a$ ja $b$ välinen etäisyys on $b-a$:
+                                    <br>
+                                    <img src="/kurssit/maa5/kuvat/k031.png" max-width: 100%; width: auto; height: auto;/>
+                                    Toisaalta erotus $a-b$ on negatiivinen, joten
+                                    \begin{align*}
+                                    \left|a-b\right| &= -(a-b) \\
+                                    &= -a+b \\
+                                    &= b-a.
+                                    \end{align*}
+                                </li>
+                           </ol>
+                        <p>
+                            Havaitaan, että kaikissa tapaukissa lukujen $a$ ja $b$ välinen etäisyys on yhtä suuri kuin erotuksen $a-b$ itseisarvo $\left|a-b\right|$.
+                        </p>
+                    </div>
+=======
+            <p>
+                Edellisen tehtävän havainnot voidaan koota seuraavaksi teoreemaksi:
+            </p>
+
+            <div class="theorem" id="ETÄISYYS LUKUSUORALLA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Lukujen $a$ ja $b$ välinen etäisyys lukusuoralla on $\left|a-b\right|$.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Tutkitaan erikseen kolme mahdollista tapausta:
+                    </p>
+                    <ol>
+                        <li> 
+                            Oletetaan, että $a > b$. Lukujen $a$ ja $b$ välinen etäisyys on $a-b$: 
+                            <br>
+                            <img src="/kurssit/maa5/kuvat/k030.png" max-width: 100%; width: auto; height: auto;/>
+                                 Toisaalta erotus $a-b$ on positiivinen, joten $\left|a-b\right| = a-b$. 
+                                 <br>
+                        </li>
+                        <li> 
+                            Oletetaan, että $a = b$. Lukujen $a$ ja $b$ välinen etäisyys on $0$: 
+                            <br>
+                            <img src="/kurssit/maa5/kuvat/k032.png" max-width: 100%; width: auto; height: auto;/>
+                                 Toisaalta erotus $a - b = 0$, joten $\left|a-b\right| = \left|0\right| = 0$. 
+                                 <br>
+                        </li>
+                        <li> 
+                            Oletetaan, että $a < b$. Lukujen $a$ ja $b$ välinen etäisyys on $b-a$:
+                            <br>
+                            <img src="/kurssit/maa5/kuvat/k031.png" max-width: 100%; width: auto; height: auto;/>
+                                 Toisaalta erotus $a-b$ on negatiivinen, joten 
+                                 \begin{align*}
+                                 \left|a-b\right| &= -(a-b) \\
+                                 &= -a+b \\
+                                 &= b-a.
+                                 \end{align*}
+                        </li>
+                    </ol>
+                    <p>
+                        Havaitaan, että kaikissa tapaukissa lukujen $a$ ja $b$ välinen etäisyys on yhtä suuri kuin erotuksen $a-b$ itseisarvo $\left|a-b\right|$.
+                    </p>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="5f2b8efb-d8f6-4901-bf3d-5965b9c390e3">
+=======
+                <div class="tehtava" id="t005-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t005">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t005" class="collapse">
+                        <p>
+                            Määritä teoreeman 3 avulla  
+                        </p>
+                        <ol class="a">
+                            <li> lukujen $-671$ ja $-176$ välinen etäisyys </li>
+                            <li> lukujen $-\dfrac{3}{8}$ ja $\dfrac{7}{10}$ välinen etäisyys. </li>
+                        </ol>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t005_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t005_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t005_v" class="collapse">
+                            <ol class="a">
+                                <li> 495 </li>
+                                <li> $\dfrac{43}{40}$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="52b136a7-a26d-46c1-9e77-3481812b4ebd">
+=======
+                <div class="tehtava" id="t006-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t006">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t006" class="collapse">
+                        <p>
+                            Tehtävänä on määrittää lukujen $a = 7 - 5\sqrt{3}$ ja $b = 4-\sqrt{3}$ välisen etäisyyden tarkka arvo sekä likiarvo kolmen merkitsevän numeron tarkkuudella.
+                        </p>
+                        <ol class="a">
+                            <li> Sievennä erotus $a-b$. </li>
+                            <li> 
+                                Tutki laskimen avulla, onko erotus $a-b$ positiivinen vai negatiivinen. Poista tämän tiedon avulla itseisarvomerkit lausekkeesta $\left|a-b\right|$.
+                                <br>
+                                Vinkki: teoreema 1.
+                            </li>
+                            <li> Mikä on lukujen $a$ ja $b$ välisen etäisyyden tarkka arvo? Entä likiarvo? </li>
+                        </ol>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t006_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t006_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t006_v" class="collapse">
+                            <ol class="a">
+                                <li>  </li>
+                                <li>  </li>
+                                <li> Tarkka arvo on $4\sqrt{3}-3$. </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Tutkitaan lopuksi vielä hiukan itseisarvojen ominaisuuksia. Joissakin tilanteissa joudutaan tarkastelemaan tulojen tai osamäärien itseisarvoja. Esimerkiksi lukujen $5k-n$ ja $8k-4n$ väliseksi etäisyydeksi saadaan
+                    \begin{align*}
+                    \left|(5k-n) - (8k-4n)\right| &= \left|5k-8k - n + 4n\right| \\
+                    &= \left|-3k + 3n\right| \\
+                    &= \left|-3(k-n)\right|
+                    \end{align*}
+                    Miten suuri tämä etäisyys on verrattuna lukujen $k$ ja $n$ väliseen etäisyyteen $\left|k-n\right|$? Tähän kysymykseen vastaamisessa auttaa seuraava teoreema:
+                </p>
+
+                <div class="theorem" id="TULON JA OSAMÄÄRÄN ITSEISARVO">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Tulon itseisarvo on yhtä suuri kuin itseisarvojen tulo:
+                        $$\left|ab\right| = \left|a\right|\left|b\right|$$
+                        Osamäärän itseisarvo on yhtä suuri kuin itseisarvojen osamäärä:
+                        $$\left|\frac{a}{b}\right| = \frac{\left|a\right|}{\left|b\right|}$$
+                    </p>
+                    <div class="proof">
+                        <p>
+                           Perustelu: Molemmat yhtälöt voidaan perustella teoreeman 1 avulla tutkimalla neljä mahdollista tapausta:
+                       </p>
+                           <ol>
+                                <li> $a \geq 0$ ja $b \geq 0$ </li>
+                                <li> $a \geq 0$ ja $b < 0$ </li>
+                                <li> $a < 0$ ja $b \geq 0$ </li>
+                                <li> $a < 0$ ja $b < 0$. </li>
+                           </ol>
+                        <p>
+                            Huomaa, että osamäärää koskevassa yhtälössä $b \neq 0$, sillä muuten osamäärä ei ole määritelty.
+                       </p>
+                        <p>
+                            Tarkastellaan malliksi tulon itseisarvon tapaus 2:
+                            <br>
+                            Oletetaan, että $a \geq 0$ ja $b < 0$. Tällöin teoreeman 1 mukaan
+                            \begin{align*}
+                            \left|a\right| &= a \\
+                            \left|b\right| &= -b,
+                            \end{align*}
+                            joten
+                            $$\left|a\right|\left|b\right| = a \cdot (-b) = \textcolor{red}{-ab}.$$
+                            Toisaalta koska $a \geq 0$ ja $b < 0$, niin $ab \leq 0$ ja teoreeman 1 mukaan
+                            $$\left|ab\right| = \textcolor{red}{-ab}.$$
+                            Siis tässä tapauksessa
+                            $$\left|ab\right| = \left|a\right|\left|b\right|.$$
+                        </p>
+                    </div>
+=======
+            <p>
+                Tutkitaan lopuksi vielä hiukan itseisarvojen ominaisuuksia. Joissakin tilanteissa joudutaan tarkastelemaan tulojen tai osamäärien itseisarvoja. Esimerkiksi lukujen $5k-n$ ja $8k-4n$ väliseksi etäisyydeksi saadaan
+                \begin{align*}
+                \left|(5k-n) - (8k-4n)\right| &= \left|5k-8k - n + 4n\right| \\
+                &= \left|-3k + 3n\right| \\
+                &= \left|-3(k-n)\right|
+                \end{align*}
+                Miten suuri tämä etäisyys on verrattuna lukujen $k$ ja $n$ väliseen etäisyyteen $\left|k-n\right|$? Tähän kysymykseen vastaamisessa auttaa seuraava teoreema:
+            </p>
+
+            <div class="theorem" id="TULON JA OSAMÄÄRÄN ITSEISARVO">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Tulon itseisarvo on yhtä suuri kuin itseisarvojen tulo:
+                    $$\left|ab\right| = \left|a\right|\left|b\right|$$
+                    Osamäärän itseisarvo on yhtä suuri kuin itseisarvojen osamäärä:
+                    $$\left|\frac{a}{b}\right| = \frac{\left|a\right|}{\left|b\right|}$$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Molemmat yhtälöt voidaan perustella teoreeman 1 avulla tutkimalla neljä mahdollista tapausta:
+                    </p>
+                    <ol>
+                        <li> $a \geq 0$ ja $b \geq 0$ </li>
+                        <li> $a \geq 0$ ja $b < 0$ </li>
+                        <li> $a < 0$ ja $b \geq 0$ </li>
+                        <li> $a < 0$ ja $b < 0$. </li>
+                    </ol>
+                    <p>
+                        Huomaa, että osamäärää koskevassa yhtälössä $b \neq 0$, sillä muuten osamäärä ei ole määritelty.
+                    </p>
+                    <p>
+                        Tarkastellaan malliksi tulon itseisarvon tapaus 2: 
+                        <br>
+                        Oletetaan, että $a \geq 0$ ja $b < 0$. Tällöin teoreeman 1 mukaan
+                        \begin{align*}
+                        \left|a\right| &= a \\
+                        \left|b\right| &= -b,
+                        \end{align*}
+                        joten 
+                        $$\left|a\right|\left|b\right| = a \cdot (-b) = \textcolor{red}{-ab}.$$
+                        Toisaalta koska $a \geq 0$ ja $b < 0$, niin $ab \leq 0$ ja teoreeman 1 mukaan
+                        $$\left|ab\right| = \textcolor{red}{-ab}.$$
+                        Siis tässä tapauksessa
+                        $$\left|ab\right| = \left|a\right|\left|b\right|.$$
+                    </p>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="779e7092-3980-490d-b8b6-0c32e2bb2699">
+=======
+                <div class="tehtava" id="t006b-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t006b">
+                                Etäisyys lukusuoralla
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t006b" class="collapse">
+                        <p>
+                            Lukujen $5k-n$ ja $8k-4n$ väliseksi etäisyydeksi laskettiin edellä 
+                            $$\left|(5k-n) - (8k-4n)\right| = \left|-3(k-n)\right|.$$
+                            Kuinka suuri tämä etäisyys on verrattuna lukujen $k$ ja $n$ väliseen etäisyyteen $\left|k-n\right|$? Hyödynnä teoreemaa 4.
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t006b_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t006b_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t006b_v" class="collapse">
+                            <p>
+                                Kolminkertainen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+            
+=======
+
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+<<<<<<< HEAD
+        <header class="otsikko">
+=======
+        <header>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#EtaisyysTasossa">
+                    Etäisyys tasossa
+                </a>
+            </h1>
+        </header>
+        <div id="EtaisyysTasossa" class="collapse">
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Tason pisteiden välinen etäisyys voidaan usein laskea <a href="http://kisallioppiminen.fi/kurssit/maa3/luku1/">MAA3-kurssista</a> tutun Pythagoraan lauseen avulla.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="9cf4909c-caa6-4620-bb29-a51d1db003dd">
+=======
+            <p>
+                Tason pisteiden välinen etäisyys voidaan usein laskea <a href="http://kisallioppiminen.fi/kurssit/maa3/luku1/">MAA3-kurssista</a> tutun Pythagoraan lauseen avulla. 
+            </p>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t007-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t007">
+                                Etäisyys tasossa
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t007" class="collapse">
+                        <p>
+                            Tehtävänä on laskea kuvassa näkyvien pisteiden $A$ ja $B$ välinen etäisyys.
+                        </p>
+                        <ol class="a">
+                            <li> Piirrä vastaava kuva vihkoosi. Yhdistä pisteet $A$ ja $B$ janalla. </li>
+                            <li> Piirrä kuvaan suorakulmainen kolmio, jonka kateetit ovat koordinaattiakselien suuntaiset ja jonka hypotenuusa on jana $AB$. </li>
+                            <li> Selvitä pisteiden $A$ ja $B$ välinen etäisyys eli janan $AB$ pituus Pythagoraan lauseen avulla. </li>
+                        </ol>
+                        <img src="/kurssit/maa5/kuvat/k033.png" max-width: 100%; width: auto; height: auto;/>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Seuraavassa teoreemassa johdetaan lauseke tason pisteiden väliselle etäisyydelle <a href="http://kisallioppiminen.fi/kurssit/maa4/xy-taso/">MAA4-kurssista</a> tutun vektorin pituuden avulla.
+                </p>
+
+
+                <div class="theorem" id="ETÄISYYS TASOSSA">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Pisteiden $P = (x_1,y_1)$ ja $Q = (x_2,y_2)$ välinen etäisyys eli janan $PQ$ pituus on
+                        $$
+                        \left|PQ\right| = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}.
+                        $$
+                    </p>
+                    <div class="proof">
+                        <p>
+                            Perustelu: Muodostetaan vektori pisteestä $P$ pisteeseen $Q$:
+                            $$
+                            \pv{PQ} = (x_2-x_1)\vi + (y_2-y_1)\vj.
+                            $$
+                            Tämän vektorin pituus on
+                            $$
+                            \left|\pv{PQ}\right| = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}.
+                            $$
+                       </p>
+                    </div>
+=======
+            <p>
+                Seuraavassa teoreemassa johdetaan lauseke tason pisteiden väliselle etäisyydelle <a href="http://kisallioppiminen.fi/kurssit/maa4/xy-taso/">MAA4-kurssista</a> tutun vektorin pituuden avulla. 
+            </p>
+
+            <div class="theorem" id="ETÄISYYS TASOSSA">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pisteiden $P = (x_1,y_1)$ ja $Q = (x_2,y_2)$ välinen etäisyys eli janan $PQ$ pituus on 
+                    $$
+                    \left|PQ\right| = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}.
+                    $$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Muodostetaan vektori pisteestä $P$ pisteeseen $Q$:
+                        $$
+                        \pv{PQ} = (x_2-x_1)\vi + (y_2-y_1)\vj.
+                        $$
+                        Tämän vektorin pituus on 
+                        $$
+                        \left|\pv{PQ}\right| = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}.
+                        $$
+                    </p>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="fb3b2ad7-1edf-4f84-9a04-0d1f7cab9316">
+=======
+                <div class="tehtava" id="t008-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t008">
+                                Etäisyys tasossa
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t008" class="collapse">
+                        <p>
+                            Laske pisteiden $A$ ja $B$ välinen etäisyys, jos
+                        </p>
+                        <ol class="a">
+                            <li> $A = (-15,25)\ $ ja $\ B = (13,-20)$ </li>
+                            <li> $A = (11,-3)\ $ ja $\ B = (11,7)$ </li>
+                            <li> $A = (-18,-2)\ $ ja $\ B = (-21,4)$. </li>
+                        </ol>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t008_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t008_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t008_v" class="collapse">
+                            <ol class="a">
+                                <li> $\left|AB\right| = 53$ </li>
+                                <li> $\left|AB\right| = 10$ </li>
+                                <li> $\left|AB\right| = 3\sqrt{5}$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="3b65cc14-df1a-422f-8bed-ff628fe2e24e">
+=======
+                <div class="tehtava" id="t009-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t009">
+                                Etäisyys tasossa
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t009" class="collapse">
+                        <p>
+                            Tehtävänä on määrittää ne $y$-akselin pisteet, joiden etäisyys pisteestä $(6,4)$ on 10.
+                        </p>
+                        <ol class="a">
+                            <li> Jos piste on $y$-akselilla, mitä voit päätellä sen $x$-koordinaatista? </li>
+                            <li> Muodosta lauseke $y$-akselin pisteen etäisyydelle pisteestä $(6,4)$. </li>
+                            <li> Määritä ne $y$-akselin pisteet, joiden etäisyys pisteestä $(6,4)$ on 10. </li>
+                            <li> Tarkista vastauksesi järkevyys hahmottelemalla tilanteesta kuva. Löysitkö kaikki sopivat pisteet?</li>
+                        </ol>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t009_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t009_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t009_v" class="collapse">
+                            <ol class="a">
+                                <li>  </li>
+                                <li>  </li>
+                                <li> $(0,12)$ ja $(0,-4)$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="fd84bad0-0a80-49c5-a0e6-d32eb17ec8e2">
+=======
+                <div class="tehtava" id="t010-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t010">
+                                Janan keskipiste
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t010" class="collapse">
+                        <p>
+                            Tarkastele alla näkyvää janaa $PQ$.
+                        </p>
+                        <ol class="a">
+                            <li> Päättele kuvan avulla, mitkä ovat janan $PQ$ keskipisteen koordinaatit. </li>
+                            <li> Miten saisit laskettua janan keskipisteen $x$-koordinaatin sen päätepisteiden $x$-koordinaateista? </li>
+                            <li> Miten saisit laskettua janan keskipisteen $y$-koordinaatin sen päätepisteiden $y$-koordinaateista? </li>
+                        </ol>
+                        <img src="/kurssit/maa5/kuvat/k057.png" max-width: 100%; width: auto; height: auto;/>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria"><p>
+                Vektoreiden avulla voidaan johtaa myös lausekkeet janan keskipisteen koordinaateille:
+=======
+            <p>
+                Vektoreiden avulla voidaan johtaa myös lausekkeet janan keskipisteen koordinaateille: 
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            </p>
+
+            <div class="theorem" id="JANAN KESKIPISTE">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Pisteitä $P = (x_1,y_1)$ ja $Q = (x_2,y_2)$ yhdistävän janan keskipisteen $C$ koordinaatit ovat päätepisteiden koordinaattien keskiarvot:
+                    $$
+                    C = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right).
+                    $$
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu: Muodostetaan pisteen $C$ paikkavektori
+                        \begin{align*}
+                        \pv{OC} &= \pv{OP} + \frac{1}{2}\pv{PQ}.
+                        \end{align*}
+                        <img src="/kurssit/maa5/kuvat/k056.png" max-width: 100%; width: auto; height: auto;/>
+<<<<<<< HEAD
+                        Kun siihen sijoitetaan
+                        \begin{align*}
+                        \pv{OP} &= x_1\vi + y_1\vj \\
+                        \pv{PQ} &= (x_2-x_1)\vi + (y_2-y_1)\vj,
+                        \end{align*}
+                        paikkavektoriksi saadaan sievennyksen jälkeen
+                        \begin{align*}
+                        \pv{OC} &= \frac{1}{2}(x_1+x_2)\vi + \frac{1}{2}(y_1 + y_2)\vj.
+                        \end{align*}
+                        Paikkavektorista voidaan lukea pisteen $C$ koordinaatit. Siis
+                        $$
+                        C = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right).
+                        $$
+                   </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="39c9ddb1-8958-492e-b5bb-7ea29555ace5">
+=======
+                             Kun siihen sijoitetaan 
+                             \begin{align*}
+                             \pv{OP} &= x_1\vi + y_1\vj \\
+                             \pv{PQ} &= (x_2-x_1)\vi + (y_2-y_1)\vj,
+                             \end{align*}
+                             paikkavektoriksi saadaan sievennyksen jälkeen 
+                             \begin{align*}
+                             \pv{OC} &= \frac{1}{2}(x_1+x_2)\vi + \frac{1}{2}(y_1 + y_2)\vj.
+                             \end{align*}
+                             Paikkavektorista voidaan lukea pisteen $C$ koordinaatit. Siis 
+                             $$
+                             C = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right).
+                             $$
+                    </p>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="t011-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t011">
+                                Janan keskipiste
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="t011" class="collapse">
+                        <p>
+                            Laske janan $AB$ keskipiste, jos
+                        </p>
+                        <ol class="a">
+                            <li> $A = (-1,-2)\ $ ja $\ B = (-8,3)$ </li>
+                            <li> $A = (-3\sqrt{2},-1)\ $ ja $\ B = (9\sqrt{2},5)$. </li>
+                        </ol>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t011_v">
+                            Vastaus
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t011_v">
+                                Vastaus
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t011_v" class="collapse">
+                            <ol class="a">
+                                <li> $\left(-\frac{9}{2}, \frac{1}{2}\right)$ </li>
+                                <li> $\left(3\sqrt{2}, 2\right)$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<<<<<<< HEAD
+            
+    <section class="panel">
+        <header class="otsikko">
+=======
+
+    <section class="panel">
+        <header>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#luku0-tehtavasarja2">
+                    TEHTÄVÄSARJA II
+                </a>
+            </h1>
+        </header>
+
+        <div id="luku0-tehtavasarja2" class="collapse">
+            <!-- Tästä alkaa piilotus -->
+
+<<<<<<< HEAD
+            <div class="tehtava" id="a63135b2-64a4-4a6f-b167-c11eaee7624c">
+=======
+            <div class="tehtava" id="s2t001-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t001">
+                            Itseisarvo
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t001">
+                    <p>
+                        Laske lukujen $-\dfrac{3}{4}$ ja $\dfrac{5}{6}$
+                    </p>
+                    <ol class="a">
+                        <li> itseisarvojen erotus </li>
+                        <li> erotuksen itseisarvo.</li>
+                    </ol>
+                    <p>
+                        Mikä on lukujen $-\dfrac{3}{4}$ ja $\dfrac{5}{6}$ välinen etäisyys?
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t001_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t001_v" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> $-\frac{1}{12}$ </li>
+                            <li> $\frac{19}{12}$, joka on myös lukujen $-\frac{3}{4}$ ja $\frac{5}{6}$ välinen etäisyys. </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="55f8240f-ccc2-439e-91bf-fc90fd312b33">
+=======
+            <div class="tehtava" id="s2t002-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t002">
+                            Itseisarvo
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t002">
+                    <p>
+                        Merkitse ja määritä seuraavien lukujen itseisarvot:
+                    </p>
+                    <ol class="a">
+                        <li> $-9$ </li>
+                        <li> $\sqrt{2} - 1$ </li>
+                        <li> $3 - \sqrt{10}$ </li>
+                    </ol>
+                    <p>
+                        Vinkki: teoreema 1.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t002_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t002_v" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> $\left|-9\right| = 9$ </li>
+                            <li> $\left|\sqrt{2} - 1\right| = \sqrt{2} - 1$ </li>
+                            <li> $\left|3 - \sqrt{10}\right| = \sqrt{10} - 3$ </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="3a6b906e-c51b-497a-8d3e-e74257815a15">
+=======
+            <div class="tehtava" id="s2t002b-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t002b">
+                            Itseisarvo
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t002b">
+                    <p>
+                        Määritä päättelemällä ne luvut, joiden itseisarvo on 
+                    </p>
+                    <ol class="a">
+                        <li> $8$ </li>
+                        <li> $\pi$ </li>
+                        <li> $\sqrt{5}+4$ </li>
+                        <li> $\sqrt{5}-3$ </li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t002b_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t002b_v" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Sopivia lukuja ovat $8$ ja $-8$. </li>
+                            <li> Sopivia lukuja ovat $\pi$ ja $-\pi$. </li>
+                            <li> Sopivia lukuja ovat $\sqrt{5}+4$ ja $-(\sqrt{5}+4) = -\sqrt{5}-4$. </li>
+                            <li> Tällaisia lukuja ei ole olemassa, sillä $\sqrt{5} - 3 < 0$. </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="dff8d2a9-152a-4b32-8c23-5a9637d2b635">
+=======
+            <div class="tehtava" id="s2t002c-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t002c">
+                            Itseisarvo
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t002c">
+                    <p>
+                        Millä vakion $b$ arvolla luvun $3b + 6$ itseisarvo on
+                    </p>
+                    <ol class="a">
+                        <li> $3b + 6$ </li>
+                        <li> $-3b-6$ </li>
+                        <li> $3b-6$? </li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t002c_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t002c_v" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Jos $b \geq -2$. </li>
+                            <li> Jos $b \leq -2$. </li>
+                            <li> Ei millään. </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="0af3f9c3-3fa9-4e8b-9cbc-fbd5925f3934">
+=======
+            <div class="tehtava" id="s2t003-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t003">
+                            Etäisyys lukusuoralla
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t003">
+                    <p>
+                        Ilmaise itseisarvon avulla seuraavien lukujen välinen etäisyys. Määritä sen jälkeen etäisyyden tarkka arvo.
+                    </p>
+                    <ol class="a">
+                        <li> $3\ $ ja $\ 4{,}5$ </li>
+                        <li> $\dfrac{5}{3}\ $ ja $\,-\dfrac{17}{7}$ </li>
+                        <li> $\sqrt{2} + 1\ $ ja $\ 3\sqrt{2} - 6$ </li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t003_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t003_v" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> $\left| 3 - 4{,}5\right| = 1{,}5$ </li>
+                            <li> $\left| \frac{5}{3} - \left(-\frac{17}{7}\right)\right| = \frac{86}{21}$ </li>
+                            <li> $\left| \sqrt{2} + 1 - (3\sqrt{2} - 6)\right| = 7 - 2\sqrt{2}$ </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="51901043-fed2-4f2f-89f4-301a868178b7">
+=======
+            <div class="tehtava" id="s2t003b-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t003b">
+                            Etäisyys lukusuoralla
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t003b">
+                    <p>
+                        Osoita, että lukujen $3a-2b$ ja $9a-8b$ etäisyys on kuusi kertaa niin suuri kuin lukujen $a$ ja $b$ etäisyys.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t003b_v">
+                            Vinkki
+                        </a>
+                    </h2>
+                    <div id="s2t003b_v" class="collapse">
+                        <p>
+                            Kertaa teoreema 4 ja tehtävä 1.7.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="dccd02b1-9bc5-4bb0-bf63-2eb5ee7795f7">
+=======
+            <div class="tehtava" id="s2t003c-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t003c">
+                            Etäisyys lukusuoralla
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t003c">
+                    <p>
+                        Ilmaise ehto itseisarvon avulla yhtälönä tai epäyhtälönä. Päättele, mitkä luvut toteuttavat ehdon.
+                    </p>
+                    <ol class="a">
+                        <li> Luvun $x$ etäisyys luvusta $17$ on $13$. </li>
+                        <li> Luvun $x$ etäisyys luvusta $-4$ on suurempi kuin $3$.</li>
+                        <li> Luvun $x$ etäisyys luvusta $9$ on pienempi tai yhtä suuri kuin $10$.</li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t003c_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t003c_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\left| x - 17 \right| = 13$, $\quad x = 4$ tai $x = 30$ 
+                        </li>
+                        <li> $\left| x - (-4) \right| > 3$, $\quad x > -1$ tai $x < -7$ 
+                        </li>
+                        <li> $\left| x - 9 \right| \leq 10$, $\quad -1 < x < 19$  
+                        </li>
+                    </ol>
+=======
+                            <li> $\left| x - 17 \right| = 13$, $\quad x = 4$ tai $x = 30$ 
+                            </li>
+                            <li> $\left| x - (-4) \right| > 3$, $\quad x > -1$ tai $x < -7$ 
+                            </li>
+                            <li> $\left| x - 9 \right| \leq 10$, $\quad -1 < x < 19$  
+                            </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="9e261921-f92a-42b8-82f3-1be6bcf7a618">
+=======
+            <div class="tehtava" id="s2t004-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t004">
+                            Etäisyys tasossa
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t004">
+                    <p>
+                        Kolmion kärkipisteet ovat $A = (0,6)$, $B = (1,-3)$ ja $C = (-4,1)$. Onko kolmio tasakylkinen?
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t004_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t004_v" class="collapse">
+                        <p>
+                            Kolmio on tasakylkinen, sillä siinä on kaksi yhtä pitkää sivua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="22f4d0f5-ea17-476c-a6cd-a9a64fe96bb5">
+=======
+            <div class="tehtava" id="s2t005-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t005">
+                            Etäisyys tasossa
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t005">
+                    <p>
+                        Millä vakion $a$ arvolla pisteiden $(a,3)$ ja $(2,-1)$ välinen etäisyys on $5$?
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t005_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t005_v" class="collapse">
+                        <p>
+                            $a = 5$ tai $a = -1$.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="7f638091-ba4b-4764-892e-785e3b56530b">
+=======
+            <div class="tehtava" id="s2t006-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t006">
+                            Etäisyys tasossa
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t006">
+                    <p>
+                        Pisteen $P$ $x$- ja $y$-koordinaatit ovat yhtä suuret, ja pisteen $P$ etäisyys pisteestä $(0,2)$ on $\sqrt{34}$. Määritä piste $P$.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t006_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t006_v" class="collapse">
+                        <p>
+                            $P = (5,5)$ tai $P = (-3,-3)$
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<<<<<<< HEAD
+            
+
+    <section class="panel">
+        <header class="otsikko">
+=======
+
+
+    <section class="panel">
+        <header>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#luku0-tehtavasarja3">
+                    TEHTÄVÄSARJA III
+                </a>
+            </h1>
+        </header>
+
+        <div id="luku0-tehtavasarja3" class="collapse">
+            <!-- Tästä alkaa piilotus -->
+
+<<<<<<< HEAD
+            <div class="tehtava" id="dda57828-a562-4a64-bd3e-b4cfcb8b97ac">
+=======
+            <div class="tehtava" id="s3t001-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s3t001">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="s3t001">
+                    <p>
+                        Ilmaise itseisarvon avulla 
+                    <ol class="a">
+                        <li> $\sqrt{(-3)^2}$ </li>
+                        <li> $\sqrt{(2-\sqrt{5})^2}$ </li>
+                        <li> $\sqrt{(a+b)^2}$ </li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s3t001_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s3t001_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\sqrt{(-3)^2} = \left|-3\right|$ </li>
+                        <li> $\sqrt{(2-\sqrt{5})^2} = \left|2-\sqrt{5}\right|$ </li>
+                        <li> $\sqrt{(a+b)^2} = \left|a + b\right|$ </li>
+                    </ol>
+=======
+                            <li> $\sqrt{(-3)^2} = \left|-3\right|$ </li>
+                            <li> $\sqrt{(2-\sqrt{5})^2} = \left|2-\sqrt{5}\right|$ </li>
+                            <li> $\sqrt{(a+b)^2} = \left|a + b\right|$ </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="8ce536f0-fb3d-495d-bccd-5a768e5677f5">
+=======
+            <div class="tehtava" id="s2t007-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s2t007">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t007">
+                    <p>
+                        Kolmion $ABC$ kärkipisteet ovat $A = (-2,5)$, $B = (-2,-1)$ ja $C = (4,3)$. Kolmion <em>keskijana</em> yhdistää kolmion kärkipisteen vastakkaisen sivun keskipisteeseen. Kuinka pitkä kärjestä $A$ piirretty kolmion keskijana on?
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t007_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t007_v" class="collapse">
+                        <p>
+                            Keskijanan pituus on 5.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="7d18ae1b-fafd-40b1-a107-db2e06088f51">
+                <header>
+                    <h1>
+                        <a data-target="#s2t008">
+                    
+=======
+            <div class="tehtava" id="s2t008-ex">
+                <header>
+                    <h1>
+                        <a data-target="#s2t008">
+
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t008">
+                    <p>
+                        Hannan koti on kartan koordinaatiston pisteessä $(4,4)$ ja Tommin koti pisteessä $(9,-1)$. He kulkevat illalla kotiin pitkin tietä, joka vastaa koordinaatiston $x$-akselia, ja sopivat eroavansa toisistaan kohdassa, joka on yhtä kaukana kummankin kodista. Missä pisteessä he eroavat toisistaan?
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t008_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t008_v" class="collapse">
+                        <p>
+                            Pisteessä $(5,0)$.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="6c70224b-4dec-42de-9c86-205d887c4bc4">
+                <header>
+                    <h1>
+                        <a data-target="#s2t009">
+                         
+=======
+            <div class="tehtava" id="s2t009-ex">
+                <header>
+                    <h1>
+                        <a data-target="#s2t009">
+
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </a>
+                    </h1>
+                </header>
+                <div id="s2t009">
+                    <p>
+                        Olkoon $O$ origo ja $A = (5,0)$. Valitaan negatiiviselta $x$-akselilta piste $P$. Piirretään $x$-akselin alapuolelle neliö $OPBC$ ja $x$-akselin yläpuolelle neliö $APDE$. Osoita, että kaikilla näin saaduilla janoilla $CE$ on sama keskipiste.
+                        <br>
+                        Vinkki: muista, että esimerkiksi neliössä $OPBC$ kärkipisteet seuraavat toisiaan järjestyksessä $O$, $P$, $B$ ja $C$.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s2t009_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s2t009_v" class="collapse">
+                        <p>
+                            Piste $C$ on negatiivisella $y$-akselilla, joten se on muotoa $(0,-c)$. Tällöin $E = (5,5+c)$. Janan $CE$ keskipiste on $(2{,}5;\, 2{,}5)$.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="a6764d1e-e3eb-4a75-9d71-831db272c608">
+=======
+            <div class="tehtava" id="s3t002-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s3t002">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="s3t002">
+                    <p>
+                        Ilmaise seuraavat lausekkeet ilman itseisarvomerkkejä:
+                    </p>
+                    <ol class="a">
+                        <li> $\left|4x+8\right|$ </li>
+                        <li> $\left|2-3x\right|$ </li>
+                    </ol>
+                    <p>
+                        Vinkki: teoreema 1.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s3t002_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s3t002_v" class="collapse">
+                        <ol class="a">
+                            <li> 
+                                $$
+                                \begin{cases}
+                                -4x - 8, &\text{ jos $x < -2$}\\
+                                \phantom{-}4x + 8, &\text{ jos $x \geq -2$} 
+                                \end{cases}
+                                $$
+                            </li>
+                            <li> 
+                                $$
+                                \begin{cases}
+                                \phantom{-}2-3x, &\text{ jos $x \leq \frac{2}{3}$} \\
+                                -2 + 3x, &\text{ jos $x > \frac{2}{3}$}
+                                \end{cases}
+                                $$
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="3bdb066d-2344-4e14-8bd8-a5504bf55bc9">
+=======
+            <div class="tehtava" id="s3t003-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#s3t003">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="s3t003">
+                    <p>
+                        Ilmaise seuraavat lausekkeet ilman itseisarvomerkkejä:
+                    </p>
+                    <ol class="a">
+                        <li> $\left|3x^2-2x-1\right|$ </li>
+                        <li> $2x-x\left|2-x\right|$ </li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#s3t003_v">
+                            Vastaus
+                        </a>
+                    </h2>
+                    <div id="s3t003_v" class="collapse">
+                        <ol class="a">
+                            <li> 
+                                $$
+                                \begin{cases}
+                                \phantom{-}3x^2-2x-1, &\text{ jos $x \leq -\frac{1}{2}$ tai $x \geq 1$} \\
+                                -3x^2 + 2x + 1, &\text{ jos $-\frac{1}{2} < x < 1$}
+                                \end{cases}
+                                $$
+                            </li>
+                            <li> 
+                                $$
+                                \begin{cases}
+                                \phantom{-}x^2, &\text{ jos $x \leq 2$} \\
+                                -x^2 + 4x, &\text{ jos $x > 2$}
+                                \end{cases}
+                                $$
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#L0itsearviointi">
+                    Itsearviointitehtävät
+                </a>
+            </h1>
+        </header>
+        <div id="L0itsearviointi" class="collapse">
+            <p>
+<<<<<<< HEAD
+                Varmista, että olet oppinut tämän luvun keskeiset asiat tekemällä <a href="">itsearviointitesti</a> opetus.tv:n polku-palvelussa. Samalla harjoittelet omien ratkaisujesi pisteyttämistä pisteytysohjeiden avulla. 
+=======
+                Varmista, että olet oppinut tämän luvun keskeiset asiat tekemällä <a href="http://polku.opetus.tv/node/1985">itsearviointitesti</a> opetus.tv:n polku-palvelussa. Samalla harjoittelet omien ratkaisujesi pisteyttämistä pisteytysohjeiden avulla. 
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+            </p>
+        </div>
+    </section>
+
+</article>

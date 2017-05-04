@@ -1,5 +1,3 @@
-const BACKEND_BASE_URL = "http://kurssihallinta.kisallioppiminen.fi/";
-const FRONTEND_BASE_URL = "http://beta.kisallioppiminen.fi/";
 let backend;
 let view;
 let id;

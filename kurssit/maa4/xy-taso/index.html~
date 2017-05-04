@@ -1,0 +1,4042 @@
+---
+layout: material
+title: MAA4 Vektorit - Vektorit ja $xy$-koordinaatisto
+main-class: has-atop
+topnav: maa4
+---
+{% include bottomnav.html %}
+
+<input type="hidden" id="theoremStart" value="1"/>
+<input type="hidden" id="chapterNumber" value="1"/>
+
+<article>
+    <section>
+        <header>
+            <h1>Vektorit ja $xy$-koordinaatisto</h1>
+        </header>
+    </section>
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#luvun-tavoitteet">
+                    Luvun tavoitteet
+                </a>
+            </h1>
+        </header>
+        <div id="luvun-tavoitteet" class="collapse">
+
+            <div class="objective">
+                <p>
+                    Tämän luvun tavoitteena on, että tiedät, millaisia $xy$-koordinaatiston vektorit ovat. Osaat
+                <ul>
+                    <li> ilmaista $xy$-koordinaatistoon piirretyn vektorin vektoreiden $\vi$ ja $\vj$ avulla
+                    <li> määrittää $xy$-koordinaatiston pisteen paikkavektorin
+                    <li> määrittää vektoreiden summan ja erotuksen piirtämällä
+                    <li> laskea vektoreiden summan, erotuksen ja pistetulon
+                    <li> kertoa vektorin reaaliluvulla ja tiedät, miten se vaikuttaa vektorin pituuteen ja suuntaan
+                    <li> määrittää kahden pisteen välisen vektorin
+                    <li> laskea vektorin pituuden
+                    <li> määrittää vektoreiden välisen kulman pistetulon avulla.
+                </ul>
+                Tavoitteiden toteutumista pääset arvioimaan luvun lopussa olevan itsearviointitestin avulla.</p>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#luvun-tavoitteet">
+        Sulje kappale
+        </a>
+        </div>    
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#luvun-tavoitteet">
+                    Sulje kappale
+                </a>
+            </div>    
+        </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+    </section>
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorit">
+                    Vektorit
+                </a>
+            </h1>
+        </header>
+        <div id="vektorit" class="collapse">
+
+            <div class="tehtavat">
+                <div class="tehtava" id="1840a37f-4186-4281-8dcf-181cb8b4ce7b">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-koordinaatisto">
+                                Koordinaatisto
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-koordinaatisto" class="collapse">
+<<<<<<< HEAD
+                        <p> Tutki alla olevaa kuvaa. Kuinka monta yhden ruudun mittaista askelta pitää siirtyä
+=======
+                        <p> Tutki alla olevaa kuvaa. Kuinka monta yhden ruudun mittaista askelta pitää siirtyä	
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <ol class="a">
+                            <li> $x$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $S$? </li>
+                            <li> $y$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $S$? </li>
+                            <li> $x$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $Q$? </li>
+                            <li> $y$-akselin suunnassa, jotta päästään origosta $O$ pisteeseen $Q$? </li>
+                        </ol>
+                        Miten voisit merkitä sitä, että pisteen $Q$ tapauksessa siirrytään $y$-akselin suunnassa alaspäin eikä ylöspäin?
+                        <br>
+<<<<<<< HEAD
+                            <img src="/kurssit/maa4/kuvat/tehtava1.png" max-width: 100%; width: auto; height: auto;/> 
+                        </p>
+                        <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-koordinaatisto_v">
+                            VASTAUS
+                        </a>
+=======
+                        <img src="/kurssit/maa4/kuvat/tehtava1.png" max-width: 100%; width: auto; height: auto;/> 
+                             </p>
+                        <h2>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-koordinaatisto_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-koordinaatisto_v" class="collapse">
+                            <ol class="a">
+                                <li> kaksi askelta oikealle </li>
+                                <li> kolme askelta ylöspäin </li>
+                                <li> kolme askelta oikealle </li>
+                                <li> yksi askel alaspäin.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Tason piste ilmoitetaan lukuparina $(x,y)$. Ensimmäinen luku $x$ kertoo, missä piste sijaitsee $x$-akselin suunnassa origoon verrattuna. Toinen luku $y$ kertoo vastaavasti, missä piste sijaitsee $y$-akselin suunnassa origoon verrattuna. Näitä lukuja kutsutaan pisteen <b>koordinaateiksi</b>.
+                </p>
+
+                <p>
+                    Esimerkiksi alla olevan kuvan pisteeseen $R$ päästään siirtymällä origosta neljä yksikköä $x$-akselin positiiviseen suuntaan ja kaksi yksikköä $y$-akselin positiiviseen suuntaan. Pistettä $R$ merkitään siis $R=(4,2)$. Pistettä $P$ merkitään puolestaan $P=(-3,1)$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/tehtava1.png"  max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="3be95534-a6c2-4b46-a4ed-0d7f6253c5fc">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteita">
+                                Pisteitä koordinaatistossa
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pisteita" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Piirrä koordinaatisto ja merkitse siihen pisteet $(1,2)$, $(1,-4)$ ja $(1,3)$.
+                            <li> Merkitse koordinaatistoon kolme uutta pistettä, jotka ovat muotoa $(1,y)$, missä $y$ on kokonaisluku.
+                            <li> Merkitse koordinaatistoon kaikki sellaiset pisteet, jotka ovat muotoa $(1,y)$. Millainen kuvio syntyy?
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p> Koordinaattiakselit jakavat tason neljään osaan. Osat nimetään yleensä järjestysnumeroilla I, II, III ja IV kuten alla olevassa kuvassa. Koordinaattiakselien leikkauspistettä kutsutaan <b>origoksi</b> ja merkitään yleensä kirjaimella $O$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/origo.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="f9f866e8-9b49-43d0-a7cb-375b1ea1367c">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-neljannekset">
+                                Koordinaattien etumerkit koordinaatiston eri neljänneksissä
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-neljannekset" class="collapse">
+                        <p>
+                            Valitse koordinaatiston jokaiselta neljännekseltä jokin piste ja ilmoita sen koordinaatit. Miten eri neljännekset vaikuttavat pisteiden $x$- ja $y$-koordinaattien etumerkkeihin?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Alla olevassa kuvassa näkyvät vektorit $\bar{\imath}$ ja $\bar{\jmath}$. Ne ovat koordinaattiakselien suuntaisia ja yhden yksikön pituisia.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/kantavektorit.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Muut vektorit voidaan esittää vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevassa kuvassa vektori $\bar{u}$
+                    on esitetty vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                </p>
+                <p>
+                    Kuvasta nähdään, että vektorin $\bar{u}$ alkupisteestä päästään sen loppupisteeseen siirtymällä kaksi yksikköä $x$-akselin negatiiviseen suuntaan ja neljä yksikköä $y$-akselin positiiviseen suuntaan. Vektori $\bar{u}$ voidaan siis ilmoittaa vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla muodossa $\bar{u} = -2\bar{\imath} + 4\bar{\jmath}$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/vektoreita1.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="fd6badf5-237b-4b97-9beb-6c4a413e207a">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektoreita1">
+                                Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-vektoreita1" class="collapse">
+                        <p>
+                            Ilmoita yllä olevassa kuvassa näkyvät vektorit $\bar{v}$ ja $\bar{w}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-vektoreita1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektoreita1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-vektoreita1_v" class="collapse">
+                            <p>$\vv = 3\vi + 2\vj$, $\vw = 2\vi - \vj$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Koordinaatistossa olevia nuolia kutsutaan siis vektoreiksi. Vektorit $\bar{\imath}$ ja $\bar{\jmath}$ ovat erityisiä, sillä ne ovat koordinaattiakselien suuntaisia ja yhden yksikön pituisia. Niiden avulla voidaan ilmaista kaikki $xy$-koordinaatiston vektorit.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="fcac3f0f-2062-4b94-975e-2d7f5deb925e">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-samojaVektoreita">
+                                Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-samojaVektoreita" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Ilmoita kaikki kuvassa näkyvät vektorit vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                            <li> Selitä omin sanoin, mitä huomaat.
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/samojaVektoreita.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: VEKTOREIDEN SAMUUS</h3>
+                    <p>
+                        Kaksi vektoria ovat samat, jos ja vain jos ne voidaan esittää samalla tavalla vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Tarkemmin sanottuna vektorit $\vv = x_1\vi + y_1\vj$ ja $\vw = x_2\vi + y_2\vj$ ovat samat eli $\vv = \vw$, jos ja vain jos $x_1 = x_2$ ja $y_1 = y_2$.
+                    </p>
+                </div>
+
+                <p>
+                    Kuten edellisessä tehtävässä huomataan, vektoreiden samuus tarkoittaa siis sitä, että ne ovat saman pituisia ja osoittavat samaan suuntaan &mdash; niiden paikalla koordinaatistossa ei ole merkitystä.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="45fb70f7-352d-45a6-8674-9d326c8e0a66">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita">
+                                Vektoreiden esittäminen vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-paikkavektoreita" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Ilmoita kaikki kuvassa näkyvät vektorit vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla.
+                            <li> Vertaa a-kohdan tuloksia vektoreiden loppupisteiden koordinaatteihin. Kerro havaintosi omin sanoin.
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/paikkavektoreita.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: PAIKKAVEKTORI</h3>
+                    <p>
+                        Vektori, joka lähtee origosta ja joka loppuu pisteeseen $P$, on pisteen $P$ paikkavektori. Pisteen $P$ paikkavektoria voidaan merkitä $\pv{OP}$.
+                    </p>
+                </div>
+
+                <p>
+                    Esimerkiksi alla olevassa kuvassa oleva vektori $\bar{v}=4\bar{\imath} + 3\bar{\jmath}$ on siis pisteen $(4,3)$ paikkavektori.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/paikkavektori.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="62f297b4-c42e-4031-bab9-e02a91307a6a">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita2">
+                                Paikkavektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-paikkavektoreita2" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Ilmoita alla olevan kuvan vektori $\bar{w}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?
+                            <li> Ilmoita vektori $\bar{u}$ vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Minkä pisteen paikkavektori se on?
+                            <li> Minkä pisteiden paikkavektoreita vektorit $\bar{\imath}$ ja $\bar{\jmath}$ ovat?
+                            <li> Mikä on origon paikkavektori?
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/paikkavektoreita2.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita2_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita2_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-paikkavektoreita2_v" class="collapse">
+                            <ol class="a">
+                                <li> $\vw = -2\vi-3\vj$ on pisteen $(-2,-3)$ paikkavektori. </li>
+                                <li> $\vu = -5\vi+\vj$ on pisteen $(-5,1)$ paikkavektori </li>
+                                <li> Pisteiden $(1,0)$ ja $(0,1)$. </li>
+                                <li> $0\vi + 0\vj$</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="b41d7c72-83ab-4fbb-bedc-613a0a9e9f63">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita3">
+                                Paikkavektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-paikkavektoreita3" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Ilmaise pisteiden $A = (9,-7)$ ja $B = (-3,8)$ paikkavektorit $\pv{OA}$ ja $\pv{OB}$ vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Tiedetään, että $\pv{OP} = -4\vi-6\vj$ ja $\pv{OS} = 23\vi-78\vj$. Päättele, mitkä ovat pisteiden $P$ ja $S$ koordinaatit.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita3_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita3_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-paikkavektoreita3_v" class="collapse">
+                            <ol class="a">
+                                <li> $\pv{OA} = 9\vi - 7\vj$, $\pv{OB} = -3\vi + 8\vj$ </li>
+                                <li> $P = (-4,-6)$ ja $S = (23,-78)$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: NOLLAVEKTORI</h3>
+                    <p>
+                        Vektoria $0\bar{\imath} + 0\bar{\jmath}$ sanotaan nollavektoriksi ja merkitään $\bar{0}$.
+                    </p>
+                </div>
+
+                <p>
+                    Nollavektori $\bar{0}$ on siis vektori, jonka alkupiste ja loppupiste ovat samat. Nollavektori on origon eli pisteen $(0,0)$ paikkavektori.
+                </p>
+
+                <p> Tarkastellaan vielä alla olevaa kuvaa. Siinä piste $P$ jakaa janan $AB$ suhteessa $1:3$. Tämä nähdään siitä, että janan $AP$ pituus on 2 ja janan $PB$ pituus on 6. Näiden pituuksien suhde on
+                    $$\frac{2}{6} = \frac{1}{3}.$$
+                    Koko jana $AB$ muodostuu siis neljästä yhtä pitkästä osasta. Jana $AP$ on yhden osan pituinen ja jana $PB$ on kolmen osan pituinen.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/L1k07.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="63530bc5-6b71-46aa-8622-627d5e53199b">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita4">
+                                Paikkavektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-paikkavektoreita4" class="collapse">
+                        <p> Päättele alla olevan kuvan avulla pisteen $P$ paikkavektori, jos tiedetään, että piste $P$ jakaa janan $AB$
+                        <ol class="a">
+                            <li> suhteessa 4:1
+                            <li> suhteessa 2:3.
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/L1k08.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita4_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-paikkavektoreita4_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-paikkavektoreita4_v" class="collapse">
+                            <ol class="a">
+                                <li> $P = (1,0)$ </li>
+                                <li> $P = (-1,2)$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektorit">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorit">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-summa">
+                    Vektoreiden summa
+                </a>
+            </h1>
+        </header>
+        <div id="vektoreiden-summa" class="collapse">
+
+            <div class="teoria">
+                <p>
+                    Edellä opittiin ilmaisemaan $xy$-koordinaatiston vektoreita vektoreiden $\bar{\imath}$ ja $\bar{\jmath}$ avulla. Esimerkiksi alla olevan kuvan  vektori $\bar{v}$ on vektoreiden $2\bar{\imath}$ ja $4\bar{\jmath}$ summa eli $\bar{v} = 2\bar{\imath} + 4\bar{\jmath}$.
+                </p>
+                <p>
+                    <img src="/kurssit/maa4/kuvat/summa1.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Yhteenlaskettavia $2\bar{\imath}$ ja $4\bar{\jmath}$ sanotaan vektorin $\bar{v}$ <b>komponenteiksi</b>. Esimerkiksi vektorin $\bar{u}=-7\bar{\imath}-3\bar{\jmath}$ komponentit ovat vektorit $-7\bar{\imath}$ ja $-3\bar{\jmath}$. Myöhemmin opitaan jakamaan $xy$-tason vektoreita myös muihin kuin koordinaattiakselien suuntaisiin komponentteihin.
+                </p>
+
+                <p>
+                    Seuraavaksi sovitaan, miten lasketaan minkä tahansa vektoreiden summa. Se tehdään laskemalla vektorit komponenteittain yhteen.
+                </p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: SUMMA</h3>
+                    <p>
+                        Vektoreiden $\bar{v}$ ja $\bar{w}$ summa $\bar{v} + \bar{w}$ saadaan laskemalla vektorit komponenteittain yhteen.
+                    </p>
+                </div>
+
+                <p>
+                    Esimerkiksi alla olevan kuvan vektoreiden $\bar{v}=\bar{\imath}+\textcolor{blue}{2}\bar{\jmath}$ ja $\bar{w} = \textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-3}\bar{\jmath}$ summa saadaan laskemalla yhteen $x$-akselin suuntaiset komponentit:
+                    $$
+                    \bar{\imath} + \textcolor{darkgreen}{4}\bar{\imath} = \textcolor{darkgreen}{5}\bar{\imath}
+                    $$
+                    sekä $y$-akselin suuntaiset komponentit:
+                    $$
+                    \textcolor{blue}{2}\bar{\jmath}+(\textcolor{blue}{-3}\bar{\jmath})=\textcolor{blue}{2}\bar{\jmath}\textcolor{blue}{-3}\bar{\jmath}=\textcolor{blue}{-}\bar{\jmath}.
+                    $$
+                    Vektoreiden $\bar{v}$ ja $\bar{w}$ summaksi saadaan siis
+                    \begin{align*}
+                    \bar{v} + \bar{w} &=(\bar{\imath}+\textcolor{blue}{2}\bar{\jmath}) + (\textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-3}\bar{\jmath}) \\
+                    &= (\textcolor{darkgreen}{1+4})\bar{\imath} + (\textcolor{blue}{2+(-3)})\bar{\jmath} \\
+                    &= \textcolor{darkgreen}{5}\bar{\imath} \textcolor{blue}{-} \bar{\jmath}.
+                    \end{align*}
+                </p>
+                <p>
+                    <img src="/kurssit/maa4/kuvat/summa2.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="48800da1-bd1c-427e-94cb-4c02e3359819">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-summa1">
+                                Vektoreiden summa
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-summa1" class="collapse">
+                        <p> Tutki vektoreita $\bar{v}=-3\bar{\imath}-4\bar{\jmath}$, $\bar{w}=9\bar{\imath}-5\bar{\jmath}$ ja $\bar{u}=-2\bar{\imath}+7\bar{\jmath}$. Laske seuraavat summat:
+                        <ol class="a">
+                            <li> $\bar{v}+\bar{w}$
+                            <li> $\bar{w}+\bar{u}$
+                            <li> $\bar{v}+\bar{u}$.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-summa1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-summa1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-summa1_v" class="collapse">
+                            <ol class="a">
+                                <li> $6\vi - 9\vj$ </li>
+                                <li> $7\vi + 2\vj$ </li>
+                                <li> $-5\vi + 3\vj$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="50a1d1dc-888c-4379-bc35-db1563ca29d0">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-summa2">
+                                Vektoreiden summa
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-summa2" class="collapse">
+                        <p> Tutki vektoreita $\bar{v}=2\bar{\imath}+2\bar{\jmath}$ ja $\bar{w}=\bar{\imath}+3\bar{\jmath}$.
+                        <ol class="a">
+                            <li> Piirrä vektori $\bar{v}$ koordinaatistoon.
+                            <li> Piirrä vektori $\bar{w}$ koordinaatistoon siten, että se alkaa vektorin $\bar{v}$ loppupisteestä.
+                            <li> Laske summa $\bar{v}+\bar{w}$.
+                            <li> Piirrä summavektori $\bar{v}+\bar{w}$ koordinaatistoon siten, että se alkaa vektorin $\bar{v}$ alkupisteestä.
+                            <li> Kerro omin sanoin, mitä havaitset edellisistä kohdista.
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="teoria">
+                <p>
+                    Tarkastellaan alla olevaa kuvaa. Siinä vektorit $\bar{a}=3\bar{\imath}+5\bar{\jmath}$ ja $\bar{b}=4\bar{\imath}-2\bar{\jmath}$ on piirretty peräkkäin niin, että vektori $\bar{b}$ alkaa vektorin $\bar{a}$ loppupisteestä. Vektoreiden $\bar{a}$ ja $\bar{b}$ summa on komponenteittain laskettuna
+                    \begin{align*}
+                    \bar{a}+\bar{b} 
+                    &= (\textcolor{darkgreen}{3}\bar{\imath}+\textcolor{blue}{5}\bar{\jmath})+(\textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-2}\bar{\jmath}) \\
+                    &= (\textcolor{darkgreen}{3+4})\bar{\imath}+(\textcolor{blue}{5+(-2)})\bar{\jmath} \\
+                    &= \textcolor{darkgreen}{7}\bar{\imath}+\textcolor{blue}{3}\bar{\jmath}.
+                    \end{align*}
+                    Saatu summavektori alkaa vektorin $\bar{a}$ alkupisteestä ja päättyy vektorin $\bar{b}$ loppupisteeseen. Tämä ilmiö on seuraus yhteenlaskun suorittamisesta komponenteittain.  
+                </p>
+=======
+            <p>
+                Tarkastellaan alla olevaa kuvaa. Siinä vektorit $\bar{a}=3\bar{\imath}+5\bar{\jmath}$ ja $\bar{b}=4\bar{\imath}-2\bar{\jmath}$ on piirretty peräkkäin niin, että vektori $\bar{b}$ alkaa vektorin $\bar{a}$ loppupisteestä. Vektoreiden $\bar{a}$ ja $\bar{b}$ summa on komponenteittain laskettuna
+                \begin{align*}
+                \bar{a}+\bar{b} 
+                &= (\textcolor{darkgreen}{3}\bar{\imath}+\textcolor{blue}{5}\bar{\jmath})+(\textcolor{darkgreen}{4}\bar{\imath}\textcolor{blue}{-2}\bar{\jmath}) \\
+                &= (\textcolor{darkgreen}{3+4})\bar{\imath}+(\textcolor{blue}{5+(-2)})\bar{\jmath} \\
+                &= \textcolor{darkgreen}{7}\bar{\imath}+\textcolor{blue}{3}\bar{\jmath}.
+                \end{align*}
+                Saatu summavektori alkaa vektorin $\bar{a}$ alkupisteestä ja päättyy vektorin $\bar{b}$ loppupisteeseen. Tämä ilmiö on seuraus yhteenlaskun suorittamisesta komponenteittain.  
+            </p>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/summa3.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Summavektorin $\bar{a}+\bar{b}$ voi määrittää piirtämällä samaan tapaan kuin yllä olevassa kuvassa: piirretään vektori $\bar{a}$ ja piirretään sen perään vektori $\bar{b}$ niin, että se alkaa vektorin $\bar{a}$ loppupisteestä. Summavektori $\bar{a}+\bar{b}$ on vektori, joka alkaa vektorin $\bar{a}$ alkupisteestä ja päättyy vektorin $\bar{b}$ loppupisteeseen.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="0543c2b3-5748-48b7-b287-077b317c3a16">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-summaPiirtamalla1">
+                                Vektoreiden summan määrittäminen piirtämällä
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-summaPiirtamalla1" class="collapse">
+                        <p> Tutki vektoreita $\bar{v}=-2\bar{\imath}+\bar{\jmath}$ ja $\bar{w}=4\bar{\imath}+4\bar{\jmath}$.
+                        <ol class="a">
+                            <li> Piirrä summavektori $\vv+\vw$ koordinaatistoon vektoreiden $\vv$ ja $\vw$ avulla.
+                            <li> Päättele piirroksestasi, miten summa $\vv+\vw$ voidaan ilmaista vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Tarkista b-kohdassa saamasi tulos laskemalla yhteen vektorit $\vv$ ja $\vw$ komponenteittain.
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="20da4fd6-65f4-46dd-9316-1dc6d4fe6882">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-summaPiirtamalla2">
+                                Vektoreiden summan määrittäminen piirtämällä
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-summaPiirtamalla2" class="collapse">
+                        <p> Tutki vektoreita $\vu=i+2\vj$, $\vv=-3i+j$ ja $\vw=3i-5j$. Piirrä seuraavat summavektorit koordinaatistoon vektoreiden $\vu, \vv$ ja $\vw$ avulla:
+                        <ol class="a">
+                            <li> $\vw+\vu+\vv$
+                            <li> $\vv+\vw+\vu$
+                            <li> $\vu+\vv+\vw$.
+                        </ol>
+                        Vertaa tuloksia. Kerro omin sanoin, mitä huomaat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="teoria">
+                <p>
+                    Edellisen tehtävän tulos on yksi osoitus siitä, että vektoreiden yhteenlaskun järjestyksellä ei ole merkitystä lopputuloksen kannalta. Vektoreiden yhteenlasku on siis vaihdannainen operaatio. Tämä näkyy myös alla olevassa kuvassa: vektori $4\vj+2\vi$ on sama kuin vektori $2\vi+4\vj$.
+                </p>
+
+            <p>
+                <img src="/kurssit/maa4/kuvat/vaihdannaisuus.png" max-width: 100%; width: auto; height: auto;/> 
+            </p>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-summa">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-summa">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-kertominen-reaaliluvulla">
+                    Vektorin kertominen reaaliluvulla
+                </a>
+            </h1>
+        </header>
+        <div id="vektorin-kertominen-reaaliluvulla" class="collapse">
+
+            <div class="teoria">
+                <p>
+                    Tarkastellaan alla olevaa kuvaa. Vektori $\va$ voidaan ilmaista vektorin $\vj$ avulla muodossa $5\vj$. Vektori $\va$ saadaan siis kertomalla vektoria $\vj$ luvulla $5$. Sanotaan, että vektori $\va$ on vektorin $\vj$ <b>skalaarimonikerta</b>.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/skalaarikertolasku.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: VEKTORIN KERTOMINEN REAALILUVULLA</h3>
+                    <p>
+                        Vektorin $\vv$ skalaarimonikerta $r\vv$ saadaan kertomalla vektorin $\vv$ komponentit reaaliluvulla $r$.
+                    </p>
+                </div>
+
+                <p>
+                    Tarkastellaan alla olevaa kuvaa. Kerrotaan vektori $\vv=-4\vi+3\vj$ luvulla $2$. Se tehdään kertomalla vektorin molemmat komponentit kahdella. Koska
+                    $2\cdot (-4\vi)=-8\vi$
+                    ja
+                    $2\cdot 3\vj=6\vj$,
+                    niin tulokseksi saadaan
+                    $2\vv=-8\vi + 6 \vj$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/skalaarikertolasku2.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="1d8d177f-38c6-4531-bca1-fab1323bdebb">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto1">
+                                Vektorin kertominen reaaliluvulla
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-skalaarikerto1" class="collapse">
+                        <p> Tutki vektoria $\va=-\vi+2\vj$.
+                        <ol class="a">
+                            <li> Ilmoita vektorit $2\va$, $3\va$ ja $-1\va$ vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Piirrä vektorit $2\va$, $3\va$ ja $-1\va$ koordinaatistoon.
+                            <li> Selitä omin sanoin, miten reaaliluvulla kertominen vaikuttaa vektoriin.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-skalaarikerto1_v" class="collapse">
+                            <ol class="a">
+                                <li> $2\va = -2\vi+4\vj$, $\quad3\va = -3\vi+6\vj\quad$ ja $\quad-1\va = \vi-2\vj$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="bf5b7bf3-fe82-45aa-aded-2f2e86bf921c">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto2">
+                                Vektorin kertominen reaaliluvulla
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-skalaarikerto2" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Piirrä koordinaatistoon vektorit $\va=\vi+2\vj$ ja $\vb=2\vi+4\vj$.
+                            <li> Miten voisit ilmaista vektorin $\vb$ vektorin $\va$ avulla?
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto2_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-skalaarikerto2_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-skalaarikerto2_v" class="collapse">
+                            <ol class="a">
+                                <li>  </li>
+                                <li> $\vb = 2\va$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: VASTAVEKTORI</h3>
+                    <p>
+                        Vektori $-1\vv$ on vektorin $\vv$ vastavektori. Sitä merkitään $-\vv$.
+                    </p>
+                </div>
+
+                <p>
+                    Alla on näkyvissä eräs vektori $\vv$ ja sen vastavektori $-\vv$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/vastavektori.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="c943b10a-d617-4afe-b05b-a1a97c991d6b">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vastavektori">
+                                Vektorin vastavektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-vastavektori" class="collapse">
+                        <p> Tarkastele alla olevaa kuvaa.
+                        <ol class="a">
+                            <li> Ilmaise kaikki kuvassa näkyvät vektorit vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Mitkä näistä vektoreista ovat toistensa vastavektoreita?
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/vastavektoreita.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-vastavektori_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vastavektori_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-vastavektori_v" class="collapse">
+                            <ol class="a">
+                                <li> $\va = 2\vi - 4\vj$, $\quad\vb = -2\vi + \vj$, $\quad\vc = \vi+ 5\vj$, $\quad\bar{d} = -2\vi + 3\vj$, $\quad\bar{e} = 2\vi - \vj$, $\quad\vv = -\vi - 6\vj$, $\quad\vw = -\vi - 5\vj$, $\quad\vu = -2\vi +2\vj$ </li>
+                                <li> $\vb = -\bar{e}$, $\quad\vc = -\vw$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektorin-kertominen-reaaliluvulla">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-kertominen-reaaliluvulla">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-erotus">
+                    Vektoreiden erotus
+                </a>
+            </h1>
+        </header>
+        <div id="vektoreiden-erotus" class="collapse">
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: EROTUS</h3>
+                    <p>
+                        Vektoreiden $\vv$ ja $\vw$ erotus $\vv-\vw$ saadaan lisäämällä vektoriin $\vv$ vastavektori $-\vw$.
+                    </p>
+                </div>
+
+                <p>
+                    Palautetaan mieleen, että summan $\bar{v}+\bar{w}$ voi  määrittää piirtämällä seuraavasti: piirretään vektori $\bar{v}$ ja piirretään sen perään vektori $\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Summa $\bar{v}+\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $\bar{w}$ loppupisteeseen. Tätä on havainnollistettu alla olevassa kuvassa.
+                </p>
+
+                <p>
+                    Erotuksen $\bar{v}-\bar{w}$ voi määrittää piirtämällä samaan tapaan vektoreiden $\vv$ ja $-\vw$ avulla. Piirretään vektori $\bar{v}$ ja piirretään sen perään vastavektori $-\bar{w}$ alkamaan vektorin $\bar{v}$ loppupisteestä. Erotus $\bar{v}-\bar{w}$ on vektori, joka alkaa vektorin $\bar{v}$ alkupisteestä ja päättyy vektorin $-\bar{w}$ loppupisteeseen.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/summaJaErotus.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Vektoreiden erotus lasketaan samaan tapaan komponenteittain kuin summakin. Esimerkiksi yllä olevan kuvan vektoreiden $\vv$ ja $\vw$ erotus on
+                    \begin{align*}
+                    \vv-\vw
+                    &=2\vi+2\vj-(2\vi - 3\vj) \\
+                    &=2\vi+2\vj-2\vi + 3\vj \\
+                    &=0\vi + 5\vj \\
+                    &=5\vj.
+                    \end{align*}
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="e3654eb2-0ef3-4bf1-a647-d83f02605b95">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-erotus">
+                                Vektoreiden erotus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-erotus" class="collapse">
+                        <p> Tutki vektoreita $\va=-3\vi+4\vj$ ja $\vb=5\vi+2\vj$.
+                        <ol class="a">
+                            <li> Laske erotus $\va-\vb$.
+                            <li> Määritä erotus $\va-\vb$ piirtämällä vektoreiden $\va$ ja $-\vb$ avulla.
+                            <li> Vertaa a- ja b-kohtien tuloksia. Ovatko ne sopusoinnussa keskenään?
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-erotus_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-erotus_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-erotus_v" class="collapse">
+                            <ol class="a">
+                                <li> $-8\vi + 2\vj$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-erotus">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-erotus">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#kahden-pisteen-valinen-vektori">
+                    Kahden pisteen välinen vektori
+                </a>
+            </h1>
+        </header>
+        <div id="kahden-pisteen-valinen-vektori" class="collapse">
+
+            <div class="teoria">
+                <p>
+                    Edellä tutustuttiin paikkavektorin käsitteeseen: pisteen $P$ paikkavektori $\pv{OP}$ tarkoittaa vektoria, jonka alkupiste on origo $O$ ja loppupiste on piste $P$. Myös muita vektoreita voidaan merkitä samaan tapaan alkupisteen ja loppupisteen avulla. Merkintä $\pv{AB}$ tarkoittaa vektoria, jonka alkupiste on $A$ ja loppupiste on $B$. Esimerkiksi alla olevassa kuvassa $\pv{AB} = 4\vi + 2\vj$ ja $\pv{RS} = \vi - 3\vj$. Lisäksi havaitaan, että vektori $\pv{CD}$ on sama kuin vektori $\pv{AB}$ eli $\pv{CD} = \pv{AB}$, sillä ne voidaan ilmaista samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/vektoriAB.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="b07a805e-530e-4fbe-a2d6-98e52cfb4a4d">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen1">
+                                Kahden pisteen välinen vektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pisteidenValinen1" class="collapse">
+                        <p> Tarkastele alla olevaa kuvaa.
+                        <ol class="a">
+                            <li> Muodosta pisteiden $A$ ja $B$ paikkavektorit $\pv{OA}$ ja $\pv{OB}$.
+                            <li> Millä laskutoimituksella saat niistä muodostettua vektorin $\pv{AB}$?
+                            <li> Muodosta pisteiden $C$ ja $D$ paikkavektorit $\pv{OC}$ ja $\pv{OD}$.
+                            <li> Millä laskutoimituksella saat niistä muodostettua vektorin $\pv{CD}$?
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/L1k01.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pisteidenValinen1_v" class="collapse">
+                            <ol class="a">
+                                <li> $\pv{OA} = \vi + 3\vj$ ja $\pv{OB} = 4\vi + \vj$ </li>
+                                <li>  </li>
+                                <li> $\pv{OC} = -3\vi - \vj$ ja $\pv{OD} = -2\vi + 4\vj$ </li>
+                                <li> </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teoria">
+                <p>
+                    Kuten edellisessä tehtävässä huomataan, vektori $\pv{AB}$ saadaan muodostettua paikkavektoreiden $\pv{OA}$ ja $\pv{OB}$ avulla. Tätä varten täytyy etsiä reitti vektorin $\pv{AB}$ alkupisteestä sen loppupisteeseen. Alkupisteestä $A$ päästään origoon paikkavektorin vastavektorilla $-\pv{OA}$. Origosta päästään pisteeseen $B$ paikkavektorilla $\pv{OB}$. Tätä on havainnollistettu alla olevassa kuvassa.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/L1k02.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+                <p>
+                    Vektori $\pv{AB}$ saadaan siis laskemalla yhteen vektorit $-\pv{OA}$ ja $\pv{OB}$. Toisin sanottuna
+                    $$\pv{AB} = -\pv{OA}+\pv{OB}$$
+                    eli
+                    $$\pv{AB} = \pv{OB}-\pv{OA}.$$
+                    Yllä olevan kuvan tilanteessa
+                    $$
+                    \begin{align*}
+                    \pv{AB} &= (3\vi + 3\vj)-(-3\vi + \vj)\\
+                    &=6\vi + 4\vj.
+                    \end{align*}
+                    $$
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="9855178a-1dfa-4748-abc0-50aa49b83372">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen0">
+                                Kahden pisteen välinen vektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pisteidenValinen0" class="collapse">
+                        <p> Merkitään $A = (-4,1)$ ja $B = (2,-3)$.
+                        <ol class="a">
+                            <li> Ilmaise paikkavektorit $\pv{OA}$ ja $\pv{OB}$ vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Määritä vektori $\pv{AB}$ käyttäen hyväksi a-kohdan tuloksia.
+                            <li> Miten vektorin $\pv{AB}$ voisi päätellä suoraan pisteiden $A$ ja $B$ koordinaateista? Selitä omin sanoin.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen0_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen0_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pisteidenValinen0_v" class="collapse">
+                            <ol class="a">
+                                <li> $\pv{OA} = -4\vi + \vj$ ja $\pv{OB} = 2\vi - 3\vj$ </li>
+                                <li> $\pv{AB} = 6\vi - 4\vj$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Tiedetään, että pisteen paikkavektoreissa vektoreiden $\vi$ ja $\vj$ kertoimet ovat samat kuin pisteen koordinaatit. Tämän vuoksi kahden pisteen välisessä vektorissa vektoreiden $\vi$ ja $\vj$ kertoimiksi saadaan vektorin loppupisteen ja alkupisteen koordinaattien erotus. Tätä on havainnollistettu alla olevassa kuvassa.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/L1k05.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="e68046cc-1e87-4bfe-80ba-e8a8bff1c1a5">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen">
+                                Kahden pisteen välinen vektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pisteidenValinen" class="collapse">
+                        <p> Merkitään $A = (-12,17)$, $B = (35,11)$, $C = (26,-29)$, $D = (-14,36)$, $E = (10,43)$ ja $F = (58,13)$.
+                        <ol class="a">
+                            <li> Ilmaise vektorit $\pv{AB}$ ja $\pv{CD}$ vektoreiden $\vi$ ja $\vj$ avulla. Tarkista tulosten järkevyys hahmottelemalla mallikuva tilanteesta.
+                            <li> Ilmaise vektorit $\pv{DA}$ ja $\pv{EF}$ vektoreiden $\vi$ ja $\vj$ avulla. Tarkista tulosten järkevyys hahmottelemalla mallikuva tilanteesta.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pisteidenValinen_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pisteidenValinen_v" class="collapse">
+                            <ol class="a">
+                                <li> $\pv{AB} = 47\vi - 6\vj$ ja $\pv{CD} = -40\vi + 65\vj$ </li>
+                                <li> $\pv{DA} = 2\vi - 19\vj$ ja $\pv{EF} = 48\vi-30\vj$</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#kahden-pisteen-valinen-vektori">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#kahden-pisteen-valinen-vektori">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-suunta-ja-pituus">
+                    Vektorin suunta ja pituus
+                </a>
+            </h1>
+        </header>
+        <div id="vektorin-suunta-ja-pituus" class="collapse">
+
+            <div class="teoria">
+                <p>
+                    Tutkitaan seuraavaksi vektoreiden suuntia. Alla olevan kuvan vektorit $\va$ ja $\vv$ ovat <b>samansuuntaiset</b>. Myös esimerkiksi vektorit $-\va$ ja $\vu$ ovat samansuuntaiset. Tämä voidaan merkitä kirjoittamalla $\va \upuparrows \vv$ ja $-\va \upuparrows \vu$.
+                </p>
+
+                <p>
+                    Vektorit $-3\va$ ja $\vw$ ovat puolestaan <b>vastakkaissuuntaiset</b>. Tämä voidaan merkitä kirjoittamalla $-3\va \uparrow\downarrow \vw$.
+                </p>
+
+                <p>
+                    Vektorit, jotka ovat joko saman- tai vastakkaisuuntaiset, ovat <b>yhdensuuntaiset</b>. Kaikki alla olevan kuvan vektorit ovat yhdensuuntaisia. Esimerkiksi vektorit $\va$ ja $-3\va$ ovat yhdensuuntaiset, mikä voidaan merkitä kirjoittamalla $\va \parallel -3\va$.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/vektorinSuunta.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="2bebc0ab-74f3-44fa-bd1f-57ff37f9d655">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektorinSuunta">
+                                Vektoreiden yhdensuuntaisuus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-vektorinSuunta" class="collapse">
+                        <p> Tarkastele alla olevaa kuvaa. Kirjoita vastauksesi käyttäen yllä esiteltyjä merkintöjä $\upuparrows$ ja $\uparrow\downarrow$.
+                        <ol class="a">
+                            <li> Mitkä vektorit ovat samansuuntaisia?
+                            <li> Mitkä vektorit ovat vastakkaissuuntaisia?
+                            <li> Mitkä vektorit eivät ole yhdensuuntaisia minkään muun kuvassa näkyvän vektorin kanssa?
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/L1k04.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-vektorinSuunta_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektorinSuunta_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-vektorinSuunta_v" class="collapse">
+                            <ol class="a">
+                                <li> $\va$ ja $\vb$; $\quad 3\vj$ ja $4\vj$ </li>
+                                <li> $\va$ ja $\bar{e}$; $\quad \vb$ ja $\bar{e}$; $\quad \vc$ ja $\vw$; $\quad \vu$ ja $\vv$; $\quad -3vi$ ja $8\vi$; $\quad -2\vj$ ja $3\vj$; $\quad -2\vj$ ja $4\vj$ </li>
+                                <li> $\bar{d}$</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="a0b09326-2bcf-4379-b613-a672c4cdebe7">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektorinSuunta2">
+                                Vektoreiden yhdensuuntaisuus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-vektorinSuunta2" class="collapse">
+                        <p>
+                        <ol class="a">
+                            <li> Millaisella luvulla kertominen säilyttää vektorin suunnan?
+                            <li> Millaisella luvulla vektoria pitää kertoa, jotta sen suunta muuttuu vastakkaiseksi?
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: YHDENSUUNTAISUUS</h3>
+                    <p>
+                        Vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset eli $\vv \parallel \vw$, jos ja vain jos $\vv=r\vw$ jollakin reaaliluvulla $r \neq 0$.
+                    </p>
+                </div>
+
+                <p>
+                    Esimerkiksi vektorit $\va=4\vi+6\vj$ ja $\vb=-2\vi-3\vj$ ovat yhdensuuntaiset, sillä
+                    \begin{align*}
+                    \va
+                    &=4\vi+6\vj \\
+                    &=-2(-2\vi-3\vj) \\
+                    &=-2\vb.
+                    \end{align*}
+                    Yllä vektoreiden yhdensuuntaisuus osoitettiin muokkaamalla vektoria $\va$ niin, että se saatiin ilmoitettua vektorin $\vb$ skalaarimonikertana eli muodossa $t\vb$, missä $t \in \R$. Toinen tapa tutkia vektoreiden yhdensuuntaisuutta on muodostaa yhtälö $\va=t\vb$ ja tutkia, toteutuuko tämä yhtälö jollakin luvulla $t \neq 0$. Jos ratkaisu löytyy, vektorit ovat yhdensuuntaiset. Esimerkiksi edellisessä tilanteessa ratkaisu on $t = -2$. Jos ratkaisua ei löydy, niin vektorit eivät ole yhdensuuntaiset.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="aa213836-5ada-4da1-a459-7664a13f06ca">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-vektorinSuunta3">
+                                Vektoreiden yhdensuuntaisuus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-vektorinSuunta3" class="collapse">
+                        <p> Tarkastele vektoria $\vv=-5\vi-5\vj$.
+                        <ol class="a">
+                            <li> Muodosta kaksi uutta vektoria, jotka ovat vektorin $\vv$ kanssa yhdensuuntaisia.
+                            <li> Onko vektori $\vw=\vi+\vj$ yhdensuuntainen vektorin $\vv$ kanssa?
+                            <li> Onko vektori $\vu=\vi+2\vj$ yhdensuuntainen vektorin $\vv$ kanssa?
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Vektorin pituus saadaan laskettua Pythagoraan lauseen avulla. Esimerkiksi alla olevassa kuvassa vektorin $\va$ pituus $\left|\va\right|$ saadaan yhtälöstä
+                    $$
+                    \left|\va\right|^2 = 2^2 + 3^2.
+                    $$
+                    Vektorin $\va$ pituudeksi saadaan siis
+                    $$
+                    \left|\va\right| = \sqrt{2^2 + 3^2}=\sqrt{4+9}=\sqrt{13} \approx 3{,}6.
+                    $$
+                </p>
+                <p>
+                    <img src="/kurssit/maa4/kuvat/vektorinPituus.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Koska toiseen potenssiin korotus tekee kaikista luvuista epänegatiivisia, voidaan vektorin pituus määritellä seuraavasti:
+                </p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: VEKTORIN PITUUS</h3>
+                    <p>
+                        Vektorin $\vv=x\vi+y\vj$ pituus on $$|\vv|=\sqrt{x^2+y^2}.$$
+                    </p>
+                </div>
+
+                <p>
+                    Huomaa, että merkintä $|\vv|$ tarkoittaa vektorin $\vv$ pituutta, kun taas merkintä $|x|$ tarkoittaa luvun $x$ itseisarvoa.
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="e4ea2be6-aa99-423c-85af-7c54bf87f7e5">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus_a">
+                                Vektorin pituus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pituus_a" class="collapse">
+                        <p> Tutki kuvassa näkyvää vektoria $\va$.
+                        <ol class="a">
+                            <li> Lausu vektori $\va$ vektoreiden $\vi$ ja $\vj$ avulla.
+                            <li> Laske vektorin $\va$ pituus.
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/L1k03.png" max-width: 100%; width: auto; height: auto;/>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pituus_a_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus_a_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pituus_a_v" class="collapse">
+                            <ol class="a">
+                                <li> $\va = -8\vi - 5\vj$ </li>
+                                <li> $|\va| = \sqrt{89} \approx 9{,}4$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="9e221ddd-0733-4566-a99b-585bdf166f2d">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus2b">
+                                Vektorin pituus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pituus2b" class="collapse">
+                        <p> Laske tai päättele vektoreiden $\vi$ ja $\vj$ pituus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="1bfe95b0-96c0-4b2e-831a-b2d2ba7aa7b2">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus2">
+                                Vektorin pituus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pituus2" class="collapse">
+                        <p> Piirrä vektorit $\vv = -2\vi + 5\vj$ ja $\vw = 7\vi - 4\vj$ koordinaatistoon ja laske niiden pituus.
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pituus2_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus2_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pituus2_v" class="collapse">
+                            <p> $|\vv| = \sqrt{29}$ ja $|\vw| = \sqrt{65}$ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="teoria">
+                <div class="theorem">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Kaksi vektoria ovat samat, jos ja vain jos ne ovat samansuuntaiset ja yhtä pitkät.
+                    </p>
+                    <div class="proof">
+                        <p>
+                            Perustelu:
+                        <ul>
+                            <li>  Se, että kaksi vektoria ovat samat, tarkoittaa, että ne voidaan esittää samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla. Tällöin ne ovat samansuuntaiset ja yhtä pitkät.
+                            <li>Jos vektorit ovat samansuuntaiset ja yhtä pitkät, ne voidaan esittää samalla tavalla vektoreiden $\vi$ ja $\vj$ avulla. Tämä tarkoittaa, että  ne ovat samat.
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="1fa69ebd-48ec-492b-abfb-3c53cd2eac84">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus">
+                                Vektorin pituus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pituus" class="collapse">
+                        <p> Tutki vektoria $\vv=6\vi+3\vj$.
+                        <ol class="a">
+                            <li> Muodosta vektorit $5\vv$, $-2\vv$ ja $\frac{1}{3}\vv$.
+                            <li> Laske vektoreiden $\vv$, $5\vv$, $-2\vv$ ja $\frac{1}{3}\vv$ pituudet.
+                            <li> Selitä omin sanoin, miten vektorin kertominen luvulla vaikuttaa vektorin pituuteen.
+                            <li> Millaisella luvulla vektoria tulee kertoa, jotta se pitenee?
+                            <li> Millaisella luvulla vektoria tulee kertoa, jotta se lyhenee?
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pituus_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pituus_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pituus_v" class="collapse">
+                            <ol class = "a">
+                                <li> $5\vv=30\vi+15\vj$, $-2\vv=-12\vi-6\vj$, $\frac{1}{3}\vv=2\vi+\vj$</li>
+                                <li> $|\vv| = \sqrt{45} = 3\sqrt{5}$, $|5\vv| = 15\sqrt{5}$, $|-2\vv| = 6\sqrt{5}$, $|\frac{1}{3}\vv| = \sqrt{5}$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teoria">
+                <p>
+                    Tarkastellaan alla olevan kuvan vektoreiden $\va=2\vi+\vj$ ja $-4\va=-8\vi-4\vj$ pituuksia. Huomataan, että vektorin $\va$ pituus on
+                    $$
+                    \begin{align*}
+                    |\va|&=\sqrt{2^2+1^2} \\
+                    &= \sqrt{4+1} \\
+                    &=\sqrt{5}
+                    \end{align*}
+                    $$
+                    ja vektorin $-4\va$ pituus on
+                    $$
+                    \begin{align*}
+                    |-4\va|&=\sqrt{(-8)^2+(-4)^2} \\
+                    &= \sqrt{64+16} \\
+                    &=\sqrt{80} \\
+                    &= \sqrt{16\cdot 5} \\
+                    &=\sqrt{16} \cdot \sqrt{5} \\
+                    &=4\sqrt{5} \\
+                    &=4\cdot |\va|\\
+                    &=|-4|\cdot |\va|.
+                    \end{align*}
+                    $$
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/pituus1.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p>
+                    Voidaan näyttää, että tämä pätee kaikille vektoreille: Vektorin $t\vv$ pituus $|t\vv|$ saadaan kertomalla vektorin $\vv$ pituutta luvun $t$ itseisarvolla. Tämä teoreema perustellaan myöhemmin $xyz$-koordinaatistoa käsittelevässä luvussa.
+                </p>
+
+                <div class="theorem">
+                    <h3>TEOREEMA</h3>
+                    <p>
+                        Kaikilla vektoreilla $\vv$ ja reaaliluvuilla $t$ pätee, että
+                        $$|t\vv|=|t|\cdot |\vv|.$$
+                    </p>
+                </div>
+
+                <p>&nbsp;</p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: YKSIKKÖVEKTORI</h3>
+                    <p>
+                        Vektoria, jonka pituus on $1$, sanotaan yksikkövektoriksi.
+                    </p>
+                </div>
+
+                <p>
+                    Tehtävän 25 mukaan vektorit $\vi$ ja $\vj$ ovat yksikkövektoreita, sillä niiden pituus on $1$. Niiden lisäksi on paljon muitakin yksikkövektoreita. Perehdytään seuraavaksi siihen, miten voidaan määrittää annetun vektorin suuntainen yksikkövektori.
+                </p>
+
+                <p>
+                    Tarkastellaan alla olevan kuvan vektoria $\vv = 8\vi + 6\vj$. Sen pituudeksi saadaan
+                    $$
+                    \begin{align*}
+                    |\vv| &= \sqrt{8^2+6^2} \\
+                    &= \sqrt{100} \\
+                    &= 10.
+                    \end{align*}
+                    $$
+                    Vektorin $\vv$ kanssa samansuuntainen yksikkövektori saadaan ottamalla siitä kymmenesosa, eli
+                    $$
+                    \begin{align*}
+                    \frac{1}{10}\vv &=  \frac{1}{10}(8\vi + 6\vj) \\
+                    &= 0{,}8\vi + 0{,}6\vj
+                    \end{align*}
+                    $$
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/yksikkovektori.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="6cf23366-6da0-49b0-90a0-7bcfc3868111">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-yksikkovektori">
+                                Yksikkövektori
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-yksikkovektori" class="collapse">
+                        <p> Tutki vektoria $\vb = 3\vi - 4\vj$.
+                        <ol class="a">
+                            <li> Laske vektorin $\vb$ pituus.
+                            <li> Määritä vektorin $\vb$ kanssa samansuuntainen vektori, jonka pituus on $10$. Piirrä se koordinaatistoon.
+                            <li> Määritä vektorin $\vb$ kanssa samansuuntainen yksikkövektori eli vektori, joka pituus on $1$. Piirrä se koordinaatistoon.
+                            <li> Määritä vektorin $\vb$ kanssa vastakkaissuuntainen yksikkövektori. Piirrä se koordinaatistoon.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-yksikkovektori_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-yksikkovektori_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-yksikkovektori_v" class="collapse">
+                            <ol class = "a">
+                                <li> $|\vb| = 5$ </li>
+                                <li> $2\vb = 6\vi - 8\vj$</li>
+                                <li> $\frac{1}{5}\vb = \frac{3}{5}\vi - \frac{4}{5}\vj$</li>
+                                <li> $-\frac{1}{5}\vb = -\frac{3}{5}\vi + \frac{4}{5}\vj$</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektorin-suunta-ja-pituus">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-suunta-ja-pituus">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-jakaminen-komponentteihin">
+                    Vektorin jakaminen komponentteihin
+                </a>
+            </h1>
+        </header>
+        <div id="vektorin-jakaminen-komponentteihin" class="collapse">
+
+            <div class="teoria">
+                <p>
+                    Edellä opittiin ilmaisemaan $xy$-tason vektoreita vektoreiden $\vi$ ja $\vj$ avulla. Esimerkiksi alla olevan kuvan vektori $\va$ voidaan kirjoittaa muodossa $\va = 6\vi + 3\vj$. Yhteenlaskettavia $6\vi$ ja $3\vj$ kutsutaan vektorin $\va$ komponenteiksi.
+                </p>
+
+                <p>
+                    Vektori $\va$ voidaan jakaa komponentteihin muillakin tavoilla. Alla olevasta kuvasta nähdään, että vektori $\va$ voidaan kirjoittaa myös muodossa $\va = 5\vv + 4\vw$, missä $\vv = 2\vi-\vj$ ja $\vw = -\vi+2\vj$. Sanotaan, että $5\vv$ ja $4\vw$ ovat vektorin $\va$ vektorien $\vv$ ja $\vw$ suuntaiset komponentit.
+                </p>
+
+                <p>
+                    <img src="/kurssit/maa4/kuvat/L1k06.png" max-width: 100%; width: auto; height: auto;/>
+                </p>
+
+                <p> &nbsp; </p>
+
+                <div class="definition">
+                    <h3>MÄÄRITELMÄ: VEKTORIN KOMPONENTIT</h3>
+                    <p>
+                        Oletetaan, että $\vv$ ja $\vw$ ovat kaksi vektoria, joista kumpikaan ei ole nollavektori. Oletetaan lisäksi, että vektorit $\vv$ ja $\vw$ eivät ole yhdensuuntaiset. <br>
+                        Jos vektori $\va$ voidaan kirjoittaa muodossa
+                        $$\va = s\vv + t\vw$$
+                        missä $s$ ja $t$ ovat reaalilukuja, niin sanotaan, että $s\vv$ ja $t\vw$ ovat vektorin $\va$ vektoreiden $\vv$ ja $\vw$ suuntaiset komponentit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+                <div class="tehtava" id="1ccd6cc6-bb55-4c7a-b5ae-9e0e03b45264">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-komponentit1">
+                                Vektorin jakaminen komponentteihin
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-komponentit1" class="collapse">
+                        <p> Jaa vektori $\va = 6\vi + 3\vj$ vektoreiden $\vb$ ja $\vc$ suuntaisiin komponentteihin kuvan avulla päättelemällä, 
+                        <ol class="a">
+                            <li> jos $\vb = \vi + 2\vj$ ja $\vc = \vi-\vj$.
+                            <li> jos $\vb = \vi - 2\vj$ ja $\vc = \vi+\vj$.
+                        </ol>
+                        Piirrä molemmissa tapauksissa komponenttivektorit näkyviin ja ilmaise ne vektorien $\vb$ ja $\vc$ avulla.
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-komponentit1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-komponentit1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-komponentit1_v" class="collapse">
+                            <ol class = "a">
+                                <li> $\va = 3\vb + 3\vc$, joten kysytyt komponenttivektorit ovat $3\vb$ ja $3\vc$ </li>
+                                <li> $\va = \vb + 5\vc$, joten kysytyt komponenttivektorit ovat $\vb$ ja $5\vc$</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektorin-jakaminen-komponentteihin">
+        Sulje kappale
+        </a>
+    </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektorin-jakaminen-komponentteihin">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-pistetulo-ja-vektoreiden-valinen-kulma">
+                    Vektoreiden pistetulo ja vektoreiden välinen kulma
+                </a>
+            </h1>
+        </header>
+        <div id="vektoreiden-pistetulo-ja-vektoreiden-valinen-kulma" class="collapse">
+
+
+        <div class="teoria">
+            <div class="definition">
+                <h3>MÄÄRITELMÄ: PISTETULO</h3>
+                <p>
+                    Vektoreiden $\vv=x_1\vi+y_1\vj$ ja $\vw=x_2\vi+y_2\vj$ pistetulo on $$\vv \cdot \vw = x_1x_2+y_1y_2.$$
+                </p>
+            </div>
+
+            <p>
+                Vektoreiden pistetulosta saadaan siis tuloksena aina reaaliluku. Esimerkiksi vektoreiden $\vv=-2\vi+4\vj$ ja $\vw=3\vi-\vj$ pistetulo on
+                \begin{align*}
+                \vv \cdot \vw
+                &= (-2\vi+4\vj) \cdot (3\vi-\vj) \\
+                &= (-2) \cdot 3 + 4\cdot (-1) \\
+                &= -6-4 \\
+                &=-10.
+                \end{align*}
+                Reaalilukuja voidaan kutsua skalaareiksi, minkä vuoksi pistetuloa kutsutaan joskus skalaarituloksi.
+            </p>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="62c2803e-c880-4576-94ad-acd1e9a3fb37">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetulo">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+
+                    <div id="t-pistetulo" class="collapse">
+                        <p> Tarkaste vektoreita $\va=7\vi+6\vj$, $\vb=3\vi-5\vj$ ja $\vc=5\vi+3\vj$.
+                        <ol class="a">
+                            <li> Piirrä vektorit $\va$, $\vb$ ja $\vc$ koordinaatistoon niin, että ne alkavat samasta pisteestä.</li>
+                            <li> Laske pistetulo $\va \cdot \vb$.</li>
+                            <li> Laske pistetulo $\va \cdot \vc$.</li>
+                            <li> Laske pistetulo $\vb \cdot \vc$.</li>
+                            <li> Millaisessa tilanteessa vektoreiden pistetulo on nolla? Vertaa edellisten laskujen tuloksia ja piirtämääsi kuvaa.</li>
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetulo_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetulo_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pistetulo_v" class="collapse">
+                            <ol class = "a">
+                                <li>  </li>
+                                <li> $\va \cdot \vb = -9$ </li>
+                                <li> $\va \cdot \vc = 53$ </li>
+                                <li> $\vb \cdot \vc = 0$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="fe2d06aa-89ce-4d00-9284-dc58399ac1a6">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetulo2">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pistetulo2" class="collapse">
+                    <p> Tarkastele vektoreita $\va=-11\vi+5\vj$, $\vb=-4\vi-7\vj$ ja $\vc=3\vi-9\vj$ sekä reaalilukua $t=3$.
+                    <ol class="a">
+                        <li> Laske pistetulot $\va \cdot \vb$ ja $\va \cdot \vc$.
+                        <li> Laske pistetulo $\va \cdot (\vb + \vc)$.
+                        <li> Vertaa a- ja b-kohtien tuloksia. Miten ne liittyvät toisiinsa?
+                        <li> Laske pistetulot $(t\va) \cdot \vb$ ja $\va \cdot (t\vb)$.
+                        <li> Vertaa a- ja d-kohtien tuloksia. Millaisen ilmiön huomaat?
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="teoria">
+            <p>
+                Pistetulolla voidaan laskea tavallisten laskusääntöjen mukaan. Näitä on koottu alla olevaan teoreemaan.
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Olkoot $\va$, $\vb$ ja $\vc$ vektoreita ja $t$ reaaliluku. Pistetulolla on seuraavat ominaisuudet:
+                </p>
+                <ol>
+                    <li> vaihdannaisuus: $\va \cdot \vb = \vb \cdot \va$
+                    <li> osittelulaki: $\va \cdot (\vb + \vc) =(\va \cdot \vb) + (\va \cdot \vc)$
+                    <li> skalaarin siirto: $t(\va \cdot \vb) =(t\va) \cdot \vb = \va \cdot (t\vb)$
+                </ol>
+                <div class="proof">
+                    <p>
+                        Perustelu: Merkitään $\va = x_1\vi + y_1\vj$ ja $\vb = x_2\vi+y_2\vj$.
+                    </p>
+                    <ol>
+                        <li>  Pistetulon määritelmän mukaan $\va \cdot \vb = x_1x_2 + y_1y_2$ ja $\vb \cdot \va = x_2x_1+y_2y_1$. Koska $x_1$ ja $x_2$ sekä $y_1$ ja $y_2$ ovat reaalilukuja, voi niiden järjestyksen kertolaskussa vaihtaa. Siis $x_1x_2 = x_2x_1$ ja $y_1y_2 = y_2y_1$. Tästä seuraa, että $\va \cdot \vb = \vb \cdot \va$.
+                    </ol>
+                    <p>
+                        Ominaisuudet 2. ja 3. voidaan perustella samaan tapaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="50d58b9d-b52e-4d1e-9955-3b6d9e95e6a7">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloPituus1">
+                            Pistetulon ja vektorin pituuden yhteys
+                        </a>
+                    </h1>
+                </header>
+
+                    <div id="t-pistetuloPituus1" class="collapse">
+                        <p> Tarkastele vektoria $\va=-6\vi+8\vj$.
+                        <ol class="a">
+                            <li> Laske pistetulo $\va \cdot \va$.</li>
+                            <li> Laske vektorin $\va$ pituus.</li>
+                            <li> Vertaa a- ja b-kohtien tuloksia. Miten ne liittyvät toisiinsa?</li>
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloPituus1_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloPituus1_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pistetuloPituus1_v" class="collapse">
+                            <ol class = "a">
+                                <li> $\va \cdot \va = 100$ </li>
+                                <li> $|\va| = 10$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="0b18631c-8a09-402f-be0e-c1a39f555cd2">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloPituus2">
+                            Pistetulon ja vektorin pituuden yhteys
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="t-pistetuloPituus2" class="collapse">
+                    <p> Tarkastele vektoria $\vv=x\vi+y\vj$.
+                    <ol class="a">
+                        <li> Muodosta lauseke pistetulolle $\vv \cdot \vv$.
+                        <li> Muodosta lauseke vektorin $\vv$ pituudelle $\left|\vv\right|$.
+                        <li> Vertaa a- ja b-kohtien tuloksia. Miten ne liittyvät toisiinsa?
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="teoria">
+            <p>
+                Edellisen tehtävän tuloksena saadaan seuraava teoreema:
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Vektorin pistetulo itsensä kanssa on yhtä suuri kuin vektorin pituuden neliö. Toisin sanottuna $\vv \cdot \vv = \left|\vv\right|^2$
+                </p>
+            </div>
+
+            <p>
+                Tutkitaan seuraavaksi vektoreiden välisen kulman ja pistetulon yhteyttä. Vektoreiden välistä kulmaa voidaan tarkastella, jos vektoreiden alkupisteet ovat samat. Vektoreiden välisellä kulmalla tarkoitetaan muodostuvista kulmista pienempää. Tätä on havainnollistettu alla olevassa kuvassa.
+            </p>
+
+            <p>
+                <img src="/kurssit/maa4/kuvat/vektoreidenKulma.png" max-width: 100%; width: auto; height: auto;/>
+            </p>
+
+            <p>
+                Vektoreiden $\vv$ ja $\vw$ väliselle kulmalle käytetään merkintää $\sphericalangle(\vv,\vw)$ kuten yllä olevassa kuvassa. Joskus käytetään myös lyhyttä merkintää $(\vv,\vw)$.
+            </p>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="b57dc3b3-b56e-4cb2-aca1-d3bdcab6120a">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-kulma">
+                            Vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+                    <div id="t-kulma" class="collapse">
+                        <p> Tarkastele yllä olevaa kuvaa.
+                        <ol class="a">
+                            <li> Kuinka suuri on vektoreiden $\vv$ ja $2\vv$ välinen kulma?</li>
+                            <li> Kuinka suuri on vektoreiden $\vv$ ja $-\vv$ välinen kulma</li>
+                            <li> Jos vektorit ovat samansuuntaiset, mikä niiden välinen kulma on</li>
+                            <li> Jos vektorit ovat vastakkaissuuntaiset, mikä niiden välinen kulma on</li>
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-kulma_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-kulma_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-kulma_v" class="collapse">
+                            <ol class = "a">
+                                <li> $0^\circ$ </li>
+                                <li> $180^\circ$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="59065bfd-56c9-46c4-9736-6d2d21d52581">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-kulma2">
+                            Vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+
+                    <div id="t-kulma2" class="collapse">
+                        <p> Tarkastele alla olevaa kuvaa. Siirrä vektorit tarvittaessa alkamaan samasta pisteestä. Kuinka suuri on vektoreiden
+                        <ol class="a">
+<<<<<<< HEAD
+                            <li> $\va$ ja $\vb$ välinen kulma $\sphericalangle(\va,\vb)$</li>
+                            <li> $\va$ ja $\vc$ välinen kulma $\sphericalangle(\va,\vc)$</li>
+                            <li> $\vb$ ja $\vc$ välinen kulma $\sphericalangle(\vb,\vc)$?</li>
+=======
+                            <li> $\va$ ja $\vb$ välinen kulma $\sphericalangle(\va,\vb)$
+                            <li> $\va$ ja $\vc$ välinen kulma $\sphericalangle(\va,\vc)$
+                            <li> $\vb$ ja $\vc$ välinen kulma $\sphericalangle(\vb,\vc)$? 
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </ol>
+                        </p>
+                        <p>
+                            <img src="/kurssit/maa4/kuvat/L1k09.png" max-width: 100%; width: auto; height: auto;/> 
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-kulma2_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-kulma2_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-kulma2_v" class="collapse">
+                            <ol class = "a">
+                                <li> $74^\circ$ </li>
+                                <li> $50^\circ$ </li>
+                                <li> $124^\circ$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="teoria">
+            <p>
+                Geometria-kurssista tutun kosinilauseen ja pistetulon ominaisuuksien avulla saadaan perusteltua seuraava teoreema, joka yhdistää pistetulon ja vektoreiden välisen kulman. Teoreema perustellaan myöhemmin $xyz$-koordinaatistoa käsittelevässä luvussa.
+            </p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Vektoreiden $\vv$ ja $\vw$ pistetulolle pätee $$\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw).$$
+
+                    <br>
+                    Jos $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, niin vektoreiden $\vv$ ja $\vw$ välinen kulma $(\vv, \vw)$ saadaan yhtälöstä
+                    $$
+                    \cos (\vv, \vw)=\frac{\vv \cdot \vw}{|\vv||\vw|}.
+                    $$
+                </p>
+
+
+                <p>Edellisen teoreeman merkintä $\cos(\vv, \vw)$ tarkoittaa siis vektoreiden $\vv$ ja $\vw$ välisen kulman kosinia.</p>
+            </div>
+        </div>
+        <div class="tehtavat">
+            <div class="tehtava" id="369aef54-a4ba-483a-9ffd-548457d438a5">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+
+                    <div id="t-pistetuloKulma" class="collapse">
+                        <p>  Vektorin $\va$ pituus on $\left|\va\right| = 3$ ja vektorin $\vb$ pituus on $\left|\vb\right| = 7$. Laske edellisen teoreeman avulla pistetulo $\va \cdot \vb$, jos
+                        <ol class="a">
+                            <li> vektorit $\va$ ja $\vb$ ovat samansuuntaiset.
+                            <li> vektorit $\va$ ja $\vb$ ovat vastakkaissuuntaiset.
+                            <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $45^{\circ}$.
+                            <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $135^{\circ}$.
+                            <li> vektoreiden $\va$ ja $\vb$ välinen kulma on $90^{\circ}$.
+                        </ol>
+                        Selitä omin sanoin, miten vektoreiden välinen kulma liittyy pistetulon etumerkkiin.
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pistetuloKulma_v" class="collapse">
+                            <ol class = "a">
+                                <li> $\va \cdot \vb = 21$ </li>
+                                <li> $\va \cdot \vb = -21$ </li>
+                                <li> $\va \cdot \vb = \frac{21}{\sqrt{2}} = \frac{21}{2}\sqrt{2}$ </li>
+                                <li> $\va \cdot \vb = -\frac{21}{\sqrt{2}} = -\frac{21}{2}\sqrt{2}$ </li>
+                                <li> $\va \cdot \vb = 0$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tehtavat">
+            <div class="tehtava" id="3f7b9440-a0e9-4acc-98df-cba73d1a84fd">
+                <header>
+                    <h1>
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma3">
+                            Pistetulo ja vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+
+                    <div id="t-pistetuloKulma3" class="collapse">
+                        <p>  Tarkaste kolmiota $ABC$, missä $\overline{AB}=5\vi-4\vj$ ja $\overline{AC}=9\vi+3\vj$. 
+                        <ol class="a">
+                            <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
+                            <li> Piirrä kuva kolmiosta $ABC$ ja tarkista, onko vastauksesi järkevä.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma3_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma3_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pistetuloKulma3_v" class="collapse">
+                            <ol class = "a">
+                                <li> Kulma $A$ noin $57^\circ$, kulma $B$ noin $81^\circ$ ja kulma $C$ noin $42^\circ$. </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="teoria">
+            <p>Pistetulon avulla voidaan tarkistaa, ovatko vektorit kohtisuorassa toisiaan vastaan.</p>
+
+            <div class="theorem">
+                <h3>TEOREEMA</h3>
+                <p>
+                    Oletetaan, että $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$. Vektorit $\vv$ ja $\vw$ ovat toisiaan vastaan kohtisuorassa, jos ja vain jos $\vv \cdot \vw = 0$.
+                </p>
+                <div class="proof">
+                    <p>
+                        Perustelu:
+                    </p>
+                    <ul>
+                        <li>  Oletetaan, että vektorit $\vv$ ja $\vw$ ovat kohtisuorassa toisiaan vastaan eli $\sphericalangle(\vv,\vw)=90^{\circ}$. Tällöin
+                            \begin{align*}
+                            \vv \cdot \vw
+                            &= |\vv||\vw|\cos (\vv, \vw) \\
+                            &= |\vv||\vw|\cos 90^{\circ} \\
+                            &= |\vv||\vw| \cdot 0 \\
+                            &= 0.
+                            \end{align*}
+                            Siis $\vv \cdot \vw = 0$.
+                        <li> Oletetaan, että $\vv \cdot \vw = 0$. Tiedetään, että $\vv \cdot \vw = |\vv||\vw|\cos (\vv, \vw)$. Näistä tiedoista voidaan päätellä, että $|\vv||\vw|\cos (\vv, \vw) = 0$. </li>
+
+                            Oletuksen mukaan $\vv \neq \bar{0}$ ja $\vw \neq \bar{0}$, joten vektoreiden $\vv$ ja $\vw$ pituudet ovat positiivisia: $\left|\vv\right| > 0$ ja $\left|\vw\right| > 0$. Tulon nollasäännön avulla voidaan siten päätellä, että $\cos (\vv, \vw) = 0$. Tästä seuraa, että $\sphericalangle(\vv,\vw)=90^{\circ}$. </li>
+
+                            Vektorit $\vv$ ja $\vw$ ovat siis toisiaan vastaan kohtisuorassa.
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="tehtavat">
+                <div class="tehtava" id="ccf6f058-fd4e-4fa0-801c-11c57208f3ef">
+                    <header>
+                        <h1>
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma2">
+                                Pistetulo ja vektoreiden kohtisuoruus
+                            </a>
+                        </h1>
+                    </header>
+
+                    <div id="t-pistetuloKulma2" class="collapse">
+                        <p>  Tutki vektoreita $\vv=-2\vi+3\vj$ ja $\vw=x\vi+3\vj$.
+                        <ol class="a">
+                            <li> Muodosta lauseke pistetulolle $\vv \cdot \vw$.
+                            <li> Millä muuttujan $x$ arvolla vektorit $\vv$ ja $\vw$ ovat kohtisuorassa toisiaan vastaan?
+                            <li> Piirrä vektorit $\vv$ ja $\vw$ koordinaatistoon ja tarkista, onko vastauksesi järkevä.
+                        </ol>
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma2_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#t-pistetuloKulma2_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="t-pistetuloKulma2_v" class="collapse">
+                            <ol class = "a">
+                                <li> $-2x+9$ </li>
+                                <li> $x = 4{,}5$ </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-pistetulo-ja-vektoreiden-valinen-kulma">
+        Sulje kappale
+        </a>
+    </div>
+        </div>
+=======
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#vektoreiden-pistetulo-ja-vektoreiden-valinen-kulma">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjai">
+                    TEHTÄVÄSARJA II
+                </a>
+            </h1>
+        </header>
+        <div id="tehtavasarjai" class="collapse">
+
+            <!-- Tästä alkaa piilotus -->
+
+<<<<<<< HEAD
+            <div class="tehtava" id="2802a29e-15a5-4848-a913-87ffa3369772">
+=======
+            <div class="tehtava" id="sarja2t1-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t1">
+                            Vektorin esittäminen vektoreiden $\vi$ ja $\vj$ avulla
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t1">
+                    <p> 
+                        Tarkastele alla olevan kuvan vektoreita. Mitkä niistä voidaan esittää muodossa $2\vi+\vj$?
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti1-1.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t1_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t1_v" class="collapse">
+                        <p>
+                            Ne kolme vektoria, jotka osoittavat suunnan kaksi askelta oikealle ja yksi ylös (kuvassa vasemmalla ja alalaidassa).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="ba6b0b7c-cd20-406d-ae8f-e0fcc4c79b1b">
+=======
+            <div class="tehtava" id="sarja2t2-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t2">
+                            Vektoreiden samuus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t2">
+                    <p>
+                        Päättele, millä reaaliluvuilla $r$ ja $s$ vektorit $\vv=-r\vi+8\vj$ ja $\vw=5\vi-12s\vj$ ovat samat. Selitä, miten päättelit.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t2_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t2_v" class="collapse">
+                        <p>
+                            $r = -5$ ja $s = -\frac{2}{3}$
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="e3335ca4-ab61-4b9f-8812-b0f98be30b53">
+=======
+            <div class="tehtava" id="sarja2t3-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t3">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t3">
+                    <p> Määritä pisteen $P$ koordinaatit, jos
+                    <ol class="a">
+                        <li> $\pv{OP}=\vi+2\vj$</li>
+                        <li> $\pv{OP}=3\vi-4\vj$</li>
+                        <li> $\pv{OP}=-\vj$.</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t3_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t3_v" class="collapse">
+                        <ol class="a">
+                            <li> $P = (1,2)$</li>
+                            <li> $P = (3,-4)$</li>
+                            <li> $P = (0,-1)$.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+<<<<<<< HEAD
+            <div class="tehtava" id="db7754ab-f5d7-43a4-ac88-d4ffe04b0a17">
+=======
+            <div class="tehtava" id="sarja2t4-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t4">
+                            Vektoreiden laskutoimituksia
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t4">
+                    <p> 
+                        Tarkastele alla olevaa kuvaa. Päättele kuvan avulla, mihin pisteeseen päädyt, kun lähdet pisteestä $(2,3)$ ja siirryt 
+                    <ol class="a">
+                        <li> vektorin $\va$ verran</li>
+                        <li> ensin vektorin $\va$ verran ja sitten vektorin $\vb$ verran</li>
+                        <li> vektorin $-\vb$ verran</li>
+                        <li> ensin vektorin $-\va$ verran ja sitten vektorin $\vb$ verran.</li>
+                    </ol>
+                        Mihin vektoreiden laskutoimituksiin b- ja d-kohdat liittyvät?
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti2-4.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t4_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t4_v" class="collapse">
+                        <ol class="a">
+                            <li> pisteeseen $(-1,2)$</li>
+                            <li> pisteeseen $(1,-1)$</li>
+                            <li> pisteeseen $(0,6)$</li>
+                            <li> pisteeseen $(7,1)$ </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="cd249ed0-e6dd-4fd6-b576-4b291a738d18">
+=======
+            <div class="tehtava" id="sarja2t5-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t5">
+                            Vektoreiden summa ja erotus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t5">
+                    <p> 
+                        Tarkastele alla olevaa kuvaa. Piirrä vektoreiden $\vv$, $\vw$ ja $\vu$ avulla vektorit
+                    <ol class="a">
+                        <li> $\vv+\vw$</li>
+                        <li> $\vw-\vv$</li>
+                        <li> $\vv-\vw-\vu$</li>
+                        <li> $\vv-\vw+\vu$</li>
+                    </ol>
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti2-1.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="84aa4428-4624-4341-a20e-9101d97306be">
+=======
+            <div class="tehtava" id="sarja2t6-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t6">
+                            Vektorin kertominen luvulla
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t6">
+                    <p>
+                        Tarkastele alla olevaan kuvaa. Ilmaise vektorit $\vb, \vc, \bar{d}$ ja $\bar{e}$ vektorin $\va$ avulla.
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti2-2.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t6_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t6_v" class="collapse">
+                        <p>
+                            $\vb = -\frac{3}{2}\va$, $\quad \vc = \frac{9}{2}\va$, $\quad \bar{d} = -4\va$, $\quad \bar{e} = -\va$
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="f709625e-c8f9-4b79-83ee-44bd31449e99">
+=======
+            <div class="tehtava" id="sarja2t7-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t7">
+                            Vektoreiden summa ja erotus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t7">
+                    <p> Tarkastele vektoreita $\vv=-2\vi+7\vj$, $\vw=6\vi-10\vj$ ja $\vu=-3\vi+5\vj$. Määritä
+                    <ol class="a">
+                        <li> $(\vv+\vw)-(\vw+\vu)$</li>
+                        <li> $(\vv+\vw)-(\vv-\vu)-(\vw+\vu)$.</li>
+                    </ol>
+                    Yritä ratkaista tehtävä mahdollisimman vähällä vaivalla.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t7_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t7_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\vv-\vu = \vi + 2\vj$</li>
+                        <li> $\bar{0}$</li>
+                    </ol>
+=======
+                            <li> $\vv-\vu = \vi + 2\vj$</li>
+                            <li> $\bar{0}$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="ed44effd-ccf6-4bd1-8878-a06e1c1fc586">
+=======
+            <div class="tehtava" id="sarja2t8-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t8">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t8">
+                    <p> Tutki vektoria $\pv{AB}=-9\vi+5\vj$. Määritä pisteen $B$ paikkavektori kuvan avulla päättelemällä tai laskemalla, jos 
+                    <ol class="a">
+                        <li> piste $A=(11,2)$</li>
+                        <li> piste $A=(-8,-7)$.</li>
+                    </ol>
+                    Jos määritit paikkavektorin laskemalla, tarkista tuloksen järkevyys hahmottelemalla kuva tilanteesta.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t8_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t8_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\pv{OB} = 2\vi + 7\vj$</li>
+                        <li> $\pv{OB} = -17\vi - 2\vj$</li>
+                    </ol>
+=======
+                            <li> $\pv{OB} = 2\vi + 7\vj$</li>
+                            <li> $\pv{OB} = -17\vi - 2\vj$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="9cce00ee-acd5-4848-a0c4-da2111e26d81">
+=======
+            <div class="tehtava" id="sarja2t9-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t9">
+                            Kahden pisteen välinen vektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t9">
+                    <p> Määritä vektori $\pv{AB}$ laskemalla tai kuvan avulla päättelemällä, jos
+                    <ol class="a">
+                        <li> $A=(-5,2)$ ja $B=(3,1)$</li>
+                        <li> $A=(3,-7)$ ja $B=(-4,8)$.</li>
+                    </ol>
+                    Jos määritit vektorin laskemalla, tarkista tuloksen järkevyys piirtämällä kuva tilanteesta.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t9_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t9_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\pv{AB} = 8\vi - \vj$</li>
+                        <li> $\pv{AB} = -7\vi + 15\vj$</li>
+                    </ol>
+=======
+                            <li> $\pv{AB} = 8\vi - \vj$</li>
+                            <li> $\pv{AB} = -7\vi + 15\vj$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="4b4f65de-c384-4456-9fb3-0fa9d45264d4">
+=======
+            <div class="tehtava" id="sarja2t10-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t10">
+                            Kahden pisteen välinen vektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t10">
+                    <p> Tarkastele pisteitä $A=(-2,4)$, $B=(3,1)$ ja $C=(5,-3)$. Määritä piste $D$ laskemalla tai piirtämällä, jos
+                    <ol class="a">
+                        <li> $\pv{CD}=\pv{AB}$</li>
+                        <li> $\pv{DC}=\pv{AB}$</li>
+                        <li> $\pv{AD}=-\pv{AC}$</li>
+                        <li> $\pv{BC}=-\pv{AD}$.</li>
+                    </ol>
+                    Jos määritit pisteen laskemalla, havainnollista ratkaisuasi piirtämällä kuva tilanteesta.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t10_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t10_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $D = (10,-6)$</li>
+                        <li> $D = (0,0)$</li>
+                        <li> $D = (-9,11)$</li>
+                        <li> $D = (-4,8)$</li>
+                    </ol>
+=======
+                            <li> $D = (10,-6)$</li>
+                            <li> $D = (0,0)$</li>
+                            <li> $D = (-9,11)$</li>
+                            <li> $D = (-4,8)$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="4d250885-8826-45cd-a46f-856847d7a2b0">
+=======
+            <div class="tehtava" id="sarja2t11-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t11">
+                            Kahden pisteen välinen vektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t11">
+                    <p> Tarkastele pisteitä $A=(-1,4)$, $B=(3,-2)$ ja $C=(-2,1)$. 
+                    <ol class="a">
+                        <li> Piirrä koordinaatistoon vektori $\pv{AB}$.</li>
+                        <li> 
+                            Lausu vektori $\pv{AB}$ paikkavektoreiden $\pv{OA}$ ja $\pv{OB}$ avulla.
+                        </li>
+                        <li> 
+                            Sievennä edellisen kohdan lauseke muotoon, jossa vektoreiden $\vi$ ja $\vj$ kertoimet ovat pisteiden $A$ ja $B$ koordinaattien erotuksia.
+                        </li>
+                        <li> 
+                            Määritä vektori $\pv{AC}$ suoraan käyttämällä tietoa, että vektoreiden $\vi$ ja $\vj$ kertoimet ovat vektorin loppupisteen ja alkupisteen koordinaattien erotuksia.
+                        </li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t11_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t11_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> </li>
+                        <li> $\pv{AB} = \pv{OB} - \pv{OA}$</li>
+                        <li> $\pv{AB} = 4\vi - 6\vj$</li>
+                        <li> $\pv{AC} = -\vi - 3\vj$</li>
+                    </ol>
+=======
+                            <li> </li>
+                            <li> $\pv{AB} = \pv{OB} - \pv{OA}$</li>
+                            <li> $\pv{AB} = 4\vi - 6\vj$</li>
+                            <li> $\pv{AC} = -\vi - 3\vj$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="c4647329-a366-4128-a76d-113ec0e577c9">
+=======
+            <div class="tehtava" id="sarja2t12-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t12">
+                            Vektoreiden suunta
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t12">
+                    <p>  Tarkastele alla olevassa kuvassa olevaa vektoria $\vv$. Piirrä koordinaatisto ja siihen  
+                    <ol class="a">
+                        <li> jokin vektori, joka on sama kuin $\vv$</li>
+                        <li> vektori, joka on vektorin $\vv$ kanssa samansuuntainen mutta kuitenkin eri vektori</li>
+                        <li> vektori, joka on vektorin $\vv$ kanssa yhdensuuntainen mutta ei samansuuntainen.</li>
+                        <li> jokin vektori, jonka pituus on 1,5 kertaa vektorin $\vv$ pituus ja joka ei ole vektorin $\vv$ kanssa yhdensuuntainen. </li>
+                    </ol>
+                    Onko jokin piirtämistäsi vektoreista vektorin $\vv$ vastavektori? Jos ei, piirrä koordinaatistoon vielä vektorin $\vv$ vastavektori.
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti3-1.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="3f9ac9a2-b88d-444a-ae6e-a72d7919412f">
+=======
+            <div class="tehtava" id="sarja2t13-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t13">
+                            Vektoreiden yhdensuuntaisuus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t13">
+                    <p> 
+                        Oletetaan, että kumpikaan vektoreista $\vv$ ja $\vw$ ei ole nollavektori. Tutki, ovatko vektorit $\vv$ ja $\vw$ yhdensuuntaiset, jos
+                    <ol class="a">
+                        <li> $\vv=6\vw$</li>
+                        <li> $2\vv+2\vw=14\vw-\vv$.</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t13_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t13_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> Kyllä.</li>
+                        <li> $\vv = 4\vw$, joten vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset. </li>
+                    </ol>
+=======
+                            <li> Kyllä.</li>
+                            <li> $\vv = 4\vw$, joten vektorit $\vv$ ja $\vw$ ovat yhdensuuntaiset. </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="e9df3004-f15b-4123-9538-635fecd6e736">
+=======
+            <div class="tehtava" id="sarja2t14-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t14">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t14">
+                    <p>
+                        Merkitään $A=(-5,2)$, $B=(-1,-1)$ ja $C=(2,1)$. Tiedetään, että vektorit $\pv{AB}$ ja $\pv{CD}$ ovat yhtä pitkät. Määritä piste $D$, jos vektorit $\pv{AB}$ ja $\pv{CD}$ ovat
+                    <ol class="a">
+                        <li> samansuuntaiset</li>
+                        <li> vastakkaissuuntaiset.</li>
+                    </ol>
+                    Ratkaise tehtävä sekä piirroksen avulla että ilman piirrosta.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t14_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t14_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $D = (6,-2)$</li>
+                        <li> $D = (-2,4)$ </li>
+                    </ol>
+=======
+                            <li> $D = (6,-2)$</li>
+                            <li> $D = (-2,4)$ </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="062bbb6d-2280-4e54-8102-d2f0e1df992a">
+=======
+            <div class="tehtava" id="sarja2t14b-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t14b">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t14b">
+                    <p> Pisteen $A$ paikkavektori on $\pv{OA}=5\vi+12\vj$. Tiedetään, että $B=(-2,-5)$ ja $C=(2,-1)$.
+                    <ol class="a">
+                        <li> Vektori $\pv{BD}$ on samansuuntainen kuin vektori $\pv{OA}$ ja sen pituus on kaksi kertaa vektorin $\pv{OA}$ pituus. Päättele, mikä piste $D$ on. Selitä, miten ajattelit.</li>
+                        <li> Vektori $\pv{CE}$ on yhdensuuntainen vektorin $\pv{OA}$ kanssa ja sen pituus on puolet vektorin $\pv{OA}$ pituudesta. Mitä voit päätellä pisteestä $E$? Selitä, miten ajattelit.</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t14b_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t14b_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $D = (8,19)$</li>
+                        <li> $E = \left(\frac{9}{2},5\right)\ $ tai $\ E = \left(-\frac{1}{2}, -7\right)$  </li>
+                    </ol>
+=======
+                            <li> $D = (8,19)$</li>
+                            <li> $E = \left(\frac{9}{2},5\right)\ $ tai $\ E = \left(-\frac{1}{2}, -7\right)$  </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="4b857495-0cd4-43b6-a766-307d29360355">
+=======
+            <div class="tehtava" id="sarja2t15-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t15">
+                            Vektoreiden summa ja erotus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t15">
+                    <p> Tarkastele alla olevaa kuvaa. Muodosta kuvan vektoreiden avulla lauseke, jolla kuljetaan 
+                    <ol class="a">
+                        <li> pisteestä $A$ pisteeseen $C$</li>
+                        <li> pisteestä $B$ pisteeseen $D$</li>
+                        <li> origosta eli pisteestä $O$ pisteeseen $B$.</li>
+                    </ol>
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/Paikkavektoritehtava_a.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t15_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t15_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $-\va + \vb$ tai yhtä hyvin $\vb - \va$ </li>
+                        <li> $\vb - \vc$</li>
+                        <li> $\pv{OA} - \va$</li>
+                    </ol>
+=======
+                            <li> $-\va + \vb$ tai yhtä hyvin $\vb - \va$ </li>
+                            <li> $\vb - \vc$</li>
+                            <li> $\pv{OA} - \va$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="de0fa11a-f2bb-4aa4-9c23-3fff5b00d26c">
+=======
+            <div class="tehtava" id="sarja2t16-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t16">
+                            Paikkavektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t16">
+                    <p> Tarkastele alla olevaa kuvaa.
+                    <ol class="a">
+                        <li> Lausu kuvan vektorit vektoreiden $\vi$ ja $\vj$ avulla.</li>
+                        <li> Muodosta kuvan vektoreiden avulla lauseke, jolla kuljetaan origosta $O$ pisteeseen $C$. </li>
+                        <li> Sijoita edellisen kohdan lausekkeeseen a-kohdan vektorit ja sievennä lauseke.</li>
+                        <li> Katso kuvasta pisteen $C$ koordinaatit. Vertaa tulosta c-kohdan tulokseen.</li>
+                        <li> Mikä on pisteen $C$ paikkavektori?</li>
+                    </ol>
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/Paikkavektoritehtava_a.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t16_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t16_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\pv{OA} = 3\vi + \vj$, $\quad \va = -\vi + 2\vj$, $\quad\vb = 2\vi$, $\quad\vc = -\vi - 3\vj$ </li>
+                        <li> $\pv{OC} = \pv{OA} - \va + \vb$</li>
+                        <li> $\pv{OC} = 6\vi - \vj$</li>
+                        <li> $C = (6,-1)$</li>
+                        <li> $\pv{OC} = 6\vi - \vj$</li>
+                    </ol>
+=======
+                            <li> $\pv{OA} = 3\vi + \vj$, $\quad \va = -\vi + 2\vj$, $\quad\vb = 2\vi$, $\quad\vc = -\vi - 3\vj$ </li>
+                            <li> $\pv{OC} = \pv{OA} - \va + \vb$</li>
+                            <li> $\pv{OC} = 6\vi - \vj$</li>
+                            <li> $C = (6,-1)$</li>
+                            <li> $\pv{OC} = 6\vi - \vj$</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="af0cd487-56a6-44c1-b89f-e9475285d6bd">
+=======
+            <div class="tehtava" id="sarja2t17-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t17">
+                            Vektoreiden yhdensuuntaisuus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t17">
+                    <p> Päättele, ovatko vektorit $\va$ ja $\vb$ yhdensuuntaiset, jos    
+                    <ol class="a">
+                        <li> $\va=\frac{1}{4}\vi-3\vj$ ja $\vb=\vi-12\vj$</li>
+                        <li> $\va=-10\vi+\frac{2}{5}\vj$ ja $\vb=\frac{4}{5}\vi+2\vj$?</li>
+                    </ol>
+                    Perustele sanallisesti.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t17_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t17_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\vb = 4\va$, joten vektorit $\va$ ja $\vb$ ovat yhdensuuntaiset.</li>
+                        <li> Vektorit $\va$ ja $\vb$ eivät ole yhdensuuntaiset, sillä ei ole olemassa sellaista lukua $r \neq 0$, jolla $\va = r\vb$. Vertaamalla vektoreita $r\vb=\frac{4}{5}r\vi+2r\vj$ ja $\va=-10\vi+\frac{2}{5}\vj$ havaitaan, että pitäisi olla yhtä aikaa $\frac{4}{5}r = -10$ ja $2r = \frac{2}{5}$, mikä ei ole mahdollista.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="tehtava" id="6e18c26b-abb6-4735-9e2a-dbc8a80a85d0">
+=======
+                            <li> $\vb = 4\va$, joten vektorit $\va$ ja $\vb$ ovat yhdensuuntaiset.</li>
+                            <li> Vektorit $\va$ ja $\vb$ eivät ole yhdensuuntaiset, sillä ei ole olemassa sellaista lukua $r \neq 0$, jolla $\va = r\vb$. Vertaamalla vektoreita $r\vb=\frac{4}{5}r\vi+2r\vj$ ja $\va=-10\vi+\frac{2}{5}\vj$ havaitaan, että pitäisi olla yhtä aikaa $\frac{4}{5}r = -10$ ja $2r = \frac{2}{5}$, mikä ei ole mahdollista.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="sarja2t18-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t18">
+                            Vektorin pituus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t18">
+                    <p> Tarkastele alla olevaa kuvaa. Mitkä kuvan vektoreista ovat yhtä pitkiä kuin vektori $\vv$? Perustele vastauksesi.
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti3-6.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t18_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t18_v" class="collapse">
+                        <p> Yhtä pitkiä kuin vektori $\vv$ ovat vektorit $\vb$ ja $\vc$, sillä myös niiden pituus on 5. Vektorin $\va$ pituus on $\sqrt{13}$, vektorin $\bar{d}$ pituus on 4 ja vektorin $\bar{e}$ pituus on $3\sqrt{2}$.</p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="16efc267-dc31-4520-b128-1e12a9fb91d2">
+=======
+            <div class="tehtava" id="sarja2t19-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t19">
+                            Vektorin pituus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t19">
+                    <p> Vektorin $\vv$ pituus on 24. </p>
+                    <ol class="a">
+                        <li> Määritä vektoreiden $-6\vv$ ja $\frac{1}{8}\vv$ pituudet.</li>
+                        <li> Vertaa vektoreiden $-6\vv$ ja $\frac{1}{8}\vv$ suuntaa vektorin $\vv$ suuntaan.</li>
+                    </ol>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t19_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t19_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $|-6\vv| = 144$ ja $\left|\frac{1}{8}\vv\right| = 3$.</li>
+                        <li> Vektorit $-6\vv$ ja $\vv$ ovat vastakkaissuuntaiset. Vektorit $\frac{1}{8}\vv$ ja $\vv$ ovat samansuuntaiset.</li>
+                    </ol>
+=======
+                            <li> $|-6\vv| = 144$ ja $\left|\frac{1}{8}\vv\right| = 3$.</li>
+                            <li> Vektorit $-6\vv$ ja $\vv$ ovat vastakkaissuuntaiset. Vektorit $\frac{1}{8}\vv$ ja $\vv$ ovat samansuuntaiset.</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="fd0fddc2-689d-46d7-b694-8ba8b3619ce1">
+=======
+            <div class="tehtava" id="sarja2t20-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t20">
+                            Yksikkövektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t20">
+                    <p> Muodosta vektorin $\vv=-8\vi+15\vj$ kanssa
+                    <ol class="a">
+                        <li> samansuuntainen yksikkövektori </li>
+                        <li> samansuuntainen vektori, jonka pituus on $4$.</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t20_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t20_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\frac{1}{17}\vv = -\frac{8}{17}\vi + \frac{15}{17}\vj$</li>
+                        <li> $\frac{4}{17}\vv = -\frac{32}{17}\vi + \frac{60}{17}\vj$</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="tehtava" id="8a444584-8663-440a-a346-bd10719628a3">
+=======
+                            <li> $\frac{1}{17}\vv = -\frac{8}{17}\vi + \frac{15}{17}\vj$</li>
+                            <li> $\frac{4}{17}\vv = -\frac{32}{17}\vi + \frac{60}{17}\vj$</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="sarja2t21-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t21">
+                            Yksikkövektori
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t21">
+                    <p>  Tiedetään, että vektorin $\vv$ pituus on
+                    <ol class="a">
+                        <li> $|\vv| = 8$</li>
+                        <li> $|\vv| = \sqrt{5}$</li>
+                        <li> $|\vv| = \frac{1}{3}$.</li>
+                    </ol>
+                    Selitä, miten voit näissä tapauksissa määrittää vektorin $\vv$ kanssa samansuuntaisen yksikkövektorin.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t21_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t21_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> Kysytty yksikkövektori on $\frac{1}{8}\vv$.</li>
+                        <li> Kysytty yksikkövektori on $\frac{1}{\sqrt{5}}\vv$.</li>
+                        <li> Kysytty yksikkövektori on $3\vv$. </li>
+                    </ol>
+=======
+                            <li> Kysytty yksikkövektori on $\frac{1}{8}\vv$.</li>
+                            <li> Kysytty yksikkövektori on $\frac{1}{\sqrt{5}}\vv$.</li>
+                            <li> Kysytty yksikkövektori on $3\vv$. </li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="c1bd55ae-8959-4842-961c-fb7fe74b8fbb">
+=======
+            <div class="tehtava" id="sarja2t22-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t22">
+                            Vektorin jakaminen komponentteihin
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t22">
+                    <p> 
+                        Jaa vektori $\va = 4\vi - 2\vj$ vektoreiden $\vv = 3\vi + \vj$ ja $\vw = -\vi-\vj$ suuntaisiin komponentteihin kuvan avulla päättelemällä. Piirrä komponenttivektorit näkyviin ja ilmaise ne vektorien $\vv$ ja $\vw$ avulla.
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t22_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t22_v" class="collapse">
+                        <p>$\va = 3\vv + 5\vw$, joten kysytyt komponenttivektorit ovat $3\vv$ ja $5\vw$.</p>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="fdbb8beb-a265-43b0-8978-fdb1016d2073">
+=======
+            <div class="tehtava" id="sarja2t23-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t23">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t23">
+                    <p> Laske vektoreiden $\vv$ ja $\vw$ pistetulo, jos
+                    <ol class="a">
+                        <li> $\vv=\frac{1}{2}\vi-3\vj$ ja $\vw=10\vi+7\vj$</li>
+                        <li> $\vv=9\vi+11\vj$ ja $\vw=\frac{2}{3}\vi-2\vj$</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t23_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t23_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\vv \cdot \vw = -16$</li>
+                        <li> $\vv \cdot \vw = -16$</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="tehtava" id="05801861-46a7-421e-af0a-48564cedcc18">
+=======
+                            <li> $\vv \cdot \vw = -16$</li>
+                            <li> $\vv \cdot \vw = -16$</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="sarja2t24-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t24">
+                            Pistetulo
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t24">
+                    <p> Kolmion kärjet ovat $A=(-4,3)$, $B=(5,2)$ ja $C=(1,-2)$. 
+                    <ol class="a">
+                        <li> Muodosta vektorit $\pv{AB}$, $\pv{BC}$ ja $\pv{CA}$. </li>
+                        <li> Osoita pistetulon avulla, että kolmio on suorakulmainen.</li>
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t24_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t24_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> $\pv{AB} = 9\vi - \vj$, $\quad \pv{BC} = -4\vi - 4\vj$, $\quad\pv{CA} = -5\vi + 5\vj$</li>
+                        <li> Kärjestä $C$ lähtevien vektoreiden $\pv{CB} = 4\vi + 4\vj$ ja $\pv{CA} = -5\vi + 5\vj$ pistetulo on $\pv{CB} \cdot \pv{CA} = 0$, joten nämä vektorit ovat kohtisuorassa toisiaan vastaan.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="tehtava" id="dbaefc3c-2434-413a-a9e0-07ed79343df9">
+=======
+                            <li> $\pv{AB} = 9\vi - \vj$, $\quad \pv{BC} = -4\vi - 4\vj$, $\quad\pv{CA} = -5\vi + 5\vj$</li>
+                            <li> Kärjestä $C$ lähtevien vektoreiden $\pv{CB} = 4\vi + 4\vj$ ja $\pv{CA} = -5\vi + 5\vj$ pistetulo on $\pv{CB} \cdot \pv{CA} = 0$, joten nämä vektorit ovat kohtisuorassa toisiaan vastaan.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtava" id="sarja2t25-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t25">
+                            Vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t25">
+                    <p>  Kolmion $ABC$ kärjet ovat pisteissä $A=(-7,1)$, $B=(4,9)$ ja $C=(-3,-5)$.
+                    <ol class="a">
+                        <li> Laske kolmion kulmien suuruudet asteen tarkkuudella.
+                        <li> Piirrä kuva kolmiosta $ABC$ ja tarkista kolmioviivoittimella mittaamalla, onko vastauksesi järkevä.
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t25_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t25_v" class="collapse">
+                        <ol class="a">
+<<<<<<< HEAD
+                        <li> Kulma $A$ noin $92^\circ$, kulma $B$ noin $27^\circ$ ja kulma $C$ noin $61^\circ$.</li>
+                    </ol>
+=======
+                            <li> Kulma $A$ noin $92^\circ$, kulma $B$ noin $27^\circ$ ja kulma $C$ noin $61^\circ$.</li>
+                        </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="99da91f6-d847-44a2-8fc4-e0ed648dc27a">
+=======
+            <div class="tehtava" id="sarja2t26-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t26">
+                            Vektoreiden välinen kulma
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t26">
+                    <p> Tarkastele alla olevan kuvan kolmiota. Määritä pistetulon avulla asteen tarkkuudella kulmat
+                    <ol class="a">
+                        <li> $\sphericalangle(\pv{AB},\pv{AC})$</li>
+                        <li> $\sphericalangle(\pv{AB},\pv{CB})$</li>
+                        <li> $\sphericalangle(\pv{CA},\pv{BC})$.</li>
+                    </ol>
+                    Piirrä kuva tilanteesta ja merkitse siihen, mikä kulma on kysymyksessä.
+                    </p>
+                    <p>
+                        <img src="/kurssit/maa4/kuvat/setti3-16.png" max-width: 100%; width: auto; height: auto;/>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t26_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t26_v" class="collapse">
+                        <ol class="a">
+                            <li> $\sphericalangle(\pv{AB},\pv{AC}) \approx 40^\circ$</li>
+                            <li> $\sphericalangle(\pv{AB},\pv{CB}) \approx 105^\circ$</li>
+                            <li> $\sphericalangle(\pv{CA},\pv{BC}) \approx 145^\circ$.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+            <div class="tehtava" id="47408fa9-cef7-42b6-94a8-f8ed268e966a">
+=======
+
+            <div class="tehtava" id="sarja2t27-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja2t27">
+                            Vektoreiden kohtisuoruus
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja2t27">
+                    <p>   
+                    <ol class="a">
+                        <li> Etsi piirroksen avulla vektori, joka on yhtä pitkä kuin vektori $\vv = 2\vi-3\vj$ ja kohtisuorassa sitä vastaan.</li>
+                        <li> Päättele, mikä vektori on yhtä pitkä kuin vektori $\vw = x\vi+y\vj$ ja kohtisuorassa sitä vastaan.</li>
+                        <li> Tarkista pistetulon avulla, että b-kohdassa tekemäsi johtopäätös on oikein.
+                    </ol>
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja2t27_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja2t27_v" class="collapse">
+                        <ol class="a">
+                            <li> Kaksi vaihtoehtoa: $3\vi + 2\vj$ ja $-3\vi - 2\vj$</li>
+                            <li> Kaksi vaihtoehtoa: $y\vi - x\vj$ ja $-y\vi + x\vj$</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjai">
+        Sulje kappale
+        </a>
+    </div>
+</div>
+=======
+
+            <div class="close-section">
+                <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjai">
+                    Sulje kappale
+                </a>
+            </div>
+        </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        <!-- Tähän loppui piilotus -->
+    </section>
+
+
+    <section class="panel">
+        <header class="otsikko">
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjaiii">
+                    TEHTÄVÄSARJA III
+                </a>
+            </h1>
+        </header>
+        <div id="tehtavasarjaiii" class="collapse">
+            <!-- Tästä alkaa piilotus -->
+
+<<<<<<< HEAD
+            <div class="tehtava" id="5213f8ee-71aa-46bf-83af-3a86b348d134">
+=======
+            <div class="tehtava" id="sarja3t1-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja3t1">
+
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja3t1">
+                    <p> 
+                        Laiva kulkee suoraan tasaisella  nopeudella. Eräällä hetkellä laiva on pisteessä $A=(-7,10)$ ja tuntia myöhemmin pisteessä $B=(6,-5)$.
+<<<<<<< HEAD
+                        <ol class="a">
+                            <li> Määritä vektori, joka kuvaa laivan siirtymää tunnin aikana.</li>
+                            <li> Missä pisteessä laiva oli kaksi tuntia ennen saapumistaan pisteeseen $A$?</li>
+                            <li> Missä pisteessä laiva on 40 minuuttia sen jälkeen, kun se jätti pisteen $B$?</li>
+                        </ol>
+=======
+                    <ol class="a">
+                        <li> Määritä vektori, joka kuvaa laivan siirtymää tunnin aikana.</li>
+                        <li> Missä pisteessä laiva oli kaksi tuntia ennen saapumistaan pisteeseen $A$?</li>
+                        <li> Missä pisteessä laiva on 40 minuuttia sen jälkeen, kun se jätti pisteen $B$?</li>
+                    </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja3t1_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja3t1_v" class="collapse">
+                        <ol class="a">
+                            <li> $\pv{AB} = 13\vi - 15\vj$</li>
+                            <li> $(-33,40)$</li>
+                            <li> $\left(\frac{44}{3}, -15\right)$ </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="tehtava" id="1c749d89-37fd-4ec1-923c-09f426a7f37f">
+=======
+            <div class="tehtava" id="sarja3t2-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                <header>
+                    <h1>
+                        <a data-target="#sarja3t2">
+                        </a>
+                    </h1>
+                </header>
+                <div id="sarja3t2">
+                    <p> 
+                        Tiedetään, että tyynessä säässä kuumailmapallo nousee suoraan ylöspäin nopeudella $3 \frac{\textrm{m}}{\textrm{s}}$. Sääennusteen mukaan lentopäivänä tuuli puhaltaa idästä $4 \frac{\textrm{m}}{\textrm{s}}$ ja kuljettaa palloa kohti länttä nousun aikana. 
+<<<<<<< HEAD
+                        <ol class="a">
+                            <li> Muodosta vektoreiden $\vi$ ja $\vj$ avulla vektori, joka kuvaa kuumailmapallon siirtymää yhden sekunnin aikana.</li>
+                            <li> Muodosta vektori, joka kuvaa kuumailmapallon siirtymää kahden minuutin aikana.</li>
+                            <li> Kuinka korkealla kuumailmapallo on kahden minuutin kuluttua lähdöstä? </li>
+                            <li> Mikä on kuumailmapallon etäisyys lähtöpaikasta kahden minuutin kuluttua?</li>
+                        </ol>
+=======
+                    <ol class="a">
+                        <li> Muodosta vektoreiden $\vi$ ja $\vj$ avulla vektori, joka kuvaa kuumailmapallon siirtymää yhden sekunnin aikana.</li>
+                        <li> Muodosta vektori, joka kuvaa kuumailmapallon siirtymää kahden minuutin aikana.</li>
+                        <li> Kuinka korkealla kuumailmapallo on kahden minuutin kuluttua lähdöstä? </li>
+                        <li> Mikä on kuumailmapallon etäisyys lähtöpaikasta kahden minuutin kuluttua?</li>
+                    </ol>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    </p>
+                    <h2>
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja3t2_v">
+                            VASTAUS
+                        </a>
+                    </h2>
+                    <div id="sarja3t2_v" class="collapse">
+                        <ol class="a">
+                            <li> Esimerkiksi $-4\vi + 3\vj$</li>
+                            <li> Esimerkiksi $-480\vi + 360\vj$</li>
+                            <li> Noin 360 metrin korkeudella. </li>
+                            <li> Noin 600 metriä.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tehtavat">
+<<<<<<< HEAD
+                <div class="tehtava" id="aa345f5b-d701-49dd-88f9-221d79c120c3">
+=======
+                <div class="tehtava" id="sarja3t3-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                    <header>
+                        <h1>
+                            <a data-target="#sarja3t3">
+
+                            </a>
+                        </h1>
+                    </header>
+                    <div id="sarja3t3">
+                        <p>
+                            Suunnikkaan kolme kärkipistettä ovat $(-1,2), (5,2)$ ja $(1,5)$. Määritä suunnikkaan neljäs kärkipiste
+                            <ol class="a">
+                                <li> kuvan avulla</li>
+                                <li> vektoreiden avulla.</li>
+                            </ol>
+                            Huomaa, että ratkaisuja on useita. Vertaile ratkaisuja kaverin kanssa. 
+                        </p>
+                        <h2>
+<<<<<<< HEAD
+                        <a data-toggle="collapse" class="collapsed" data-target="#sarja3t3_v">
+                            VASTAUS
+                        </a>
+=======
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t3_v">
+                                VASTAUS
+                            </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        </h2>
+                        <div id="sarja3t3_v" class="collapse">
+                            <p> Neljäs kärkipiste voi olla $(-5,5)$ tai $(3,-1)$ tai $(7,5)$.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tehtavat">
+<<<<<<< HEAD
+                    <div class="tehtava" id="82fa4b31-430e-4ef6-b2d0-df4958997708">
+=======
+                    <div class="tehtava" id="sarja3t4-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t4">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t4">
+                            <p> Tutki vektoreita $\va=2\vi+3\vj$, $\vb=-3\vi+\vj$ ja $\vc=\vi-4\vj$. 
+                            <ol class="a">
+                                <li> Piirrä vektori $\va +\vb +\vc$ koordinaatistoon vektoreiden $\va$, $\vb$ ja $\vc$ avulla.
+                                <li> Selitä omin sanoin, mitä huomaat.
+                                <li> Miten voit ilmaista vektorin $\vc$ vektoreiden $\va$ ja $\vb$ avulla?
+                            </ol>
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t4_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t4_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t4_v" class="collapse">
+                                <ol class="a">
+                                    <li> </li>
+                                    <li> </li>
+                                    <li> $\vc = -\va - \vb$ </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="3cc01510-5b12-44ef-9faf-020ef2119c61">
+=======
+                    <div class="tehtava" id="sarja3t5-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t5">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t5">
+                            <p> Tarkastele pisteitä $A=(2{,}-5)$ ja $B=(5{,}1)$.
+                            <ol class="a">
+                                <li> Piirrä pisteet $A$ ja $B$ yhdistävä jana koordinaatistoon.</li>
+                                <li> Sijoita piste $P$ janalle silmämääräisesti siten, että se jakaa janan $AB$ suhteessa $2:3$.</li>
+                                <li> Lausu vektori $\pv{AP}$ vektorin $\pv{AB}$ avulla.</li>
+                                <li> Määritä pisteen $P$ koordinaatit.</li>
+                            </ol>
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t5_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t5_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t5_v" class="collapse">
+                                <ol class="a">
+                                    <li> </li>
+                                    <li> </li>
+                                    <li> $\pv{AP} = \frac{2}{5}\pv{AB}$ </li>
+                                    <li> $P = \left(\frac{16}{5}, -\frac{13}{5}\right) = (3{,}2; -2{,}6)$  </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="c0225393-bdde-4435-a3a5-9a99e04b21c2">
+=======
+                    <div class="tehtava" id="sarja3t6-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t6">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t6">
+                            <p> Tarkastele alla olevaa kuvaa.
+                            <ol class="a">
+                                <li> Ilmoita vektorit $\vv$ ja $\vw$ vektoreiden $\vi$ ja $\vj$ avulla.</li>
+                                <li> Laske vektoreiden $\vv$ ja $\vw$ pituudet.</li>
+                                <li> Muodosta vektori $3\vv-4\vw$ ja laske sen pituus.</li>
+                            </ol>
+                            </p>
+                            <p>
+                                <img src="/kurssit/maa4/kuvat/setti3-8.png" max-width: 100%; width: auto; height: auto;/>
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t6_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t6_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t6_v" class="collapse">
+                                <ol class="a">
+                                    <li> $\vv = -5\vi + 2\vj\ $ ja $\ \vw = -4\vi-4\vj$ </li>
+                                    <li> $|\vv| = \sqrt{29} \ $ ja $\ |\vw| = \sqrt{32} = 4\sqrt{2}$ </li>
+                                    <li> $3\vv - 4\vw = \vi + 22\vj\ $ ja $\ |3\vv - 4\vw| = \sqrt{485}$ </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+
+                    <div class="tehtava" id="4673f151-065c-4d3e-9fe4-57eeb63372cc">
+=======
+                    <div class="tehtava" id="sarja3t7-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t7">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t7">
+                            <p> 
+                                Tutki, onko olemassa sellainen reaaliluku $r$, että vektorit $\vv=(2+3r)\vi-4\vj$ ja $\vw=5\vi+(r-5)\vj$ ovat
+<<<<<<< HEAD
+                            </p>
+                                <ol class="a">
+                                    <li> yhdensuuntaiset</li>
+                                    <li> samat.</li>
+                                </ol>
+                            <p>
+                                Ovatko vektorit $\vv$ ja $\vw$ a-kohdan tapauksessa samansuuntaiset vai vastakkaissuuntaiset? Voit ratkaista ratkaisussa muodostuvat yhtälöparit laskimella.
+                            </p>
+                            <h2>
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t7_v">
+                                VASTAUS
+                            </a>
+=======
+                            </p>
+                            <ol class="a">
+                                <li> yhdensuuntaiset</li>
+                                <li> samat.</li>
+                            </ol>
+                            <p>
+                                Ovatko vektorit $\vv$ ja $\vw$ a-kohdan tapauksessa samansuuntaiset vai vastakkaissuuntaiset? Voit ratkaista ratkaisussa muodostuvat yhtälöparit laskimella.
+                            </p>
+                            <h2>
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t7_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t7_v" class="collapse">
+                                <ol class="a">
+                                    <li> Kyllä, $r = \frac{10}{3}$. </li>
+                                    <li> Kyllä, $r = 1$. </li>
+                                </ol>
+                                <p>Kohdassa (a) vektorit ovat samansuuntaiset.</p>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="c5dd5e6b-c485-455b-981a-a942bd72f5ac">
+=======
+                    <div class="tehtava" id="sarja3t8-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t8">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t8">
+                            <p> 
+                                Määritä vektoreiden $\va=2\vi+5\vj$ ja $\vb=\vi-2\vj$ summavektori ja summavektorin suuntainen yksikkövektori. [Pitkä K09/3a]
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t8_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t8_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t8_v" class="collapse">
+                                <p>$\va + \vb = 3\vi + 3\vj$ ja samansuuntainen yksikkövektori on $\dfrac{1}{\sqrt{2}}\vi + \dfrac{1}{\sqrt{2}}\vj$.</p>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+
+                    <div class="tehtava" id="24f03fc1-7001-4600-a26f-cfbb1828f720">
+=======
+                    <div class="tehtava" id="sarja3t9-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t9">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t9">
+                            <p> Selvitä, mihin pisteeseen päädyt, jos siirryt  
+                            <ol class="a">
+                                <li> pisteestä $A=(7,3)$ kymmenen pituusyksikköä vektorin $\vv=3\vi-4\vj$ suuntaan</li>
+                                <li> pisteestä $B=(4,-8)$ viisi pituusyksikköä vektorin $\vv=-12\vi+9\vj$ suuntaan.</li>
+                            </ol>
+                            Havainnollista ratkaisuasi piirroksella.
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t9_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t9_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t9_v" class="collapse">
+                                <ol class="a">
+                                    <li> Pisteeseen $(13,-5)$. </li>
+                                    <li> Pisteeseen $(0,-5)$. </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="9f102b90-e735-40b2-94a1-b0d49903ebc0">
+=======
+                    <div class="tehtava" id="sarja3t10-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t10">
+
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t10">
+                            <p> 
+                                Vektorien $\pv{AB}$ ja $\pv{CD}$ päätepisteet ovat $A=(3,1)$, $B=(7,3)$, $(C=1,4)$ ja $D=(-3,-2)$. Laske vektorien välisen kulman suuruus $0{,}1$ asteen tarkkuudella. Piirrä kuvio. [Pitkä S05/3]
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t10_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t10_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t10_v" class="collapse">
+                                <p> Noin $150{,}3^\circ$. </p>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+
+
+                    <div class="tehtava" id="a812cfa0-4fab-49ac-838f-0378db7399a5">
+=======
+                    <div class="tehtava" id="sarja3t11-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t11">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t11">
+                            <p> Tutki, onko kolmio suorakulmainen, jos sen eräästä kärjestä alkavat sivuvektorit ovat 
+                            <ol class="a">
+                                <li> $\va=3\vi+\vj$ ja $\vb=2\vi+6\vj$</li>
+                                <li> $\va=-4\vi-3\vj$ ja $\vb=-2\vi-4\vj$.</li>
+                            </ol>
+                            Kannattaa piirtää tilanteesta kuva. Perustele vastauksesi kuitenkin laskemalla.
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t11_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t11_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t11_v" class="collapse">
+                                <ol class="a">
+                                    <li> Kolmio ei ole suorakulmainen. Kärkipisteet voivat olla esimerkiksi $O=(0,0)$, $A=(3,1)$ ja $B=(2,6)$. Kulmiksi saadaan noin $53^\circ$, noin $97^\circ$ ja noin $30^\circ$. </li>
+                                    <li> Kolmio on suorakulmainen. Kärkipisteet voivat olla esimerkiksi $O=(0,0)$, $A=(-4,-3)$ ja $B=(-2,-4)$. Kulma $\sphericalangle(\pv{BA}, \pv{BO}) = 90^\circ$. </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="215beb9a-5808-4cc9-b436-16129a0de41d">
+=======
+                    <div class="tehtava" id="sarja3t12-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t12">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t12">
+                            <p> Kolmiossa $ABC$ on $\pv{AB}=2{,}2\vi+7{,}3\vj$ ja $\pv{AC}=5{,}9\vi-2{,}1\vj$. 	
+                            <ol class="a">
+                                <li> Määritä kolmanteen sivuun liittyvä vektori $\pv{BC}$.</li>
+                                <li> Osoita, että $BC$ on kolmion pisin sivu.</li>
+                                <li> Määritä kulman $BAC$ suuruus pistetulon avulla 0,1 asteen tarkkuudella.</li>
+                            </ol>
+                            [Pitkä S2007/3]
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t12_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t12_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t12_v" class="collapse">
+                                <ol class="a">
+                                    <li> $\pv{BC} = 3{,}7\vi - 9{,}4\vj$ </li>
+                                    <li> $|\pv{AB}| = \sqrt{58{,}13}$, $|\pv{AC}| = \sqrt{39{,}22}$ ja $|\pv{BC}| = \sqrt{102{,}05}$, joten sivu $BC$ on pisin (sen pituuden lausekkeessa juurrettava on suurin). </li>
+                                    <li> Noin $92{,}8^\circ$.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="15138733-39f8-45a3-9422-f9981875a092">
+=======
+                    <div class="tehtava" id="sarja3t13-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t13">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t13">
+                            <p> 
+                                Olkoon $\pv{OA}=7\vi+9\vj$ tason vektori. Määritä kaikki sellaiset vektorit $\pv{OB}$, että kulma OAB on suora ja vektorin $\pv{AB}$ pituus on puolet vektorin $\pv{OA}$ pituudesta. [Pitkä K2005/4]
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t13_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t13_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t13_v" class="collapse">
+                                <p> Kaksi mahdollisuutta: $\frac{23}{2}\vi + \frac{11}{2}\vj$ tai $\frac{5}{2}\vi + \frac{25}{2}\vj$.</p>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="691039c2-ade0-453c-87d1-b5ad1811e41b">
+=======
+                    <div class="tehtava" id="sarja3t14-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t14">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t14">
+                            <p>  
+                                Origosta alkavan vektorin $\va=2\vi+7\vj$ päätepisteestä $P$ alkava ja $x$-akselin pisteeseen $Q$ päättyvä vektori $\vb$ on kohtisuorassa vektoria $\va$ vastaan. Määritä pisteet $P$ ja $Q$ sekä vektori $\vb$. [Lyhyt K1989/6a]
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t14_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t14_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t14_v" class="collapse">
+                                <p> $P = (2,7)$, $\ Q = \left(\frac{53}{2}, 0\right)\ $ ja $\ \vb = \frac{49}{2}\vi - 7\vj$</p>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="1132ab60-542e-4d37-a58c-bef6b648c0da">
+=======
+                    <div class="tehtava" id="sarja3t15-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t15">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t15">
+                            <p> 
+                                Lentäjä ohjaa lentokonetta länteen. Tyynessä säässä lentokone liikkuisi suoraan länttä kohti $210~\frac{\textrm{km}}{\textrm{h}}$, mutta tuuli puhaltaa pohjoisesta $25~\frac{\textrm{m}}{\textrm{s}}$ ja kuljettaa konetta etelän suuntaan. 
+                            <ol class="a">
+                                <li> Mihin suuntaan lentokone todellisuudessa lentää?</li>
+                                <li> Mikä on lentokoneen vauhti maan suhteen?</li>
+                            </ol>
+                                Tiedetään, että $1~\frac{\textrm{m}}{\textrm{s}} = 3{,}6~\frac{\textrm{km}}{\textrm{h}}.$
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t15_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t15_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t15_v" class="collapse">
+                                <ol class="a">
+                                    <li> Noin 23,2 astetta lännestä etelän suuntaan (kompassisuuntaan $246{,}8^\circ$). </li>
+                                    <li> Noin 228 km/h. </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="1f9d53ae-d53a-4ff9-9647-0ee744ada744">
+=======
+                    <div class="tehtava" id="sarja3t16-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t16">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t16">
+                            <p> 
+                                Vedät pulkkaa voimalla $\bar{F} = x\vi + y\vj$, jonka suuruus on $|\bar{F}| = 150~\textrm{N}$. 
+                            <ol class="a">
+                                <li> Mikä on vektorin $\vj$ suuntaisen komponentin suuruus, jos vektorin $\vi$ suuntaisen komponentin suuruus on 90 N?</li>
+                                <li> Jos vektoreiden $\vi$ ja $\vj$ suuntaiset komponentit ovat yhtä suuret, kuinka suuret ne ovat?</li>
+                            </ol>
+                                Havainnollista ratkaisuasi piirtämällä tilanteesta mallikuva.
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t16_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t16_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t16_v" class="collapse">
+                                <ol class="a">
+                                    <li> 120 N </li>
+                                    <li> Noin 106 N. </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <div class="tehtava" id="23134295-9349-48a3-afff-e11ebb742ef7">
+=======
+                    <div class="tehtava" id="sarja3t17-ex">
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                        <header>
+                            <h1>
+                                <a data-target="#sarja3t17">
+                                </a>
+                            </h1>
+                        </header>
+                        <div id="sarja3t17">
+                            <p> 
+                                Voiman $\bar{F} = x\vi + y\vj$ suuruus on $|\bar{F}| = 84~\textrm{N}$. 
+                                Mikä on vektorin $\vi$ suuntaisen komponentin suuruus, jos vektorin $\vj$ suuntaisen komponentin suuruus on 60,2 N?
+                                Havainnollista ratkaisuasi piirtämällä tilanteesta mallikuva.
+                            </p>
+                            <h2>
+<<<<<<< HEAD
+                            <a data-toggle="collapse" class="collapsed" data-target="#sarja3t17_v">
+                                VASTAUS
+                            </a>
+=======
+                                <a data-toggle="collapse" class="collapsed" data-target="#sarja3t17_v">
+                                    VASTAUS
+                                </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                            </h2>
+                            <div id="sarja3t17_v" class="collapse">
+                                <p> Noin 58,6 N.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tähän loppui piilotus -->
+<<<<<<< HEAD
+=======
+                </div>
+                <div class="close-section">
+                    <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjaiii">
+                        Sulje kappale
+                    </a>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+                </div>
+        <div class="close-section">
+        <a data-toggle="collapse" class="collapsed" data-target="#tehtavasarjaiii">
+        Sulje kappale
+        </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="panel">
+        <header>
+            <h1>
+                <a data-toggle="collapse" class="collapsed" data-target="#itsearviointi">
+                    Itsearviointitehtävät
+                </a>
+            </h1>
+        </header>
+        <div id="itsearviointi" class="collapse">
+            <p>
+                Varmista, että olet oppinut tämän luvun keskeiset asiat tekemällä itsearviointitestit opetus.tv:n polku-palvelussa. Samalla harjoittelet omien ratkaisujesi pisteyttämistä pisteytysohjeiden avulla. Linkit luvun itsearviointitesteihin ovat tässä: <a href="http://polku.opetus.tv/node/1339">ensimmäinen testi</a> ja <a href="http://polku.opetus.tv/node/1342">toinen testi</a>.
+            </p>
+            <div class="close-section">
+<<<<<<< HEAD
+        <a data-toggle="collapse" class="collapsed" data-target="#itsearviointi">
+        Sulje kappale
+        </a>
+    </div>
+=======
+                <a data-toggle="collapse" class="collapsed" data-target="#itsearviointi">
+                    Sulje kappale
+                </a>
+            </div>
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+        </div>
+    </section>
+</article>

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<!-- numbering.js need JQuery so it need to be loaded here also-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<style>
+<<<<<<< HEAD
+        section > header h1 {
+                font-size: 2.75em;
+                padding-top: 15px;
+        }
+=======
+    section > header h1 {
+            font-size: 2.75em;
+            padding-top: 15px;
+    }
+
+		#scrollToTop {
+			z-index: 99;
+			bottom: 6px;
+			float: right;
+			border: none;
+			outline: none;
+			background-color: #4da851;
+			color: white;
+			cursor: pointer;
+			padding: 10px;
+			border-radius: 8px;
+			margin-top: 5px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		#scrollToTop:hover {
+			background-color: #52CD57;
+		}
+
+>>>>>>> c79514733f598008b15b7993fc036843573b8549
+</style>
+
+<article>
+	{% include selectcourse.html %}
+    {{ content }}
+</article>
+
+<script src="/js/numbering.js"></script>

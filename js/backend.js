@@ -15,6 +15,7 @@ class Backend {
       request.withCredentials = true;
       request.onload = () => {
         if (request.status >= 200 && request.status < 400) {
+          Session.renew();
           resolve(JSON.parse(request.responseText));
         } else if (request.status === 404) {
           reject('404');
@@ -40,6 +41,7 @@ class Backend {
 
       request.onload = () => {
         if (request.status >= 200 && request.status < 400) {
+          Session.renew();
           resolve(JSON.parse(request.responseText));
         } else {
           reject(JSON.parse(request.responseText));

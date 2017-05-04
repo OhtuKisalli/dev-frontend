@@ -4,27 +4,19 @@
 
 class Scoreboard {
 
-  static _compare(a, b) {
-    if (a.user < b.user)
-      return -1;
-    if (a.user > b.user)
-      return 1;
-    return 0;
-  }
-
   static getFullScreenLink(id, html_id, coursekey) {
     return `scoreboard.html?id=${encodeURIComponent(id)}&html_id=${encodeURIComponent(html_id)}&coursekey=${coursekey}`;
   }
 
   static createTable(courseData, exercises, table_id, course) {
-    courseData.sort(Scoreboard._compare);
-
     const keys = {
       "green": 0,
       "yellow": 1,
       "red": 2,
       "gray": 3
     };
+
+    const scheduleColors = ['#ffffff', '#da9887', '#87b2da', '#c4da87', '#f9bb81', '#eae981'];
 
     let id = Math.random().toString(36).substring(7);
 
@@ -41,6 +33,7 @@ class Scoreboard {
     console.log(courseData);
     for (let j in courseData) {      
       let student = courseData[j];
+
       let row = view.createName(student.user);
 
       for (let k in student.exercises) {
@@ -48,10 +41,25 @@ class Scoreboard {
         let exercise = student.exercises.filter(function (obj) {
           return obj.id == correctExercise.id;
         });
-        let checkmark = view.createCheckmark(keys[exercise[0].status], exercise[0].status, student.user, correctExercise.number);
-        row.appendChild(checkmark);
+        if (exercise.length === 1) {
+          console.log(student.color);
+          let checkmark;
+          if(student.color === undefined) {
+            checkmark = view.createCheckmark(keys[exercise[0].status], exercise[0].status, student.user, correctExercise.number);            
+          } else {
+            checkmark = view.createScheduleMark(scheduleColors[student.color], exercise[0].status, student.user, correctExercise.number);
+          }
+          row.appendChild(checkmark);
+        } else {
+          let checkmark = view.createCheckmark(3, 'gray', student.user, correctExercise.number);
+          row.appendChild(checkmark);          
+        }
       }
-      scoreboard.querySelector('tbody').appendChild(row);
+      if (student.color != undefined) {
+        scoreboard.querySelector('tfoot').appendChild(row);
+      } else {
+        scoreboard.querySelector('tbody').appendChild(row);        
+      }
     }
 
     $('div[id=checkmarkTable' + table_id + ']').html(scoreboard);
@@ -69,9 +77,9 @@ class Scoreboard {
     $(alertID).hide();
 
     $('[data-toggle="tooltip"]').tooltip();
-
+    
     // make table sortable
-    if (table_id.length > 1 && courseData.length > 1) {
+    if (table_id.length > 1 && courseData.length > 1 && !window.location.pathname.includes('/omat_kurssit.html')) {
       console.log(id);
       let nto = document.getElementById(id);
       console.log(nto);
@@ -94,15 +102,22 @@ class Scoreboard {
 
   static createScoreboard(pageData, data, course) {
     let exercises = Exercises.extractExercises(pageData);
-    if (data.exercises) {
-      let studentData = [{
-        user: Session.getUserFirstName(),
-        exercises: data.exercises
-      }];
-      this.createTable(studentData, exercises, data.coursekey, course);
-    } else {
-      this.createTable(data.students, exercises, data.coursekey, course);
+    this.createTable(data.students, exercises, data.coursekey, course);
+  }
+
+  static validateScoreboardData(data) {
+    let amount = [];
+    for (let i in data.students) {
+      let item = data.students[i];
+      amount.push(item.exercises.length);
     }
+    return amount.every( (val, i, arr) => val == arr[0] );
+  }
+
+  static displayError(course, data) {
+    $(`#loadingAlert${course.coursekey}`).removeClass('alert-info').addClass('alert-danger');
+    $(`#loadingAlert${course.coursekey} strong`).html('Virhe! Tulostaulua ei pystytty lataamaan.');
+    console.warn(data + ": Could not get scoreboard.");
   }
 
   init(data, key) {
@@ -126,13 +141,15 @@ class Scoreboard {
           backend.get(url)
             .then(
               function fulfilled(data) {
-                Scoreboard.createScoreboard(pageData, data, course);
+                if (Scoreboard.validateScoreboardData(data)) {
+                  Scoreboard.createScoreboard(pageData, data, course);                  
+                } else {
+                  Scoreboard.displayError(course, data);
+                }
               },
               function rejected(data) {
                 console.log(course.coursekey);
-                $(`#loadingAlert${course.coursekey}`).removeClass('alert-info').addClass('alert-danger');
-                $(`#loadingAlert${course.coursekey} strong`).html('Virhe! Tulostaulua ei pystytty lataamaan.');
-                console.warn(data + ": Could not get scoreboard.");
+                Scoreboard.displayError(course, data);
               }
             );
         },

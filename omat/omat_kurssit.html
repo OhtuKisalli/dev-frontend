@@ -15,12 +15,20 @@ td {
     white-space: nowrap;
 }
 
+tbody {
+    white-space: nowrap;
+}
+
 th {
     white-space: nowrap;
     margin: 0;
     padding: 0;
     min-width: 24px;
     max-width: 24px;
+}
+
+tfoot {
+    border-top: 1px dashed #333;
 }
 
 .name {
@@ -59,6 +67,19 @@ th {
     background: rgb(105,105,105);
 }
 
+.white {
+    margin: 1px;
+    width: 24px;
+    height: 24px;
+    background: #bdc3c7 !important;
+}
+
+.black {
+    margin: 1px;
+    width: 24px;
+    height: 24px;
+}
+
 .numberHeader {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -73,6 +94,15 @@ th {
     
     padding: 8px 0;
 }
+
+.input-group {
+    z-index: 0;
+}
+
+tfoot > tr > td.name {
+    font-weight: 800 !important;
+}
+
 </style>
 
 <section class="panel panel-courselisting">
@@ -96,6 +126,6 @@ th {
 <div class="courseList"></div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="{{site.url}}/js/scoreboard.js"></script>
-<script src="{{site.url}}/js/courselist.js"></script>
-<script src="{{site.url}}/js/join_course.js"></script>
+<script src="/js/scoreboard.js"></script>
+<script src="/js/courselist.js"></script>
+<script src="/js/join_course.js"></script>

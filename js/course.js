@@ -10,12 +10,11 @@ flatpickr(".flatpickr", {
 
 class Course {
 
-  static createCoursePost(data, exercises) {
+  static createCoursePost(data) {
     let course = {
       html_id: data.courseSelect,
       coursekey: data.coursekey,
       name: data.courseName,
-      exercises: exercises,
       startdate: data.startDate,
       enddate: data.endDate
     };
@@ -25,6 +24,7 @@ class Course {
         function fulfilled(data) {
           const alert = '<div id="join_course_alert" class="alert alert-success" role="alert">' + data.message + '</div>';
           $('#validationMessage').html(alert).show();
+          document.cookie("teacher=true;path=/");
         },
         function rejected(data) {
           const alert = '<div id="join_course_alert" class="alert alert-danger" role="alert">' + data.error + '</div>';
@@ -37,8 +37,7 @@ class Course {
     $.ajax({
       url: FRONTEND_BASE_URL + `kurssit/${data.courseSelect}/print.html`,
       success: function (pageData) {
-        let exercises = Exercises.extractExercises(pageData);
-        Course.createCoursePost(data, exercises);
+        Course.createCoursePost(data);
       },
       error: function () {
         console.log("Could not retrieve course page");

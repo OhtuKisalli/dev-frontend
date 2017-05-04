@@ -42,7 +42,7 @@ describe('Session manager', function() {
     setTimeout(function() {
       expect(Session.getUserId()).toBe('1234');
       expect(Session.getUserFirstName()).toBe('Weirdoman');
-    }, 100);
+    }, 500);
 
   });
 
@@ -61,7 +61,7 @@ describe('Session manager', function() {
     setTimeout(function() {
       expect(Session.getUserId()).toBe(undefined);
       expect(Session.getUserFirstName()).toBe(undefined);
-    }, 100);
+    }, 500);
 
   });
 

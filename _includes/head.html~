@@ -1,0 +1,85 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore>
+	<link rel="dns-prefetch" href="//code.jquery.com" data-proofer-ignore>
+<<<<<<< HEAD
+
+
+	<link rel="dns-prefetch" href="//www.google-analytics.com" data-proofer-ignore>
+=======
+	
+	{% for href in site.resources.css %}
+	<link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %}
+	{% for href in page.resources.css %}
+	<link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %}
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+
+	<!-- Bootstrap CSS --> <!-- Navbar käyttää! -->
+	<link rel="stylesheet" href="{{site.url}}/css/bootstrap.css">
+
+<<<<<<< HEAD
+    <!-- Lataa css tiedostot _config.yml:sta -->
+	{% for href in site.resources.css %}
+	    <link rel="stylesheet" href="
+	        {% if href contains "//" %}
+                {{ href }}
+            {%else%}
+                {{ href | prepend:site.baseurl }}
+            {% endif %}"
+        type="text/css"></link>
+    {% endfor %}
+
+	<link rel="icon" type="image/png" href="/img/favicon.png">
+
+	
+	<!-- {% for href in site.resources.css %} -->
+	<!-- <link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %} -->
+	<!-- {% for href in page.resources.css %} -->
+	<!-- <link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %} -->
+  <!--  -->
+	<!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
+  <!--  -->
+	<!-- <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}"> -->
+	
+
+=======
+	<link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
+	
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+	<!-- mathjax config similar to math.stackexchange -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		jax: ["input/TeX", "output/HTML-CSS"],
+  		tex2jax: {
+    			inlineMath: [ ['$', '$'] ],
+    			displayMath: [ ['$$', '$$']],
+    			processEscapes: true,
+    			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  		},
+  		messageStyle: "none",
+  		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+ 
+		});
+	</script>
+<<<<<<< HEAD
+
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+=======
+        
+        
+{% for src in site.resources.js %}
+	<script src="{% if src contains '//' %}{{ src }}{% else %}{{ src | prepend: site.baseurl }}{% endif %}"></script>{% endfor %}
+{% for src in page.resources.js %}
+	<script src="{% if src contains '//' %}{{ src }}{% else %}{{ src | prepend: site.baseurl }}{% endif %}"></script>{% endfor %}
+{% for script in page.resources.script %}
+	<script>{{script}}</script>{% endfor %}
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+
+</head>

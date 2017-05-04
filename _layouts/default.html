@@ -6,12 +6,12 @@ layout: compress
 	{% include head.html %}
 
 	<body>
-		{% include modal.html %}
-		{% include nav.html %}
-		{% include header.html %}
-	        <div style="display: none;">
-	        ${% include mathematics.html %}$
-	        </div>
+        {% include modal.html %}
+        {% include nav.html %}
+        {% include header.html %}
+        <div style="display: none;">
+        ${% include mathematics.html %}$
+        </div>
 		
 		{% if page.topnav %}
 			{% include topnav.html %}
@@ -20,15 +20,8 @@ layout: compress
 			{{ content }}
 		</main>
 
-		{% if page.english %}
-			{% include footer-en.html %}
-		{% else %}
-			{% include footer.html %}
-		{% endif %}
-
-		{% include foot.html %}
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		{% include footer.html %}
+		{% include scripts.html %}
 	</body>
 
 </html>

@@ -9,53 +9,29 @@
 	{% endif %}
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" data-proofer-ignore>
 	<link rel="dns-prefetch" href="//code.jquery.com" data-proofer-ignore>
-
-
 	<link rel="dns-prefetch" href="//www.google-analytics.com" data-proofer-ignore>
-
-	<!-- Bootstrap CSS --> <!-- Navbar käyttää! -->
-	<link rel="stylesheet" href="{{site.url}}/css/bootstrap.css">
-
-    <!-- Lataa css tiedostot _config.yml:sta -->
+    <!-- Load css from _config.yml -->
 	{% for href in site.resources.css %}
-	    <link rel="stylesheet" href="
-	        {% if href contains "//" %}
-                {{ href }}
-            {%else%}
-                {{ href | prepend:site.baseurl }}
-            {% endif %}"
-        type="text/css"></link>
+		<link rel="stylesheet" href="{{ href }}" type="text/css">
     {% endfor %}
-
 	<link rel="icon" type="image/png" href="/img/favicon.png">
-
-	
-	<!-- {% for href in site.resources.css %} -->
-	<!-- <link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %} -->
-	<!-- {% for href in page.resources.css %} -->
-	<!-- <link rel="stylesheet" href="{% if href contains "//" %}{{href}}{%else%}{{href|prepend:site.baseurl}}{% endif %}" type="text/css">{% endfor %} -->
-  <!--  -->
-	<!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
-  <!--  -->
-	<!-- <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}"> -->
-	
 
 	<!-- mathjax config similar to math.stackexchange -->
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
   		jax: ["input/TeX", "output/HTML-CSS"],
   		tex2jax: {
-    			inlineMath: [ ['$', '$'] ],
-    			displayMath: [ ['$$', '$$']],
-    			processEscapes: true,
-    			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
   		},
   		messageStyle: "none",
   		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
- 
+
 		});
 	</script>
-
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
 
 </head>

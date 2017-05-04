@@ -2,16 +2,12 @@
 layout: compress
 ---
 
-<script src="https://web-palvelinohjelmointi.github.io/js/libs/jquery/jquery.js"></script>        
-<script src="https://web-palvelinohjelmointi.github.io/js/libs/jqueryui/jquery-ui.js"></script>
-<script src="{{site.url}}/js/numbering4print.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- numbering4print.js need JQuery so it need to be loaded here also-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="/js/numbering4print.js"></script>
 
 <style>
-        section > header h1 {
-                font-size: 2.75em;
-                padding-top: 15px;
-        }
         
         div.print-link {
         	display: none;
@@ -20,7 +16,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
 	{% include head.html %}
-
+	<script src="/js/numbering4print.js"></script>
 	<body>
 
 		{% include nav.html %}
@@ -55,7 +51,7 @@ layout: compress
 			{% include footer.html %}
 		{% endif %}
 
-		{% include foot.html %}
+		{% include scripts.html %}
 
 	</body>
 

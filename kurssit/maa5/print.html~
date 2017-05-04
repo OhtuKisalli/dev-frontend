@@ -1,0 +1,19 @@
+---
+<<<<<<< HEAD
+title: MAA5 - Analyyttinen Geometria 
+layout: print
+sitemap: true
+main-class: has-atop
+topnav: maa5
+---
+
+<div class="print-link">
+<p>Tällä sivulla näkyy kaikki kurssin <em>Analyyttinen Geometria</em> kurssisivut yhtenä pötkönä. Sivua voi käyttää sellaisenaan tai kurssimateriaalin tulostamiseen. Tulostettaessa sivu näyttää erilaiselta kuin verkkoselaimessa, esimerkiksi avaamista vaativat sisältöelementit ovat auki.</p>
+</div>
+=======
+title: MAA5 - Analyyttinen geometria
+layout: print
+topnav: maa5
+main-class: has-atop
+---
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1

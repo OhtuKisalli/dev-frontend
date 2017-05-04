@@ -12,3 +12,5 @@ out/
 node_modules/
 _coverage/*
 *~
+
+/HTML5Application/nbproject/private

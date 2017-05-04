@@ -1,0 +1,57 @@
+# Site settings
+title: Kisallioppiminen.fi
+baseurl: ""
+<<<<<<< HEAD
+url: "http://beta.kisallioppiminen.fi/"
+backendbaseurl: "http://kurssihallinta.kisallioppiminen.fi/"
+=======
+url: "https://kisallioppiminen.github.io"
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-redirect-from
+
+encoding: UTF-8
+sass:
+  style: :compressed
+
+navigation:
+  "Materiaalit": "/"
+  "Blogi": "http://blogs.helsinki.fi/kisallioppiminenlukiossa"
+  "Tietoa": "/tietoa.html"
+
+resources:
+  css:
+    - "//fonts.googleapis.com/css?family=Alegreya+Sans:400|Noto+Sans:400,700|Open+Sans+Condensed:300,700"
+    - "/css/main.css"
+  js:
+<<<<<<< HEAD
+    - "/js/common.js"
+    - "//code.jquery.com/jquery-2.2.4.min.js"
+    - "/js/session.js"
+    - "/js/view.js"
+    - "/js/exercises.js"
+    - "/js/backend.js"
+=======
+    - "/js/jquery.js"
+    - "/js/jquery-ui.js"
+    - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    - "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+>>>>>>> 63bdc151972ff63e35c39199039a2973231f70e1
+    - "/js/mooc.js"
+    - "/js/button/button.js"
+    - "/js/init.js"
+    - "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
+
+
+exclude: [vendor]
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
