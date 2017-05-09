@@ -367,6 +367,7 @@ class View {
     del.setAttribute('style', 'button');
     del.setAttribute('data-toggle', 'modal');
     del.setAttribute('data-target', '#leaveCourseModal');
+    del.setAttribute('data-name', data.name);
     del.style.display = "inline-block";
     del.style.margin = "0px 80px 10px 20px";
     del.innerHTML = "Poistu kurssilta";
