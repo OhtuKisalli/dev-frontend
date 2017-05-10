@@ -55,19 +55,22 @@ var SITE = {
             let firstExercise;
             let lastExercise;
 
-            $(this).find('.tehtava').each(function(index, value) {
-                if (index === 0) {
-                    firstExercise = $(this).find('header h1').text();
-                };
+            if ($(this).find('.tehtava').size() > 0) {
 
-                lastExercise = $(this).find('header h1').text();
-            });
+                $(this).find('.tehtava').each(function (index) {
+                    if (index === 0) {
+                        firstExercise = $(this).find('header h1').text();
+                    }
 
-            $(this).find('.otsikko').each(function(index, value) {
-                var exHeader = $(value).find("h1 a").text();
-                var newHeader = exHeader + " ("+ /[0-9].[0-9]+/.exec(firstExercise)[0] + " - " + /[0-9].[0-9]+/.exec(lastExercise)[0] + ")";
-                $(value).find("h1 a").text(newHeader);
-            });
+                    lastExercise = $(this).find('header h1').text();
+                });
+
+                $(this).find('.otsikko').each(function (index, value) {
+                    var exHeader = $(value).find("h1 a").text();
+                    var newHeader = exHeader + " (" + /[0-9].[0-9]+/.exec(firstExercise)[0] + " - " + /[0-9].[0-9]+/.exec(lastExercise)[0] + ")";
+                    $(value).find("h1 a").text(newHeader);
+                });
+            }
 
         });
         
