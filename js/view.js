@@ -515,14 +515,16 @@ class View {
     let scheduleButton = document.createElement('button');
 
     scheduleButton.setAttribute('type', 'button');
-    scheduleButton.setAttribute('class', 'btn btn-danger');
+    scheduleButton.setAttribute('class', 'btn btn-danger btn-xs');
     scheduleButton.innerHTML = 'Poista';
     scheduleButton.style.marginLeft = '3.3em';
+    scheduleButton.style.marginTop = '5px';
+    scheduleButton.style.float = "right";
     scheduleButton.onclick = function() {
       schedulemanagerInstance.deleteSchedule(button.getCourseID(), reserved.id);
     };
 
-    divRow.appendChild(scheduleButton);
+    divRadioButton.appendChild(scheduleButton);
   }
 
   createOpenScheduleManagerLink() {
